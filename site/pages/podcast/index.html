@@ -1,0 +1,40 @@
+<!-- /site/pages/podcast/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Podcast — L8 The Butterfly Layer</title>
+
+  <link rel="stylesheet" href="/assets/css/variables.css" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="/assets/css/podcast.css" />
+</head>
+<body id="top">
+  <div id="header"></div>
+
+  <main id="main" role="main">
+    <header class="page-header container">
+      <h1>Podcast</h1>
+      <p class="page-intro">Conversations on building with intention.</p>
+    </header>
+
+    <section class="container flow" id="episodes" aria-live="polite">
+      <!-- Podcast episodes will be rendered here (via /assets/js/podcast.js) -->
+      <noscript>Please enable JavaScript to view episodes.</noscript>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="/assets/js/loader.js" defer></script>
+  <script src="/assets/js/podcast.js" defer></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      loadPartial('#header', '/site/partials/header.html');
+      loadPartial('#footer', '/site/partials/footer.html');
+      // podcast.js should populate #episodes from /site/podcast/episodes.json
+    });
+  </script>
+</body>
+</html>

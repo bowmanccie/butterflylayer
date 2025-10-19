@@ -1,0 +1,43 @@
+<!-- /site/pages/resources/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resources — L8 The Butterfly Layer</title>
+
+  <link rel="stylesheet" href="/assets/css/variables.css" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body id="top">
+  <div id="header"></div>
+
+  <main id="main" role="main">
+    <header class="page-header container">
+      <h1>Resources</h1>
+      <p class="page-intro">Frameworks, guides, and tools for elegant systems.</p>
+    </header>
+
+    <section class="container flow">
+      <ul class="resource-list">
+        <!-- Example:
+        <li>
+          <h3><a href="/pages/resources/architecture-guide/">Architecture Guide</a></h3>
+          <p>Lightweight patterns for calm scalability.</p>
+        </li>
+        -->
+      </ul>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="/assets/js/loader.js" defer></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      loadPartial('#header', '/site/partials/header.html');
+      loadPartial('#footer', '/site/partials/footer.html');
+    });
+  </script>
+</body>
+</html>

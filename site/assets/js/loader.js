@@ -1,3 +1,4 @@
+// /site/assets/js/loader.js
 async function inject(selector, url){
   const host = document.querySelector(selector);
   if(!host) return;
