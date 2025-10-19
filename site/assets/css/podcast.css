@@ -1,0 +1,25 @@
+.episode-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.episode {
+  background: #fff;
+  border: 1px solid var(--color-silver);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.episode h3 {
+  margin: 0 0 8px;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--color-blush);
+  border: 1px solid var(--color-silver);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+}

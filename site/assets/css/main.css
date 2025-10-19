@@ -1,0 +1,109 @@
+@import url('./variables.css');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-pearl);
+  color: var(--color-ink);
+  font: 16px/1.55 var(--font-body);
+}
+
+a {
+  color: #2b5eff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.hero {
+  background: linear-gradient(90deg, var(--color-pearl), var(--color-blush), var(--color-orchid));
+  border-bottom: 1px solid var(--color-silver);
+}
+
+.hero .container {
+  padding: 56px 24px;
+}
+
+.hero-title {
+  font-size: 40px;
+  margin: 0 0 8px;
+}
+
+.hero-sub {
+  font-size: 18px;
+  color: var(--color-ink-soft);
+  max-width: 760px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--color-silver);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+
+.site-footer {
+  border-top: 1px solid var(--color-silver);
+  background: #fff;
+  margin-top: 48px;
+}
+
+.site-footer .container {
+  padding: 24px;
+  font-size: 14px;
+  color: var(--color-ink-soft);
+}
+
+small.muted {
+  color: #666;
+}
+
+.signature {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.signature img {
+  height: 38px;
+}
+
+.tagline {
+  font-style: italic;
+  color: var(--color-lavender-ink);
+}
+
+.nav {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.nav a {
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.logo img {
+  height: 28px;
+}
