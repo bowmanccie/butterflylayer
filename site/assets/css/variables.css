@@ -1,16 +1,81 @@
 /* /site/assets/css/variables.css */
 :root {
-  --color-blush: #f6d0e0;
-  --color-orchid: #cdb4db;
-  --color-pearl: #f9f9fb;
-  --color-silver: #dfe1e8;
-  --color-ink: #222222;
-  --color-ink-soft: #444444;
-  --color-lavender-ink: #8E8AAE;
+  /* Brand Palette — L8 The Butterfly Layer */
+  --pearl:            #FAFAFB;   /* soft canvas */
+  --blush:            #F6E7EE;   /* warm accent wash */
+  --orchid:           #C46BB1;   /* confident accent */
+  --silver:           #E6E7EA;   /* lines / borders */
+  --lavender-ink:     #5C4B8A;   /* elegant text accent */
 
-  --max-width: 1140px;
-  --radius: 16px;
-  --shadow: 0 10px 30px rgba(0,0,0,0.08);
+  /* Neutrals */
+  --ink-900:          #1C1C20;   /* primary body text */
+  --ink-700:          #2A2A31;
+  --ink-500:          #4A4A55;   /* secondary text */
+  --ink-300:          #8C8C99;   /* muted */
+  --ink-100:          #D8D9E0;   /* subtle dividers */
 
-  --font-body: "Segoe UI", Arial, sans-serif;
+  /* Backgrounds */
+  --bg:               var(--pearl);
+  --surface:          #FFFFFF;   /* cards, panels */
+  --surface-tint:     color-mix(in oklab, var(--blush) 22%, white);
+  --hero-tint:        color-mix(in oklab, var(--blush) 10%, white);
+
+  /* Typography */
+  --font-sans:        ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  --font-serif:       "Cormorant Garamond", "Cormorant", Georgia, "Times New Roman", serif; /* magazine grace */
+  --font-mono:        ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* Type scale (clamp for fluid sizing) */
+  --step--1: clamp(0.86rem, 0.84rem + 0.2vw, 0.95rem);
+  --step-0:  clamp(1.00rem, 0.98rem + 0.25vw, 1.10rem);
+  --step-1:  clamp(1.20rem, 1.12rem + 0.50vw, 1.35rem);
+  --step-2:  clamp(1.44rem, 1.28rem + 0.80vw, 1.70rem);
+  --step-3:  clamp(1.80rem, 1.50rem + 1.20vw, 2.20rem);
+  --step-4:  clamp(2.20rem, 1.80rem + 1.80vw, 2.80rem);
+  --step-5:  clamp(2.75rem, 2.10rem + 2.40vw, 3.60rem);
+
+  /* Spacing scale */
+  --space-2xs:  0.25rem;
+  --space-xs:   0.5rem;
+  --space-sm:   0.75rem;
+  --space-md:   1rem;
+  --space-lg:   1.5rem;
+  --space-xl:   2rem;
+  --space-2xl:  3rem;
+  --space-3xl:  4.5rem;
+
+  /* Radius & Shadow */
+  --radius-sm:        8px;
+  --radius-md:        14px;
+  --radius-lg:        22px;
+  --shadow-soft:      0 6px 20px rgba(28, 28, 32, 0.06);
+  --shadow-hover:     0 10px 28px rgba(28, 28, 32, 0.08);
+
+  /* Borders */
+  --border:           1px solid var(--silver);
+
+  /* Focus ring (accessible but subtle) */
+  --focus-ring:       0 0 0 3px color-mix(in oklab, var(--orchid) 30%, white);
+
+  /* Z-index layers */
+  --z-header:         1000;
+  --z-overlay:        1100;
+  --z-tooltip:        1200;
+}
+
+/* Light/Dark hooks (optional future theming) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:           #111114;
+    --surface:      #18181C;
+    --ink-900:      #F4F4F7;
+    --ink-700:      #E6E6EE;
+    --ink-500:      #CFCFDB;
+    --ink-300:      #A5A5B2;
+    --ink-100:      #383844;
+    --silver:       #2A2A35;
+    --surface-tint: color-mix(in oklab, var(--lavender-ink) 8%, #18181C);
+    --hero-tint:    color-mix(in oklab, var(--lavender-ink) 6%, #111114);
+    --focus-ring:   0 0 0 3px color-mix(in oklab, var(--orchid) 30%, black);
+  }
 }
