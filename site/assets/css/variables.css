@@ -1,0 +1,15 @@
+:root {
+  --color-blush: #f6d0e0;
+  --color-orchid: #cdb4db;
+  --color-pearl: #f9f9fb;
+  --color-silver: #dfe1e8;
+  --color-ink: #222222;
+  --color-ink-soft: #444444;
+  --color-lavender-ink: #8E8AAE;
+
+  --max-width: 1140px;
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+  --font-body: "Segoe UI", Arial, sans-serif;
+}
