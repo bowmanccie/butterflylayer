@@ -1,0 +1,26 @@
+# OS/system junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Node / build (future-proofing)
+node_modules/
+dist/
+build/
+
+# Temp files
+*.log
+*.tmp
+~$*
+
+# OneDrive oddities
+*.lnk
+
+# Project-specific: keep repo lean
+content/images/raw/
+content/podcast/audio/drafts/
+reference/archive/
