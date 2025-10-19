@@ -1,12 +1,10 @@
 /* /site/assets/css/main.css */
 
 /* ===========
-   Editorial Elegance — Base Layout & Components
-   Relies on tokens in variables.css
+   Editorial Elegance — Airier Theme
    =========== */
 
-/* 1) Modern Reset + Base
-   -------------------------------------------------- */
+/* 1) Reset + Base */
 *,
 *::before,
 *::after { box-sizing: border-box; }
@@ -17,16 +15,15 @@ body {
   margin: 0;
   font-family: var(--font-sans);
   font-size: var(--step-0);
-  line-height: 1.6;
-  color: var(--ink-900);
+  line-height: 1.65;
+  color: var(--ink-800);
   background: var(--bg);
   text-rendering: optimizeLegibility;
 }
 
-/* Better images/embeds */
 img, svg, video { max-width: 100%; height: auto; display: block; }
 
-/* Links */
+/* Links (lighter default, underline on hover) */
 a {
   color: var(--lavender-ink);
   text-decoration: none;
@@ -44,11 +41,9 @@ h2 { font-family: var(--font-serif); font-size: var(--step-3); font-weight: 500;
 h3 { font-size: var(--step-2); font-weight: 600; }
 h4 { font-size: var(--step-1); font-weight: 600; }
 
-/* Paragraphs, lists */
 p { margin: 0 0 var(--space-md); color: var(--ink-700); }
 ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 
-/* Screen-reader utility */
 .sr-only {
   position: absolute !important; width: 1px; height: 1px;
   padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0);
@@ -64,16 +59,13 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 }
 .skip-link:focus { left: var(--space-sm); top: var(--space-sm); z-index: var(--z-overlay); }
 
-/* Focus ring */
 :focus-visible { outline: none; box-shadow: var(--focus-ring); border-radius: var(--radius-sm); }
 
-/* 2) Layout primitives
-   -------------------------------------------------- */
+/* 2) Layout primitives */
 .container {
   width: min(1100px, 100% - 2*var(--space-xl));
   margin-inline: auto;
 }
-
 .flow > * + * { margin-top: var(--space-md); }
 
 .grid.two {
@@ -81,32 +73,28 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   gap: var(--space-xl);
   grid-template-columns: 1fr;
 }
-@media (min-width: 820px) {
-  .grid.two { grid-template-columns: 1fr 1fr; }
-}
+@media (min-width: 820px) { .grid.two { grid-template-columns: 1fr 1fr; } }
 
 .card-grid {
   list-style: none; margin: 0; padding: 0;
   display: grid; gap: var(--space-xl);
   grid-template-columns: 1fr;
 }
-@media (min-width: 900px) {
-  .card-grid { grid-template-columns: repeat(3, 1fr); }
-}
+@media (min-width: 900px) { .card-grid { grid-template-columns: repeat(3, 1fr); } }
 
-/* Buttons */
+/* Buttons (lighter look) */
 .button {
   display: inline-block;
   font-weight: 600;
   padding: 0.7rem 1rem;
   border-radius: var(--radius-md);
-  background: var(--lavender-ink);
-  color: white;
+  background: var(--orchid);
+  color: #fff;
   box-shadow: var(--shadow-soft);
   transition: transform 200ms ease, box-shadow 200ms ease, opacity 200ms ease;
 }
 .button:hover { text-decoration: none; transform: translateY(-1px); box-shadow: var(--shadow-hover); }
-.button:active { transform: translateY(0); opacity: 0.9; }
+.button:active { transform: translateY(0); opacity: 0.92; }
 
 /* Link with arrow */
 .link-arrow { position: relative; padding-right: 1.2em; }
@@ -117,12 +105,11 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 }
 .link-arrow:hover::after { transform: translateX(3px); }
 
-/* 3) Header & Navigation
-   -------------------------------------------------- */
+/* 3) Header & Navigation (softer, airier) */
 .site-header {
   position: sticky; top: 0; z-index: var(--z-header);
-  background: var(--surface);
-  border-bottom: var(--border);
+  background: color-mix(in oklab, var(--surface) 94%, white 6%);
+  border-bottom: 1px solid var(--ink-150);
   backdrop-filter: saturate(140%) blur(8px);
 }
 .header-inner {
@@ -138,22 +125,17 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 .brand-mark {
   font-weight: 800; letter-spacing: 0.02em;
   background: var(--surface-tint);
-  padding: 0.2rem 0.45rem; border-radius: 999px; 
+  padding: 0.2rem 0.45rem; border-radius: 999px;
   box-shadow: inset 0 0 0 1px var(--silver);
 }
 .brand-name { font-weight: 600; color: var(--ink-700); }
 .tagline { margin: 0; grid-column: 1 / -1; color: var(--ink-500); font-size: var(--step--1); }
 
-.nav-toggle {
-  display: inline-flex; flex-direction: column; gap: 4px;
-  background: transparent; border: none; cursor: pointer;
-}
-.nav-toggle .nav-toggle-bar {
-  width: 24px; height: 2px; background: var(--ink-900);
-}
+.nav-toggle { display: inline-flex; flex-direction: column; gap: 4px; background: none; border: 0; cursor: pointer; }
+.nav-toggle .nav-toggle-bar { width: 24px; height: 2px; background: var(--ink-800); }
 
 .primary-nav { display: none; }
-.primary-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: var(--space-lg); }
+.primary-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: var(--space-lg); flex-wrap: wrap; }
 .primary-nav a { color: var(--ink-700); font-weight: 600; }
 .primary-nav a:hover { color: var(--ink-900); }
 
@@ -164,12 +146,11 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   .primary-nav { display: block; }
 }
 
-/* 4) Hero, Cards, Pull Quotes
-   -------------------------------------------------- */
+/* 4) Hero, Cards, Pull Quotes (lighter hero) */
 .hero {
   padding: var(--space-3xl) 0 var(--space-2xl);
   background: var(--hero-tint);
-  border-bottom: var(--border);
+  border-bottom: 1px solid var(--ink-150);
 }
 .hero-title {
   font-family: var(--font-serif);
@@ -178,14 +159,14 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 }
 .hero-tagline {
   font-size: var(--step-1);
-  color: var(--ink-500);
+  color: var(--ink-600);
   max-width: 60ch;
 }
 .hero-cta { margin-top: var(--space-lg); }
 
 .card {
   background: var(--surface);
-  border: var(--border);
+  border: 1px solid var(--silver);
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
   box-shadow: var(--shadow-soft);
@@ -197,7 +178,7 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   margin: var(--space-2xl) auto;
   padding: var(--space-lg);
   background: var(--surface);
-  border: var(--border);
+  border: 1px solid var(--silver);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
 }
@@ -208,17 +189,14 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   color: var(--lavender-ink);
 }
 
-/* 5) Footer
-   -------------------------------------------------- */
+/* 5) Footer (F-A: vertical on mobile, horizontal on desktop) */
 .site-footer {
   margin-top: var(--space-3xl);
   padding: var(--space-2xl) 0;
   background: var(--surface);
-  border-top: var(--border);
+  border-top: 1px solid var(--ink-150);
 }
-.footer-inner {
-  display: grid; gap: var(--space-xl);
-}
+.footer-inner { display: grid; gap: var(--space-xl); }
 .footer-nav {
   list-style: none; margin: 0; padding: 0;
   display: grid; gap: var(--space-sm);
@@ -232,20 +210,29 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   box-shadow: inset 0 0 0 1px var(--silver);
 }
 
-/* 6) Quote Bubble (for your motivational quotes — not yet wired)
-   -------------------------------------------------- */
+/* Desktop: footer links horizontal */
+@media (min-width: 880px) {
+  .footer-nav {
+    display: flex;
+    gap: var(--space-lg);
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* 6) Quote Bubble (unchanged behavior, slightly lighter) */
 .quote-bubble {
   position: fixed;
   right: clamp(12px, 3vw, 28px);
   bottom: clamp(12px, 3vw, 28px);
   max-width: 28ch;
   background: var(--surface);
-  border: var(--border);
+  border: 1px solid var(--silver);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
   padding: var(--space-md) var(--space-lg);
   color: var(--ink-700);
-  opacity: 0.96;
+  opacity: 0.97;
   backdrop-filter: blur(6px);
   transform: translateY(8px);
   animation: quoteIn 420ms cubic-bezier(.2,.7,.2,1) forwards;
@@ -258,17 +245,12 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   color: var(--ink-300); cursor: pointer;
 }
 .quote-close:hover { color: var(--ink-500); }
+@keyframes quoteIn { to { opacity: 1; transform: translateY(0); } }
 
-@keyframes quoteIn {
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* 7) Misc
-   -------------------------------------------------- */
+/* 7) Page section spacing */
 .page-header { padding: var(--space-2xl) 0 var(--space-xl); }
-.page-intro { color: var(--ink-500); max-width: 70ch; }
+.page-intro { color: var(--ink-600); max-width: 70ch; }
 
 .highlights { padding: var(--space-2xl) 0; }
-
 .backtotop a { color: var(--ink-500); }
 .backtotop a:hover { color: var(--ink-700); }

@@ -1,31 +1,36 @@
 /* /site/assets/css/variables.css */
 :root {
-  /* Brand Palette — L8 The Butterfly Layer */
-  --pearl:            #FAFAFB;   /* soft canvas */
-  --blush:            #F6E7EE;   /* warm accent wash */
-  --orchid:           #C46BB1;   /* confident accent */
-  --silver:           #E6E7EA;   /* lines / borders */
-  --lavender-ink:     #5C4B8A;   /* elegant text accent */
+  /* Brand Palette — L8 The Butterfly Layer (airier) */
+  --pearl:            #FCFCFD;   /* softer canvas */
+  --blush:            #F7EAF2;   /* lighter warm wash */
+  --orchid:           #C98BCB;   /* elegant accent (lightened) */
+  --silver:           #ECEEF3;   /* lighter lines/borders */
+  --lavender-ink:     #6A5FB2;   /* softer, less heavy accent ink */
 
-  /* Neutrals */
-  --ink-900:          #1C1C20;   /* primary body text */
-  --ink-700:          #2A2A31;
-  --ink-500:          #4A4A55;   /* secondary text */
-  --ink-300:          #8C8C99;   /* muted */
-  --ink-100:          #D8D9E0;   /* subtle dividers */
+  /* Neutrals (lightened contrast for an airy look) */
+  --ink-900:          #23232A;
+  --ink-800:          #2C2C34;
+  --ink-700:          #3A3A44;
+  --ink-500:          #5A5A66;
+  --ink-300:          #9AA0AD;
+  --ink-150:          #E6E8EF;   /* extra-soft dividers */
 
   /* Backgrounds */
   --bg:               var(--pearl);
   --surface:          #FFFFFF;   /* cards, panels */
-  --surface-tint:     color-mix(in oklab, var(--blush) 22%, white);
-  --hero-tint:        color-mix(in oklab, var(--blush) 10%, white);
+  --surface-tint:     color-mix(in oklab, var(--blush) 16%, white);
+  --hero-tint:        linear-gradient(
+                        180deg,
+                        color-mix(in oklab, var(--blush) 10%, white) 0%,
+                        color-mix(in oklab, var(--pearl) 92%, white) 100%
+                      );
 
   /* Typography */
   --font-sans:        ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
-  --font-serif:       "Cormorant Garamond", "Cormorant", Georgia, "Times New Roman", serif; /* magazine grace */
+  --font-serif:       "Cormorant Garamond", "Cormorant", Georgia, "Times New Roman", serif;
   --font-mono:        ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-  /* Type scale (clamp for fluid sizing) */
+  /* Type scale (fluid) */
   --step--1: clamp(0.86rem, 0.84rem + 0.2vw, 0.95rem);
   --step-0:  clamp(1.00rem, 0.98rem + 0.25vw, 1.10rem);
   --step-1:  clamp(1.20rem, 1.12rem + 0.50vw, 1.35rem);
@@ -34,7 +39,7 @@
   --step-4:  clamp(2.20rem, 1.80rem + 1.80vw, 2.80rem);
   --step-5:  clamp(2.75rem, 2.10rem + 2.40vw, 3.60rem);
 
-  /* Spacing scale */
+  /* Spacing */
   --space-2xs:  0.25rem;
   --space-xs:   0.5rem;
   --space-sm:   0.75rem;
@@ -44,38 +49,39 @@
   --space-2xl:  3rem;
   --space-3xl:  4.5rem;
 
-  /* Radius & Shadow */
+  /* Radius & Shadow (softer) */
   --radius-sm:        8px;
   --radius-md:        14px;
   --radius-lg:        22px;
-  --shadow-soft:      0 6px 20px rgba(28, 28, 32, 0.06);
-  --shadow-hover:     0 10px 28px rgba(28, 28, 32, 0.08);
+  --shadow-soft:      0 6px 20px rgba(35, 35, 42, 0.05);
+  --shadow-hover:     0 10px 28px rgba(35, 35, 42, 0.08);
 
   /* Borders */
   --border:           1px solid var(--silver);
 
-  /* Focus ring (accessible but subtle) */
+  /* Focus ring (subtle) */
   --focus-ring:       0 0 0 3px color-mix(in oklab, var(--orchid) 30%, white);
 
-  /* Z-index layers */
+  /* Z-index */
   --z-header:         1000;
   --z-overlay:        1100;
   --z-tooltip:        1200;
 }
 
-/* Light/Dark hooks (optional future theming) */
+/* Dark mode hook (kept, but softened) */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg:           #111114;
-    --surface:      #18181C;
-    --ink-900:      #F4F4F7;
-    --ink-700:      #E6E6EE;
-    --ink-500:      #CFCFDB;
-    --ink-300:      #A5A5B2;
-    --ink-100:      #383844;
-    --silver:       #2A2A35;
-    --surface-tint: color-mix(in oklab, var(--lavender-ink) 8%, #18181C);
-    --hero-tint:    color-mix(in oklab, var(--lavender-ink) 6%, #111114);
-    --focus-ring:   0 0 0 3px color-mix(in oklab, var(--orchid) 30%, black);
+    --bg:           #111214;
+    --surface:      #17181B;
+    --ink-900:      #F5F6FA;
+    --ink-800:      #E9EAF1;
+    --ink-700:      #D9DBE6;
+    --ink-500:      #B9BECD;
+    --ink-300:      #8E95A7;
+    --ink-150:      #2A2D36;
+    --silver:       #2A2D36;
+    --surface-tint: color-mix(in oklab, var(--lavender-ink) 7%, #17181B);
+    --hero-tint:    linear-gradient(180deg, #141519 0%, #121318 100%);
+    --focus-ring:   0 0 0 3px color-mix(in oklab, var(--orchid) 35%, black);
   }
 }
