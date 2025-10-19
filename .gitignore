@@ -24,3 +24,15 @@ build/
 content/images/raw/
 content/podcast/audio/drafts/
 reference/archive/
+
+# Python virtual environments
+venv/
+env/
+.l8/
+.l8/
+l8/
+.l8-env/
+*venv/
+*env/
+__pycache__/
+*.pyc

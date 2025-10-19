@@ -11,5 +11,6 @@ window.L8_QUOTES = [
   { text: "Refine until it feels inevitable.", author: "L8" },
   { text: "Grace wins the long game.", author: "L8" },
   { text: "Architecture is empathy made structural.", author: "L8" },
+  { text: "Just when the caterpillar thought she would die, she began to fly.", author: "L8" },
   { text: "Elegance is disciplined kindness.", author: "L8" }
 ];
