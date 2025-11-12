@@ -23,7 +23,8 @@ build/
 # Project-specific: keep repo lean
 content/images/raw/
 content/podcast/audio/drafts/
-reference/archive/
+reference/
+ops/
 
 # Python virtual environments
 venv/
