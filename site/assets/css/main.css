@@ -23,12 +23,13 @@ body {
 
 img, svg, video { max-width: 100%; height: auto; display: block; }
 
-/* Links (lighter default, underline on hover) */
-a {
-  color: var(--lavender-ink);
-  text-decoration: none;
+/* Links — blush-ink underline on hover for elegance */
+a { color: var(--lavender-ink); text-decoration: none; text-underline-offset: 2px; }
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: color-mix(in oklab, var(--orchid) 40%, var(--lavender-ink));
 }
-a:hover { text-decoration: underline; }
 
 /* Headings */
 h1, h2, h3, h4 {
@@ -108,7 +109,7 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 /* 3) Header & Navigation (softer, airier) */
 .site-header {
   position: sticky; top: 0; z-index: var(--z-header);
-  background: color-mix(in oklab, var(--surface) 94%, white 6%);
+  background: color-mix(in oklab, var(--surface) 92%, var(--blush) 8%);
   border-bottom: 1px solid var(--ink-150);
   backdrop-filter: saturate(140%) blur(8px);
 }
@@ -149,9 +150,29 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 /* 4) Hero, Cards, Pull Quotes (lighter hero) */
 .hero {
   padding: var(--space-3xl) 0 var(--space-2xl);
-  background: var(--hero-tint);
+
+  /* Top → bottom: 1) SVG butterfly (side profile), 2) blush bloom, 3) gradient wash */
+  background-image:
+    url("/assets/img/ui/butterfly-line.svg"),
+    radial-gradient(80% 60% at 18% 22%, color-mix(in oklab, var(--blush) 38%, white) 0%, transparent 60%),
+    var(--hero-tint);
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+
+  /* Place the butterfly on the left; keep generous size but not overpowering */
+  background-size: clamp(560px, 44vw, 820px) auto, 120% 100%, 100% 100%;
+  background-position: left 4% center, 0 0, 0 0;
+
   border-bottom: 1px solid var(--ink-150);
 }
+
+@media (max-width: 520px) {
+  .hero {
+    background-size: clamp(380px, 78vw, 560px) auto, 150% 120%, 100% 100%;
+    background-position: left -4% top -10%, 0 0, 0 0;
+  }
+}
+
 .hero-title {
   font-family: var(--font-serif);
   font-size: var(--step-5);
@@ -170,9 +191,14 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
   box-shadow: var(--shadow-soft);
-  transition: transform 220ms ease, box-shadow 220ms ease;
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease, background-color 220ms ease;
 }
-.card:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+  border-color: color-mix(in oklab, var(--orchid) 24%, var(--silver));
+  background: color-mix(in oklab, var(--ui-tint) 30%, white);
+}
 
 .pull-quote {
   margin: var(--space-2xl) auto;
@@ -203,13 +229,13 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 }
 .footer-nav a { color: var(--ink-700); }
 .footer-nav a:hover { color: var(--ink-900); }
+
 .signature-slot {
   width: 220px; height: 64px;
-  background: var(--surface-tint);
+  background: var(--ui-tint);
   border-radius: var(--radius-md);
   box-shadow: inset 0 0 0 1px var(--silver);
 }
-
 /* Desktop: footer links horizontal */
 @media (min-width: 880px) {
   .footer-nav {
@@ -226,8 +252,8 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   right: clamp(12px, 3vw, 28px);
   bottom: clamp(12px, 3vw, 28px);
   max-width: 28ch;
-  background: var(--surface);
   border: 1px solid var(--silver);
+  background: color-mix(in oklab, var(--ui-tint) 35%, white);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
   padding: var(--space-md) var(--space-lg);
@@ -248,9 +274,19 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 @keyframes quoteIn { to { opacity: 1; transform: translateY(0); } }
 
 /* 7) Page section spacing */
-.page-header { padding: var(--space-2xl) 0 var(--space-xl); }
+.page-header {
+  padding: var(--space-2xl) 0 var(--space-xl);
+  background: var(--section-tint);
+  border-bottom: 1px solid var(--ink-150);
+}
 .page-intro { color: var(--ink-600); max-width: 70ch; }
 
-.highlights { padding: var(--space-2xl) 0; }
+.highlights {
+  padding: var(--space-2xl) 0;
+  background: var(--section-tint);
+  border-top: 1px solid var(--ink-150);
+  border-bottom: 1px solid var(--ink-150);
+}
 .backtotop a { color: var(--ink-500); }
 .backtotop a:hover { color: var(--ink-700); }
+
