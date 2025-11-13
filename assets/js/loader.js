@@ -91,8 +91,8 @@ function showQuoteBubble(quote) {
 /* ---------- Boot ---------- */
 document.addEventListener("DOMContentLoaded", async () => {
   await Promise.all([
-    loadPartial("#header", "/site/partials/header.html"),
-    loadPartial("#footer", "/site/partials/footer.html"),
+      loadPartial("#header", "/partials/header.html"),
+      loadPartial("#footer", "/partials/footer.html"),
   ]);
 
   // Light, pretty motivation: random quote (sourced from quotes.js if present)
