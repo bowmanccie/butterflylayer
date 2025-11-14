@@ -290,26 +290,40 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 .backtotop a { color: var(--ink-500); }
 .backtotop a:hover { color: var(--ink-700); }
 
+
+/* --- Footer Nav Spacing Fix --- */
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* space between links */
+  padding: 0;
+  margin: 0;
+}
+.footer-nav li {
+  margin: 0;
+}
+
+/* --- Bio Block Centering (About & CoCo pages) --- */
 .bio-block {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   align-items: flex-start;
+  justify-content: center; /* center whole flex group */
 }
-
-.profile-photo img {
-  max-width: 250px;
-  border-radius: 4px;
-  display: block;
-}
-
+.profile-photo,
 .bio-text {
-  flex: 1; /* fill space beside image */
-  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center inside each column */
 }
 
-@media (max-width: 768px) {
-  .bio-block {
-    flex-direction: column; /* stack photo above text on smaller screens */
-  }
+/* --- Footer Headshot Styling --- */
+.signature-slot img {
+  max-width: 80px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin-top: 0.5rem;
 }
