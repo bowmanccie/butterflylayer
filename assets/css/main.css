@@ -290,11 +290,26 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 .backtotop a { color: var(--ink-500); }
 .backtotop a:hover { color: var(--ink-700); }
 
-.profile-photo img {
-  max-width: 200px;
-  height: auto;
-  border-radius: 4px;
-  display: block;
-  margin-bottom: 1rem;
+.bio-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
 }
 
+.profile-photo img {
+  max-width: 250px;
+  border-radius: 4px;
+  display: block;
+}
+
+.bio-text {
+  flex: 1; /* fill space beside image */
+  min-width: 250px;
+}
+
+@media (max-width: 768px) {
+  .bio-block {
+    flex-direction: column; /* stack photo above text on smaller screens */
+  }
+}
