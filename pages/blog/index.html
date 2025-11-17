@@ -11,7 +11,7 @@
 </head>
 <body class="page page-blog">
   <!-- Header partial (loader.js should replace this container) -->
-  <div data-include="/partials/header.html"></div>
+  <div id="header"></div>
 
   <main class="page-content">
     <header class="page-header">
@@ -24,10 +24,16 @@
     <section class="section">
       <div id="blog-list" class="card-list"></div>
     </section>
+    <aside class="container pull-quote" aria-label="Brand pull quote">
+      <blockquote>
+        <p>“Engineering elegance at the human layer.”</p>
+      </blockquote>
+    </aside>
   </main>
 
-  <!-- Footer partial -->
-  <div data-include="/partials/footer.html"></div>
+  <div id="footer"></div>
+  <script src="/assets/js/loader.js" defer></script>
+  <script src="/assets/js/quotes.js" defer></script>
 
   <script>
     // Minimal loader in case your main loader.js doesn’t already hook this:
