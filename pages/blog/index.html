@@ -7,14 +7,13 @@
   <meta name="description" content="Essays from the Butterfly Layer – architecture, AI, and the human layer of networks.">
   <link rel="stylesheet" href="/assets/css/variables.css">
   <link rel="stylesheet" href="/assets/css/main.css">
-  <script src="/assets/js/loader.js" defer></script>
 </head>
 <body class="page page-blog">
-  <!-- Header partial (loader.js should replace this container) -->
+  <!-- Header partial container -->
   <div id="header"></div>
 
-  <main class="page-content">
-    <header class="page-header">
+  <main id="main" class="page-content">
+    <header class="page-header container">
       <h1>Blog</h1>
       <p class="page-subtitle">
         Essays from the Butterfly Layer — architecture, AI, and the human layer of networks.
@@ -22,16 +21,16 @@
     </header>
 
     <section class="section">
-      <div id="blog-list" class="card-list"></div>
+      <div id="blog-list" class="card-list container"></div>
     </section>
   </main>
 
+  <!-- Footer partial container -->
   <div id="footer"></div>
-  <script src="/assets/js/loader.js" defer></script>
 
+  <script src="/assets/js/loader.js" defer></script>
+  <script src="/assets/js/quotes.js" defer></script>
   <script>
-    // Minimal loader in case your main loader.js doesn’t already hook this:
-    // If loader.js already handles [data-include], this script is just for the blog list.
     async function loadBlogList() {
       const container = document.getElementById("blog-list");
       if (!container) return;
@@ -46,7 +45,6 @@
           return;
         }
 
-        // newest first by date
         posts.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
 
         container.innerHTML = posts.map(post => {

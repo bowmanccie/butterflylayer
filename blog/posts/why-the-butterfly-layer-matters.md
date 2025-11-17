@@ -1,5 +1,3 @@
-# Why the Butterfly Layer Matters
-
 We spend a lot of time talking about Layers 1–7.
 
 Cables, optics, packets, protocols, APIs, applications.

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Why the Butterfly Layer Matters – L8: The Butterfly Layer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="How the human layer – the Butterfly Layer – shapes architectures more than any protocol ever will.">
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="page page-blog-post">
+  <!-- Header partial container -->
+  <div id="header"></div>
+
+  <main id="main" class="page-content">
+    <article class="blog-post container">
+      <header class="page-header">
+        <p class="page-eyebrow">
+          <a href="/pages/blog/">&larr; Back to blog</a>
+        </p>
+        <h1 id="post-title">Why the Butterfly Layer Matters</h1>
+
+        <p class="page-subtitle" id="post-meta">2025-11-16 • layer8, architecture, mindset
+        </p>
+      </header>
+
+      <section id="post-body"></section>
+    </article>
+  </main>
+
+  <!-- Footer partial container -->
+  <div id="footer"></div>
+
+  <!-- Scripts: loader for header/footer, motivational card, markdown renderer, then page logic -->
+  <script src="/assets/js/loader.js" defer></script>
+  <script src="/assets/js/quotes.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <script>
+    // slug + title baked in at build time
+    const slug = "why-the-butterfly-layer-matters";
+    const pageTitle = "Why the Butterfly Layer Matters";
+    const bodyEl = document.getElementById("post-body");
+
+    function stripLeadingTitle(md, title) {
+      const lines = md.split("\n");
+
+      // Skip leading blank lines
+      let i = 0;
+      while (i < lines.length && lines[i].trim() === "") {
+        i++;
+      }
+
+      if (i < lines.length) {
+        const line = lines[i].trim();
+
+        // Match "# Title" at the top
+        if (line.startsWith("# ")) {
+          const headingText = line.replace(/^#\s+/, "").trim();
+          if (!title || headingText === title.trim()) {
+            // Remove that line
+            lines.splice(i, 1);
+            return lines.join("\n");
+          }
+        }
+      }
+      return md;
+    }
+
+    async function loadMarkdown() {
+      try {
+        const res = await fetch("/blog/posts/" + slug + ".md");
+        if (!res.ok) throw new Error("Unable to load markdown");
+        let markdown = await res.text();
+
+        // Remove leading "# Title" if it matches the page title
+        markdown = stripLeadingTitle(markdown, pageTitle);
+
+        const html = window.marked ? window.marked.parse(markdown) : markdown;
+        bodyEl.innerHTML = html;
+      } catch (err) {
+        console.error(err);
+        bodyEl.innerHTML = "<p>Sorry, this post could not be loaded right now.</p>";
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", loadMarkdown);
+  </script>
+</body>
+</html>
