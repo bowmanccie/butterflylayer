@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 600 200"
+     role="img"
+     aria-label="Jennifer signature with butterfly and underline flourish">
+  
+  <!-- Handwritten name -->
+  <text x="0" y="80"
+        font-family="'Great Vibes', 'Brush Script MT', cursive"
+        font-size="72"
+        fill="#222">
+    Jennifer
+  </text>
+
+  <!-- Butterfly placeholder -->
+  <!-- Replace this group with actual butterfly-line.svg paths if you want your brand butterfly -->
+  <g transform="translate(370,15) scale(0.4)">
+    <path d="M50 0 C75 25, 75 75, 50 100 C25 75, 25 25, 50 0 Z"
+          fill="#c94f7c" />
+    <path d="M50 100 C75 125, 75 175, 50 200 C25 175, 25 125, 50 100 Z"
+          fill="#ff8fa3" />
+    <!-- Butterfly body -->
+    <rect x="47" y="0" width="6" height="200" fill="#444" rx="3" />
+  </g>
+
+  <!-- Underline flourish drawn right-to-left -->
+  <path d="M 540 140
+           C 400 160, 250 120, 60 150
+           S 0 150, 20 170"
+        fill="none"
+        stroke="#222"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-dasharray="0" />
+</svg>
