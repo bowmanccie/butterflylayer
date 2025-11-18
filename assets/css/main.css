@@ -343,18 +343,113 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 }
 
 /* --- Bio Block Centering (About & CoCo pages) --- */
+/* --- Bio Block Layout (About & CoCo pages) --- */
 .bio-block {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   align-items: flex-start;
-  justify-content: center; /* center whole flex group */
+  justify-content: center; /* mobile & small screens */
+  margin: var(--space-2xl) auto;
 }
+
 .profile-photo,
 .bio-text {
   display: flex;
   flex-direction: column;
-  align-items: center; /* center inside each column */
+  align-items: center;      /* mobile: center content */
+  text-align: center;
+}
+
+/* Headshot / main photo styling */
+.profile-photo img {
+  max-width: 220px;
+  border-radius: 999px; /* soft portrait shape */
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--silver);
+}
+
+/* Bio text column */
+.bio-text {
+  max-width: 38rem;
+}
+
+/* Desktop adjustments */
+@media (min-width: 820px) {
+  .bio-block {
+    justify-content: flex-start;
+  }
+
+  .profile-photo {
+    flex: 0 0 auto;
+    align-items: flex-start;
+  }
+
+  .bio-text {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+/* --- CoCo Photo Grid --- */
+.photo-grid {
+  list-style: none;
+  margin: var(--space-xl) 0 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 720px) {
+  .photo-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.photo-card {
+  background: var(--surface);
+  border: 1px solid var(--silver);
+  border-radius: var(--radius-lg);
+  padding: var(--space-sm);
+  box-shadow: var(--shadow-soft);
+}
+
+.photo-card img {
+  border-radius: var(--radius-md);
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.photo-caption {
+  font-size: var(--step--1);
+  color: var(--ink-600);
+  margin-top: 0.4rem;
+  text-align: center;
+}
+
+/* --- Figure captions (About & CoCo) --- */
+.profile-photo figcaption,
+.bio-text figure figcaption {
+  margin-top: 0.4rem;
+  font-size: var(--step--1);
+  color: var(--ink-600);
+  text-align: center;
+}
+
+/* Secondary images inside bio-text (CoCo) */
+.bio-text figure {
+  margin: var(--space-md) 0 var(--space-lg);
+  text-align: center;
+}
+
+.bio-text figure img {
+  max-width: 260px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--silver);
+  margin-inline: auto;
 }
 
 /* --- Footer Headshot Styling --- */
