@@ -330,3 +330,23 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   display: block;
   margin-top: 0.5rem;
 }
+/* --- Blog Teaser Card Styling --- */
+#blog-teaser-card .teaser-title {
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+
+#blog-teaser-card .teaser-meta {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
+}
+
+#blog-teaser-card .teaser-tags .tag {
+  margin-left: 0.4rem;
+  font-size: 0.8rem;
+}
+
+#blog-teaser-card .teaser-summary {
+  margin-bottom: 0.6rem;
+}
