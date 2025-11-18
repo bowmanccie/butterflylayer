@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360" height="260" viewBox="0 0 360 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">L8 Butterfly Hero Graphic</title>
+  <desc id="desc">A soft, elegant butterfly with rounded wings in blush and orchid gradients.</desc>
+
+  <defs>
+    <!-- Soft blush → orchid gradient for wings -->
+    <linearGradient id="wingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7d6e8"/> <!-- blush pink -->
+      <stop offset="50%" stop-color="#e3c8ff"/> <!-- orchid lavender -->
+      <stop offset="100%" stop-color="#fdf9ff"/> <!-- pearl -->
+    </linearGradient>
+
+    <!-- Subtle glow -->
+    <radialGradient id="glowGradient" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#fbefff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fbefff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Shared wing stroke style via class -->
+    <style>
+      .wing-outline {
+        fill: url(#wingGradient);
+        stroke: #d3c6f2;
+        stroke-width: 2.4;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+      }
+      .wing-inner {
+        fill: none;
+        stroke: #ffffff;
+        stroke-width: 1.4;
+        stroke-linecap: round;
+        opacity: 0.8;
+      }
+      .body {
+        fill: #ddd8f0;
+        stroke: #b8b1d6;
+        stroke-width: 2;
+        stroke-linecap: round;
+      }
+      .sparkle {
+        fill: #ffffff;
+        opacity: 0.9;
+      }
+    </style>
+  </defs>
+
+  <!-- Soft background glow -->
+  <circle cx="180" cy="130" r="110" fill="url(#glowGradient)"/>
+
+  <!-- Left wing (rounded, no insecty points) -->
+  <g transform="translate(180,130)">
+    <path class="wing-outline" d="
+      M 0 0
+      C -40 -70, -105 -80, -130 -30
+      C -145 0, -135 35, -105 55
+      C -80 72, -40 65, -10 32
+      Z
+    "/>
+
+    <!-- Left inner detail -->
+    <path class="wing-inner" d="
+      M -8 6
+      C -38 -25, -85 -32, -108 -10
+      C -121 4, -116 26, -98 38
+    "/>
+    <path class="wing-inner" d="
+      M -18 20
+      C -45 13, -70 22, -84 32
+    "/>
+
+    <!-- Right wing (mirror of left) -->
+    <g transform="scale(-1,1)">
+      <path class="wing-outline" d="
+        M 0 0
+        C -40 -70, -105 -80, -130 -30
+        C -145 0, -135 35, -105 55
+        C -80 72, -40 65, -10 32
+        Z
+      "/>
+      <path class="wing-inner" d="
+        M -8 6
+        C -38 -25, -85 -32, -108 -10
+        C -121 4, -116 26, -98 38
+      "/>
+      <path class="wing-inner" d="
+        M -18 20
+        C -45 13, -70 22, -84 32
+      "/>
+    </g>
+
+    <!-- Body -->
+    <path class="body" d="
+      M -4 -22
+      C -3 -38, 3 -38, 4 -22
+      L 4 18
+      C 4 24, 2 28, 0 30
+      C -2 28, -4 24, -4 18
+      Z
+    "/>
+
+    <!-- Antennae -->
+    <path class="body" d="M -2 -24 C -10 -40, -22 -48, -30 -50" stroke-width="1.5" fill="none"/>
+    <path class="body" d="M  2 -24 C  10 -40,  22 -48,  30 -50" stroke-width="1.5" fill="none"/>
+
+  </g>
+
+  <!-- Subtle sparkles -->
+  <circle class="sparkle" cx="70" cy="80" r="2.2"/>
+  <circle class="sparkle" cx="290" cy="70" r="1.8"/>
+  <circle class="sparkle" cx="300" cy="170" r="2.0"/>
+  <circle class="sparkle" cx="90" cy="190" r="1.6"/>
+
+</svg>
