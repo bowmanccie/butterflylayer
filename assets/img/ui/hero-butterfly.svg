@@ -6,18 +6,18 @@
   <defs>
     <!-- Soft blush → orchid gradient for wings -->
     <linearGradient id="wingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f7d6e8"/> <!-- blush pink -->
-      <stop offset="50%" stop-color="#e3c8ff"/> <!-- orchid lavender -->
-      <stop offset="100%" stop-color="#fdf9ff"/> <!-- pearl -->
+      <stop offset="0%" stop-color="#f7d6e8"/>
+      <stop offset="50%" stop-color="#e3c8ff"/>
+      <stop offset="100%" stop-color="#fdf9ff"/>
     </linearGradient>
 
-    <!-- Subtle glow -->
+    <!-- Soft glow -->
     <radialGradient id="glowGradient" cx="50%" cy="50%" r="60%">
       <stop offset="0%" stop-color="#fbefff" stop-opacity="0.9"/>
       <stop offset="100%" stop-color="#fbefff" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Shared wing stroke style via class -->
+    <!-- Style classes -->
     <style>
       .wing-outline {
         fill: url(#wingGradient);
@@ -46,47 +46,51 @@
     </style>
   </defs>
 
-  <!-- Soft background glow -->
+  <!-- Glow -->
   <circle cx="180" cy="130" r="110" fill="url(#glowGradient)"/>
 
-  <!-- Left wing (rounded, no insecty points) -->
+  <!-- Wings + Body -->
   <g transform="translate(180,130)">
+
+    <!-- Left wing: fuller, more rounded upper wing bottom -->
     <path class="wing-outline" d="
       M 0 0
-      C -40 -70, -105 -80, -130 -30
-      C -145 0, -135 35, -105 55
-      C -80 72, -40 65, -10 32
+      C -42 -82, -112 -84, -148 -40
+      C -126 -20, -102 -6, -80 4
+      C -100 26, -112 50, -104 70
+      C -86 86, -50 82, -14 40
       Z
     "/>
 
-    <!-- Left inner detail -->
+    <!-- Left inner highlights (inward, inside wing) -->
     <path class="wing-inner" d="
-      M -8 6
-      C -38 -25, -85 -32, -108 -10
-      C -121 4, -116 26, -98 38
+      M -10 6
+      C -30 -16, -62 -22, -78 -8
+      C -86 0, -84 16, -72 26
     "/>
     <path class="wing-inner" d="
-      M -18 20
-      C -45 13, -70 22, -84 32
+      M -22 24
+      C -40 20, -54 28, -62 34
     "/>
 
-    <!-- Right wing (mirror of left) -->
+    <!-- Right wing (mirrored) -->
     <g transform="scale(-1,1)">
       <path class="wing-outline" d="
         M 0 0
-        C -40 -70, -105 -80, -130 -30
-        C -145 0, -135 35, -105 55
-        C -80 72, -40 65, -10 32
+        C -42 -82, -112 -84, -148 -40
+        C -126 -20, -102 -6, -80 4
+        C -100 26, -112 50, -104 70
+        C -86 86, -50 82, -14 40
         Z
       "/>
       <path class="wing-inner" d="
-        M -8 6
-        C -38 -25, -85 -32, -108 -10
-        C -121 4, -116 26, -98 38
+        M -10 6
+        C -30 -16, -62 -22, -78 -8
+        C -86 0, -84 16, -72 26
       "/>
       <path class="wing-inner" d="
-        M -18 20
-        C -45 13, -70 22, -84 32
+        M -22 24
+        C -40 20, -54 28, -62 34
       "/>
     </g>
 
@@ -106,10 +110,10 @@
 
   </g>
 
-  <!-- Subtle sparkles -->
-  <circle class="sparkle" cx="70" cy="80" r="2.2"/>
-  <circle class="sparkle" cx="290" cy="70" r="1.8"/>
-  <circle class="sparkle" cx="300" cy="170" r="2.0"/>
-  <circle class="sparkle" cx="90" cy="190" r="1.6"/>
+  <!-- Sparkles (moved further out so they don't read as eyes) -->
+  <circle class="sparkle" cx="55" cy="82" r="2.2"/>
+  <circle class="sparkle" cx="305" cy="82" r="1.8"/>
+  <circle class="sparkle" cx="255" cy="175" r="2.0"/>
+  <circle class="sparkle" cx="100" cy="180" r="1.6"/>
 
 </svg>
