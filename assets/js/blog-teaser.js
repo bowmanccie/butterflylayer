@@ -1,41 +1,61 @@
-// /assets/js/blog-teaser.js
+// /site/assets/js/blog-teaser.js
+
 document.addEventListener("DOMContentLoaded", async () => {
-  const teaser = document.getElementById("blog-teaser");
-  if (!teaser) return;
+  const card = document.getElementById("blog-teaser-card");
+  if (!card) return;
+
+  const titleEl   = card.querySelector(".teaser-title");
+  const summaryEl = card.querySelector(".teaser-summary");
+  const metaEl    = card.querySelector(".teaser-meta");
+  const tagsEl    = card.querySelector(".teaser-tags");
+  const linkEl    = card.querySelector("a.link-arrow");
 
   try {
-    const res = await fetch("/blog/posts.json");
-    if (!res.ok) throw new Error("Failed to fetch posts.json");
+    // Adjust path if your blog JSON lives elsewhere, but per layout it should be /blog/posts.json
+    const res = await fetch("/blog/posts.json", { cache: "no-store" });
+    if (!res.ok) return;
 
     const posts = await res.json();
+    if (!Array.isArray(posts) || posts.length === 0) return;
 
-    if (!posts.length) {
-      teaser.innerHTML = "<p>No posts yet. Check back soon.</p>";
-      return;
+    // Assuming newest post is first in the array
+    const latest = posts[0];
+
+    const slug    = latest.slug || latest.id || "";
+    const title   = latest.title || "Latest Post";
+    const summary = latest.summary || latest.excerpt || "";
+    const date    = latest.date_readable || latest.date || "";
+    const tags    = latest.tags || [];
+
+    if (titleEl) {
+      titleEl.textContent = title;
     }
 
-    // Newest post first (YYYY-MM-DD sorts correctly as strings)
-    posts.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
-    const post = posts[0];
+    if (summaryEl) {
+      summaryEl.textContent = summary || "New writing from the Butterfly Layer.";
+    }
 
-    const href = "/blog/" + post.slug + "/";
-    const date = post.date || "";
-    const summary = post.summary || "";
-    const tags = (post.tags || [])
-      .map(t => `<span class="tag">${t}</span>`)
-      .join(" ");
+    if (metaEl) {
+      metaEl.textContent = date ? `Latest Post · ${date}` : "Latest Post";
+    }
 
-    teaser.innerHTML = `
-      <h4 class="teaser-title"><a href="${href}">${post.title}</a></h4>
-      <p class="teaser-meta">
-        ${date ? `<time datetime="${date}">${date}</time>` : ""}
-        ${tags ? `<span class="teaser-tags">${tags}</span>` : ""}
-      </p>
-      <p class="teaser-summary">${summary}</p>
-      <p class="teaser-cta"><a href="${href}" class="link-arrow">Read this post</a></p>
-    `;
+    if (tagsEl) {
+      tagsEl.innerHTML = "";
+      if (tags.length) {
+        tags.slice(0, 3).forEach(tag => {
+          const span = document.createElement("span");
+          span.className = "tag";
+          span.textContent = tag;
+          tagsEl.appendChild(span);
+        });
+      }
+    }
+
+    if (linkEl && slug) {
+      linkEl.href = `/blog/${slug}/`;
+    }
   } catch (err) {
-    console.error(err);
-    teaser.innerHTML = "<p>Unable to load latest post.</p>";
+    console.error("Error loading blog teaser:", err);
+    // UI will just show the fallback text in the card
   }
 });

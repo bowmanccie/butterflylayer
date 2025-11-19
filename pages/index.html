@@ -12,56 +12,148 @@
 <body id="top">
   <div id="header"></div>
 
-  <main id="main" role="main">
+  <main id="main-content">
+    <!-- Hero -->
     <section class="hero">
-      <div class="hero-inner container">
-        
-        <!-- LEFT: Text -->
+      <div class="container hero-inner">
         <div class="hero-copy">
-          <h1 class="hero-title">The Butterfly Layer</h1>
+          <p class="kicker">L8: The Butterfly Layer</p>
+          <h1 class="hero-title">Where intent takes flight.</h1>
           <p class="hero-subtitle">
-            <strong>L8</strong> — Engineering elegance at the human layer.
+            Blending architecture, AI, and elegance — designing the human layer of networking
+            with as much care as the packets themselves.
           </p>
-          <p class="hero-cta">
-            <a class="button" href="/pages/about/">Explore the vision</a>
-          </p>
+          <div class="hero-cta">
+            <a href="/about/" class="button">Meet Jennifer</a>
+          </div>
         </div>
 
-        <!-- RIGHT: Butterfly Visual -->
-        <div class="hero-visual">
+        <div class="hero-visual" aria-hidden="true">
           <img
-            src="/assets/img/ui/hero-butterfly.svg"
-            alt="Elegant butterfly motif for The Butterfly Layer"
+            src="/assets/images/hero-butterfly.svg"
+            alt=""
             class="hero-butterfly"
-            loading="lazy"
           />
         </div>
-
       </div>
     </section>
 
-    <section class="highlights container">
-      <h2>Highlights</h2>
-      <ul class="card-grid">
-        <li class="card">
-          <h3>Resources</h3>
-          <p>Frameworks and patterns for calm, scalable architectures.</p>
-          <p><a href="/pages/resources/" class="link-arrow">Browse resources</a></p>
-        </li>
-        <li class="card" id="blog-teaser-card">
-          <h3>From the Blog</h3>
-          <div id="blog-teaser">
-            <p>Loading latest post…</p>
-          </div>
-        </li>
-        <li class="card">
-          <h3>Podcast</h3>
-          <p>Conversations where intent meets infrastructure.</p>
-          <p><a href="/pages/podcast/" class="link-arrow">Visit podcast</a></p>
-        </li>
-      </ul>
+    <!-- Brand highlights / pillars -->
+    <section class="page-section">
+      <div class="container">
+        <header class="page-intro flow">
+          <p class="kicker">What lives at Layer 8</p>
+          <h2>Architecture, AI, and the human layer</h2>
+          <p>
+            L8: The Butterfly Layer is where systems thinking, elegant design,
+            and lived experience come together — from global architectures to the
+            everyday moments that keep teams grounded.
+          </p>
+        </header>
+
+        <ul class="card-grid" aria-label="Highlights">
+          <li>
+            <article class="card flow">
+              <h3>Intent-driven architecture</h3>
+              <p>
+                Translating complex enterprise requirements into graceful,
+                resilient designs that respect both the network and the people
+                who depend on it.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article class="card flow">
+              <h3>AI with a human lens</h3>
+              <p>
+                Exploring where AI amplifies human judgment — not replaces it —
+                across design, operations, and collaboration.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article class="card flow">
+              <h3>Elegance in practice</h3>
+              <p>
+                From diagrams and documents to conversations and decisions,
+                pursuing solutions that feel as calm and coherent as they are
+                technically sound.
+              </p>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Latest blog teaser -->
+    <section class="page-section">
+      <div class="container">
+        <header class="page-intro flow">
+          <p class="kicker">From the blog</p>
+          <h2>Recent writing</h2>
+          <p>
+            Essays and reflections from the Butterfly Layer — architecture stories,
+            lessons from the field, and thoughts on the human side of networking.
+          </p>
+        </header>
+
+        <!-- This card is styled and can be populated by your existing JS -->
+        <article id="blog-teaser-card" class="card">
+          <p class="teaser-meta">Latest post</p>
+          <h3 class="teaser-title">Loading latest post…</h3>
+          <p class="teaser-summary">
+            Please wait while we fetch the most recent story from the Butterfly Layer.
+          </p>
+          <p class="teaser-tags">
+            <span class="tag">L8</span>
+            <span class="tag">Architecture</span>
+          </p>
+          <a href="/blog/" class="link-arrow">Browse all posts</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Podcast teaser -->
+    <section class="page-section">
+      <div class="container two-column">
+        <article class="card flow">
+          <p class="kicker">Podcast</p>
+          <h2>L8: The Butterfly Layer — in conversation</h2>
+          <p>
+            A podcast exploring architecture, intent, and the human stories that sit
+            between the diagrams. Episodes blend technical depth with honest,
+            grounded conversations.
+          </p>
+          <p>
+            Even as episodes evolve, the goal stays the same: help you see the
+            networks you build — and the people who live inside them — with more
+            clarity and care.
+          </p>
+          <a href="/podcast/" class="button">Visit the podcast</a>
+        </article>
+
+        <aside class="card flow">
+          <h3>What to expect</h3>
+          <ul>
+            <li>Deep dives on real-world architectures and tradeoffs</li>
+            <li>Reflections from global strategy and transformation work</li>
+            <li>Moments from the greenroom, with CoCo occasionally supervising</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Back to top / subtle footer helper -->
+    <section class="page-section backtotop">
+      <div class="container">
+        <a href="#main-content">Back to top</a>
+      </div>
     </section>
   </main>
+
+  <div class="floating-butterfly" aria-hidden="true">
+    <img src="/assets/img/ui/hero-butterfly.svg" alt="">
+  </div>
 
   <div id="footer"></div>
 

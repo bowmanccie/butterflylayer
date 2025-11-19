@@ -17,7 +17,16 @@ body {
   font-size: var(--step-0);
   line-height: 1.65;
   color: var(--ink-800);
-  background: var(--bg);
+  background:
+    radial-gradient(circle at top left,
+      color-mix(in oklab, var(--blush) 70%, white) 0,
+      transparent 55%)
+    ,
+    radial-gradient(circle at bottom right,
+      color-mix(in oklab, var(--orchid) 55%, white) 0,
+      transparent 60%)
+    ,
+    var(--bg);
   text-rendering: optimizeLegibility;
 }
 
@@ -64,7 +73,7 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 
 /* 2) Layout primitives */
 .container {
-  width: min(1100px, 100% - 2*var(--space-xl));
+  width: min(1100px, calc(100% - 2 * var(--space-xl)));
   margin-inline: auto;
 }
 .flow > * + * { margin-top: var(--space-md); }
@@ -82,6 +91,27 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   grid-template-columns: 1fr;
 }
 @media (min-width: 900px) { .card-grid { grid-template-columns: repeat(3, 1fr); } }
+
+/* Generic page section rhythm */
+.page-section {
+  padding: var(--space-2xl) 0;
+}
+.page-section + .page-section {
+  border-top: 1px solid var(--ink-150);
+}
+
+/* Two-column layout for About / CoCo / content sections */
+.two-column {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr);
+  gap: var(--space-xl);
+  align-items: flex-start;
+}
+@media (max-width: 820px) {
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* Buttons (lighter look) */
 .button {
@@ -140,6 +170,23 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 .primary-nav a { color: var(--ink-700); font-weight: 600; }
 .primary-nav a:hover { color: var(--ink-900); }
 
+/* Active nav link */
+.primary-nav a[aria-current="page"] {
+  color: var(--ink-900);
+  font-weight: 700;
+  position: relative;
+}
+.primary-nav a[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem;
+  width: 100%;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--blush), var(--orchid));
+}
+
 @media (min-width: 880px) {
   .header-inner { grid-template-columns: auto 1fr auto; }
   .tagline { grid-column: 1 / -1; }
@@ -151,6 +198,13 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 .hero {
   padding: var(--space-3xl) 0 var(--space-2xl);
   border-bottom: 1px solid var(--ink-150);
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in oklab, var(--blush) 75%, white) 0%,
+      color-mix(in oklab, var(--orchid) 40%, white) 38%,
+      transparent 72%
+    );
 }
 
 .hero-inner {
@@ -250,7 +304,7 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   color: var(--lavender-ink);
 }
 
-/* 5) Footer (F-A: vertical on mobile, horizontal on desktop) */
+/* 5) Footer */
 .site-footer {
   margin-top: var(--space-3xl);
   padding: var(--space-2xl) 0;
@@ -258,9 +312,18 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   border-top: 1px solid var(--ink-150);
 }
 .footer-inner { display: grid; gap: var(--space-xl); }
+
+/* Footer nav (final version) */
 .footer-nav {
-  list-style: none; margin: 0; padding: 0;
-  display: grid; gap: var(--space-sm);
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+.footer-nav li {
+  margin: 0;
 }
 .footer-nav a { color: var(--ink-700); }
 .footer-nav a:hover { color: var(--ink-900); }
@@ -274,6 +337,7 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 .signature-slot a {
   display: inline-block;
 }
+
 /* Desktop: footer links horizontal */
 @media (min-width: 880px) {
   .footer-nav {
@@ -311,6 +375,42 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 .quote-close:hover { color: var(--ink-500); }
 @keyframes quoteIn { to { opacity: 1; transform: translateY(0); } }
 
+/* Floating butterfly badge (top-right, below header) */
+.floating-butterfly {
+  position: fixed;
+  top: clamp(160px, 16vh, 190px);   /* pushed down so it clears the nav */
+  right: clamp(12px, 4vw, 40px);
+  width: 170px;                     /* slightly larger */
+  opacity: 0.97;
+  pointer-events: none;
+  filter: drop-shadow(0 18px 34px rgba(60, 41, 102, 0.25));
+  z-index: 999;
+  animation: butterflyDrift 16s ease-in-out infinite;
+}
+
+.floating-butterfly img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@keyframes butterflyDrift {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate3d(-6px, -8px, 0) rotate(-2deg);
+  }
+  50% {
+    transform: translate3d(2px, -12px, 0) rotate(1deg);
+  }
+  75% {
+    transform: translate3d(-4px, -6px, 0) rotate(-1deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+}
+
 /* 7) Page section spacing */
 .page-header {
   padding: var(--space-2xl) 0 var(--space-xl);
@@ -328,21 +428,6 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 .backtotop a { color: var(--ink-500); }
 .backtotop a:hover { color: var(--ink-700); }
 
-
-/* --- Footer Nav Spacing Fix --- */
-.footer-nav {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem; /* space between links */
-  padding: 0;
-  margin: 0;
-}
-.footer-nav li {
-  margin: 0;
-}
-
-/* --- Bio Block Centering (About & CoCo pages) --- */
 /* --- Bio Block Layout (About & CoCo pages) --- */
 .bio-block {
   display: flex;
@@ -452,7 +537,7 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   margin-inline: auto;
 }
 
-/* --- Footer Headshot Styling --- */
+/* --- Footer Headshot Styling (final) --- */
 .signature-slot img {
   max-width: 80px;
   height: auto;
@@ -460,6 +545,7 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   display: block;
   margin-top: 0.5rem;
 }
+
 /* --- Blog Teaser Card Styling --- */
 #blog-teaser-card .teaser-title {
   font-size: 1.05rem;
@@ -479,4 +565,95 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 
 #blog-teaser-card .teaser-summary {
   margin-bottom: 0.6rem;
+}
+
+/* --- Blog listing & post layout --- */
+.blog-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.blog-card {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--silver);
+  background: var(--surface);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-soft);
+  transition: box-shadow 180ms ease, transform 180ms ease, border-color 180ms ease, background-color 180ms ease;
+}
+.blog-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+  border-color: color-mix(in oklab, var(--orchid) 25%, var(--silver));
+  background: color-mix(in oklab, var(--ui-tint) 25%, white);
+}
+
+.blog-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.blog-card-link h2 {
+  margin-bottom: var(--space-xs);
+}
+.blog-card-excerpt {
+  margin-bottom: var(--space-sm);
+  color: var(--ink-700);
+}
+.blog-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  align-items: center;
+  font-size: var(--step--1);
+  color: var(--ink-500);
+}
+
+/* Tag pill */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.05rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(163, 139, 198, 0.3);
+  background: color-mix(in oklab, var(--ui-tint) 25%, white);
+  font-size: var(--step--1);
+  color: var(--ink-600);
+}
+
+/* Blog post page body */
+.blog-post-body {
+  max-width: 70ch;
+  margin-inline: auto;
+  font-size: var(--step-0);
+}
+.blog-post-body p + p {
+  margin-top: var(--space-md);
+}
+.blog-post-body h2 {
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-sm);
+  font-size: var(--step-2);
+}
+.blog-post-body h3 {
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-xs);
+}
+.blog-post-meta {
+  font-size: var(--step--1);
+  color: var(--ink-500);
+  margin-bottom: var(--space-md);
+}
+
+/* Small mobile tweaks */
+@media (max-width: 768px) {
+  .blog-card {
+    padding: var(--space-md);
+  }
+  .page-header {
+    padding: var(--space-xl) 0 var(--space-lg);
+  }
 }
