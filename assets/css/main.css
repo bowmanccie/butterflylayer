@@ -676,3 +676,23 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
     padding: var(--space-xl) 0 var(--space-lg);
   }
 }
+
+.footer-social {
+  display: flex;
+  gap: 1.2rem;
+  margin: 0.5rem 0 0.75rem;
+}
+
+.footer-social a {
+  color: var(--ink-600);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+
+.footer-social a:hover {
+  color: var(--lavender-ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
