@@ -22,7 +22,7 @@ async function loadPartial(targetSelector, url) {
 }
 
 function enhanceHeader(root) {
-  // Mobile nav toggle (works even without CSS “open” class present)
+  // Mobile nav toggle
   const toggle = root.querySelector("#nav-toggle");
   const nav = root.querySelector("#primary-nav");
   if (toggle && nav) {
@@ -38,27 +38,17 @@ function enhanceHeader(root) {
     });
   }
 
-  // If nav links were authored as root links (e.g. "/about/"),
-  // remap them to /pages/... so local static browsing works nicely.
-  const map = {
-    "/": "/pages/",
-    "/about/": "/pages/about/",
-    "/work/": "/pages/resources/",
-    "/writing/": "/pages/press/",
-    "/podcast/": "/pages/podcast/",
-    "/contact/": "/pages/contact/",
-    "/privacy/": "/pages/privacy/",
-  };
-  root.querySelectorAll('nav a[href^="/"]').forEach(a => {
-    const href = a.getAttribute("href");
-    if (map[href]) a.setAttribute("href", map[href]);
-  });
+  // Mark active link with exact path match
+  let here = location.pathname.replace(/\/+$/, "");
+  if (here === "") here = "/"; // normalize root
 
-  // Mark active link (best-effort)
-  const here = location.pathname.replace(/\/+$/, "");
-  root.querySelectorAll("nav a").forEach(a => {
-    const path = a.getAttribute("href")?.replace(/\/+$/, "");
-    if (path && here.endsWith(path)) a.setAttribute("aria-current", "page");
+  root.querySelectorAll("nav a[href]").forEach(a => {
+    let path = a.getAttribute("href").replace(/\/+$/, "");
+    if (path === "") path = "/";
+
+    if (path === here) {
+      a.setAttribute("aria-current", "page");
+    }
   });
 }
 
@@ -91,8 +81,8 @@ function showQuoteBubble(quote) {
 /* ---------- Boot ---------- */
 document.addEventListener("DOMContentLoaded", async () => {
   await Promise.all([
-      loadPartial("#header", "/partials/header.html"),
-      loadPartial("#footer", "/partials/footer.html"),
+    loadPartial("#header", "/partials/header.html?v=2"),
+    loadPartial("#footer", "/partials/footer.html?v=2"),
   ]);
 
   // Light, pretty motivation: random quote (sourced from quotes.js if present)
