@@ -138,8 +138,15 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 
 /* 3) Header & Navigation (softer, airier) */
 .site-header {
-  position: sticky; top: 0; z-index: var(--z-header);
-  background: color-mix(in oklab, var(--surface) 92%, var(--blush) 8%);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-header);
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in oklab, var(--blush) 28%, var(--surface)) 0%,
+      color-mix(in oklab, var(--surface) 88%, var(--orchid) 12%) 100%
+    );
   border-bottom: 1px solid var(--ink-150);
   backdrop-filter: saturate(140%) blur(8px);
 }
@@ -308,7 +315,12 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 .site-footer {
   margin-top: var(--space-3xl);
   padding: var(--space-2xl) 0;
-  background: var(--surface);
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in oklab, var(--surface) 88%, var(--blush) 12%) 0%,
+      color-mix(in oklab, var(--surface) 92%, var(--orchid) 8%) 100%
+    );
   border-top: 1px solid var(--ink-150);
 }
 .footer-inner { display: grid; gap: var(--space-xl); }
@@ -378,9 +390,9 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 /* Floating butterfly badge (top-right, below header) */
 .floating-butterfly {
   position: fixed;
-  top: clamp(160px, 16vh, 190px);   /* pushed down so it clears the nav */
+  top: clamp(160px, 16vh, 190px);
   right: clamp(12px, 4vw, 40px);
-  width: 170px;                     /* slightly larger */
+  width: 170px;
   opacity: 0.97;
   pointer-events: none;
   filter: drop-shadow(0 18px 34px rgba(60, 41, 102, 0.25));
@@ -392,6 +404,13 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* Hide the floating butterfly on very small screens */
+@media (max-width: 640px) {
+  .floating-butterfly {
+    display: none;
+  }
 }
 @keyframes butterflyDrift {
   0% {
