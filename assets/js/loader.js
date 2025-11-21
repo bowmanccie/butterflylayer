@@ -80,10 +80,11 @@ function showQuoteBubble(quote) {
 
 /* ---------- Boot ---------- */
 document.addEventListener("DOMContentLoaded", async () => {
-  await Promise.all([
-    loadPartial("#header", "/partials/header.html?v=2"),
-    loadPartial("#footer", "/partials/footer.html?v=2"),
-  ]);
+  const v = "20251121175036"; // will be replaced at publish time
+    await Promise.all([
+      loadPartial("#header", `/partials/header.html?v=${v}`),
+      loadPartial("#footer", `/partials/footer.html?v=${v}`),
+    ]);
 
   // Light, pretty motivation: random quote (sourced from quotes.js if present)
   if (window.L8_QUOTES && Array.isArray(window.L8_QUOTES) && window.L8_QUOTES.length) {
