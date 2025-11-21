@@ -1,21 +1,23 @@
 <!-- /site/partials/header.html -->
 <header class="site-header" data-partial="header" role="banner">
-  <a class="skip-link" href="#main">Skip to Content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <div class="header-inner container">
     <a class="brand" href="/" aria-label="L8 — The Butterfly Layer — Home">
-      <span class="brand-mark">L8</span>
-      <span class="brand-name">The Butterfly Layer</span>
+      <img
+        src="/assets/img/ui/logo-header.png"
+        alt="L8 — The Butterfly Layer logo"
+        class="brand-logo"
+      />
+      <span class="brand-text">
+        <span class="brand-mark">L8</span>
+        <span class="brand-name">The Butterfly Layer</span>
+      </span>
     </a>
 
     <p class="tagline">Where intent takes flight. 🦋</p>
 
-    <button
-      class="nav-toggle"
-      id="nav-toggle"
-      aria-expanded="false"
-      aria-controls="primary-nav"
-    >
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
       <span class="sr-only">Toggle navigation</span>
       <span class="nav-toggle-bar"></span>
       <span class="nav-toggle-bar"></span>
@@ -26,13 +28,13 @@
       <ul>
         <li><a href="/" data-nav="home">Home</a></li>
         <li><a href="/pages/about/" data-nav="about">About</a></li>
-        <li><a href="/pages/coco/" data-nav="coco">CoCo</a></li>
         <li><a href="/pages/resources/" data-nav="resources">Resources</a></li>
         <li><a href="/pages/blog/" data-nav="blog">Blog</a></li>
         <!-- <li><a href="/pages/press/" data-nav="press">Press</a></li> -->
         <li><a href="/pages/podcast/" data-nav="podcast">Podcast</a></li>
         <li><a href="/pages/contact/" data-nav="contact">Contact</a></li>
         <li><a href="/pages/privacy/" data-nav="privacy">Privacy</a></li>
+        <li><a href="/pages/coco/" data-nav="coco">CoCo</a></li>
       </ul>
     </nav>
   </div>

@@ -156,17 +156,42 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   align-items: center;
   padding: var(--space-md) 0;
 }
+/* --- Header Brand Hybrid Logo (butterfly + L8) --- */
+
 .brand {
-  display: inline-flex; align-items: baseline; gap: var(--space-xs);
-  color: var(--ink-900);
+  display: inline-flex;
+  align-items: center; /* was baseline; center works better with icon */
+  gap: var(--space-xs);
 }
+
+.brand-logo {
+  height: 40px;           /* tweak between 32–48px if needed */
+  width: auto;
+  flex-shrink: 0;
+  display: block;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .brand-mark {
-  font-weight: 800; letter-spacing: 0.02em;
+  font-weight: 800;
+  letter-spacing: 0.02em;
   background: var(--surface-tint);
-  padding: 0.2rem 0.45rem; border-radius: 999px;
+  padding: 0.2rem 0.45rem;
+  border-radius: 999px;
   box-shadow: inset 0 0 0 1px var(--silver);
 }
-.brand-name { font-weight: 600; color: var(--ink-700); }
+
+.brand-name {
+  font-weight: 600;
+  color: var(--ink-700);
+  font-size: var(--step--1);
+}
+
 .tagline { margin: 0; grid-column: 1 / -1; color: var(--ink-500); font-size: var(--step--1); }
 
 .nav-toggle { display: inline-flex; flex-direction: column; gap: 4px; background: none; border: 0; cursor: pointer; }
