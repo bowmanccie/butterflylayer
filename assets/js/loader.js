@@ -80,7 +80,7 @@ function showQuoteBubble(quote) {
 
 /* ---------- Boot ---------- */
 document.addEventListener("DOMContentLoaded", async () => {
-  const v = "20251121183916"; // will be replaced at publish time
+  const v = "20251121184649"; // will be replaced at publish time
     await Promise.all([
       loadPartial("#header", `/partials/header.html?v=${v}`),
       loadPartial("#footer", `/partials/footer.html?v=${v}`),
