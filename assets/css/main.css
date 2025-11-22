@@ -324,58 +324,93 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   color: var(--lavender-ink);
 }
 
-/* 5) Footer */
+/* 5) Footer — compact layout */
+/* 5) Footer — NORMAL LAYOUT */
 .site-footer {
-  margin-top: var(--space-3xl);
-  padding: var(--space-2xl) 0;
+  margin-top: var(--space-xl);
+  padding: var(--space-xl) 0 var(--space-lg); 
   background:
     linear-gradient(
       180deg,
-      color-mix(in oklab, var(--surface) 88%, var(--blush) 12%) 0%,
-      color-mix(in oklab, var(--surface) 92%, var(--orchid) 8%) 100%
+      color-mix(in oklab, var(--surface) 92%, var(--blush) 8%) 0%,
+      color-mix(in oklab, var(--surface) 95%, var(--orchid) 5%) 100%
     );
   border-top: 1px solid var(--ink-150);
 }
-.footer-inner { display: grid; gap: var(--space-xl); }
+
+/* Simple vertical stack */
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* center all content */
+  
+  row-gap: var(--space-md);  /* normal, not huge spacing */
+}
+
+/* Brand + signature */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-sm);
+}
+
+.signature-slot img {
+  width: 160px;
+  height: auto;
+  border-radius: 0;
+}
+
+/* Navigation — centered row */
+.footer-links {
+  text-align: center;
+}
 
 .footer-nav {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
 }
-.footer-nav a { color: var(--ink-700); }
-.footer-nav a:hover { color: var(--ink-900); }
-
-.signature-slot img {
-  max-width: 80px;
-  height: auto;
-  border-radius: 50%;
-  display: block;
-  margin-top: 0.5rem;
+.footer-nav a {
+  color: var(--ink-700);
+  font-weight: 500;
+}
+.footer-nav a:hover {
+  color: var(--ink-900);
 }
 
-@media (min-width: 880px) {
-  .footer-nav { gap: var(--space-lg); }
+/* Meta — standard footer text */
+.footer-meta {
+  text-align: center;
+  font-size: var(--step--1);
+}
+
+.footer-meta address,
+.footer-meta p {
+  margin: 0.5rem 0;
 }
 
 .footer-social {
   display: flex;
-  gap: 1.2rem;
-  margin: 0.5rem 0 0.75rem;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
 }
+
 .footer-social a {
-  color: var(--ink-600);
   font-weight: 600;
-  text-decoration: none;
-  transition: color 0.18s ease;
+  color: var(--ink-700);
 }
 .footer-social a:hover {
   color: var(--lavender-ink);
-  text-decoration: underline;
-  text-underline-offset: 3px;
 }
 
 /* 6) Quote Bubble */
@@ -510,15 +545,6 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   color: var(--ink-600);
   margin-top: 0.4rem;
   text-align: center;
-}
-
-/* Footer headshot */
-.signature-slot img {
-  max-width: 80px;
-  height: auto;
-  border-radius: 50%;
-  display: block;
-  margin-top: 0.5rem;
 }
 
 /* Blog teaser card */
@@ -833,4 +859,3 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   .thumb-card img.thumb { margin-inline: auto; }
   .thumb-card .thumb-content { margin-left: 0; }
 }
-
