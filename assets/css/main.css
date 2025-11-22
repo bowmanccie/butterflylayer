@@ -721,3 +721,46 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   text-underline-offset: 3px;
 }
 
+.pub-item.book {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  align-items: flex-start;
+}
+
+/* Brand-aligned border for book covers */
+.pub-item .book-cover {
+  width: 240px;
+  height: auto;
+  border-radius: 10px;
+
+  /* L8 brand border: subtle pearl → lavender */
+  border: 3px solid;
+  border-image: linear-gradient(
+      135deg,
+      #f7f3f7 0%,      /* pearl */
+      #f4d7e8 25%,     /* blush */
+      #d7c5f7 60%,     /* orchid lavender */
+      #c9c9d5 100%     /* soft metallic silver */
+  ) 1;
+
+  /* Existing shadow for lateral depth */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.pub-item .pub-content p {
+  max-width: 640px;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .pub-item.book {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .pub-item .book-cover {
+    width: 70%;
+    max-width: 320px;
+  }
+}

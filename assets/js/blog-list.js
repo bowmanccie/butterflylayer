@@ -4,7 +4,7 @@ async function loadBlogList() {
   if (!container) return;
 
   try {
-    const res = await fetch("/blog/posts.json?v=20251121184649");
+    const res = await fetch("/blog/posts.json?v=20251121191416");
     if (!res.ok) throw new Error("Failed to load posts.json");
 
     const posts = await res.json();
