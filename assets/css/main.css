@@ -1,7 +1,7 @@
 /* /site/assets/css/main.css */
 
-/* ===========
-   Editorial Elegance — Airier Theme
+/* ===========  
+   Editorial Elegance — Airier Theme  
    =========== */
 
 /* 1) Reset + Base */
@@ -32,7 +32,7 @@ body {
 
 img, svg, video { max-width: 100%; height: auto; display: block; }
 
-/* Links — blush-ink underline on hover for elegance */
+/* Links — blush-ink underline on hover */
 a { color: var(--lavender-ink); text-decoration: none; text-underline-offset: 2px; }
 a:hover {
   text-decoration: underline;
@@ -71,7 +71,7 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 
 :focus-visible { outline: none; box-shadow: var(--focus-ring); border-radius: var(--radius-sm); }
 
-/* 2) Layout primitives */
+/* 2) Layout */
 .container {
   width: min(1100px, calc(100% - 2 * var(--space-xl)));
   margin-inline: auto;
@@ -92,7 +92,7 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 }
 @media (min-width: 900px) { .card-grid { grid-template-columns: repeat(3, 1fr); } }
 
-/* Generic page section rhythm */
+/* Page sections */
 .page-section {
   padding: var(--space-2xl) 0;
 }
@@ -100,7 +100,7 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   border-top: 1px solid var(--ink-150);
 }
 
-/* Two-column layout for About / CoCo / content sections */
+/* Two-column layout */
 .two-column {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr);
@@ -108,12 +108,10 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   align-items: flex-start;
 }
 @media (max-width: 820px) {
-  .two-column {
-    grid-template-columns: 1fr;
-  }
+  .two-column { grid-template-columns: 1fr; }
 }
 
-/* Buttons (lighter look) */
+/* Buttons */
 .button {
   display: inline-block;
   font-weight: 600;
@@ -136,7 +134,7 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 }
 .link-arrow:hover::after { transform: translateX(3px); }
 
-/* 3) Header & Navigation (softer, airier) */
+/* 3) Header & Navigation */
 .site-header {
   position: sticky;
   top: 0;
@@ -150,22 +148,22 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   border-bottom: 1px solid var(--ink-150);
   backdrop-filter: saturate(140%) blur(8px);
 }
+
 .header-inner {
   display: grid; gap: var(--space-md);
   grid-template-columns: 1fr auto;
   align-items: center;
   padding: var(--space-md) 0;
 }
-/* --- Header Brand Hybrid Logo (butterfly + L8) --- */
 
 .brand {
   display: inline-flex;
-  align-items: center; /* was baseline; center works better with icon */
+  align-items: center;
   gap: var(--space-xs);
 }
 
 .brand-logo {
-  height: 40px;           /* tweak between 32–48px if needed */
+  height: 40px;
   width: auto;
   flex-shrink: 0;
   display: block;
@@ -226,7 +224,7 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   .primary-nav { display: block; }
 }
 
-/* 4) Hero, Cards, Pull Quotes (lighter hero) */
+/* 4) Hero, Cards, Pull Quotes */
 .hero {
   padding: var(--space-3xl) 0 var(--space-2xl);
   border-bottom: 1px solid var(--ink-150);
@@ -260,12 +258,7 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   margin-bottom: var(--space-lg);
 }
 
-/* Hero visual */
-.hero-visual {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+.hero-visual { display: flex; justify-content: center; align-items: center; }
 
 .hero-butterfly {
   max-width: 260px;
@@ -275,25 +268,18 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   animation: heroFloat 10s ease-in-out infinite;
 }
 
-/* Gentle float animation */
 @keyframes heroFloat {
-  0%   { transform: translateY(0px); }
+  0%   { transform: translateY(0); }
   50%  { transform: translateY(-8px); }
-  100% { transform: translateY(0px); }
+  100% { transform: translateY(0); }
 }
 
 @media (max-width: 768px) {
-  .hero-inner {
-    grid-template-columns: 1fr;
-    text-align: left;
-  }
-
-  .hero-visual {
-    order: -1;
-    margin-bottom: var(--space-lg);
-  }
+  .hero-inner { grid-template-columns: 1fr; text-align: left; }
+  .hero-visual { order: -1; margin-bottom: var(--space-lg); }
 }
 
+/* Hero headings */
 .hero-title {
   font-family: var(--font-serif);
   font-size: var(--step-5);
@@ -306,6 +292,7 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 }
 .hero-cta { margin-top: var(--space-lg); }
 
+/* Generic card */
 .card {
   background: var(--surface);
   border: 1px solid var(--silver);
@@ -321,6 +308,7 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   background: color-mix(in oklab, var(--ui-tint) 30%, white);
 }
 
+/* Pull quotes */
 .pull-quote {
   margin: var(--space-2xl) auto;
   padding: var(--space-lg);
@@ -350,7 +338,6 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 }
 .footer-inner { display: grid; gap: var(--space-xl); }
 
-/* Footer nav (final version) */
 .footer-nav {
   list-style: none;
   display: flex;
@@ -359,33 +346,39 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   padding: 0;
   margin: 0;
 }
-.footer-nav li {
-  margin: 0;
-}
 .footer-nav a { color: var(--ink-700); }
 .footer-nav a:hover { color: var(--ink-900); }
 
 .signature-slot img {
-  max-width: 160px;
+  max-width: 80px;
   height: auto;
+  border-radius: 50%;
   display: block;
   margin-top: 0.5rem;
 }
-.signature-slot a {
-  display: inline-block;
-}
 
-/* Desktop: footer links horizontal */
 @media (min-width: 880px) {
-  .footer-nav {
-    display: flex;
-    gap: var(--space-lg);
-    align-items: center;
-    flex-wrap: wrap;
-  }
+  .footer-nav { gap: var(--space-lg); }
 }
 
-/* 6) Quote Bubble (unchanged behavior, slightly lighter) */
+.footer-social {
+  display: flex;
+  gap: 1.2rem;
+  margin: 0.5rem 0 0.75rem;
+}
+.footer-social a {
+  color: var(--ink-600);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+.footer-social a:hover {
+  color: var(--lavender-ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* 6) Quote Bubble */
 .quote-bubble {
   position: fixed;
   right: clamp(12px, 3vw, 28px);
@@ -412,7 +405,7 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 .quote-close:hover { color: var(--ink-500); }
 @keyframes quoteIn { to { opacity: 1; transform: translateY(0); } }
 
-/* Floating butterfly badge (top-right, below header) */
+/* Floating butterfly */
 .floating-butterfly {
   position: fixed;
   top: clamp(160px, 16vh, 190px);
@@ -424,38 +417,20 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   z-index: 999;
   animation: butterflyDrift 16s ease-in-out infinite;
 }
+.floating-butterfly img { width: 100%; height: auto; }
 
-.floating-butterfly img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Hide the floating butterfly on very small screens */
 @media (max-width: 640px) {
-  .floating-butterfly {
-    display: none;
-  }
+  .floating-butterfly { display: none; }
 }
 @keyframes butterflyDrift {
-  0% {
-    transform: translate3d(0, 0, 0) rotate(0deg);
-  }
-  25% {
-    transform: translate3d(-6px, -8px, 0) rotate(-2deg);
-  }
-  50% {
-    transform: translate3d(2px, -12px, 0) rotate(1deg);
-  }
-  75% {
-    transform: translate3d(-4px, -6px, 0) rotate(-1deg);
-  }
-  100% {
-    transform: translate3d(0, 0, 0) rotate(0deg);
-  }
+  0%   { transform: translate3d(0,0,0) rotate(0deg); }
+  25%  { transform: translate3d(-6px,-8px,0) rotate(-2deg); }
+  50%  { transform: translate3d(2px,-12px,0) rotate(1deg); }
+  75%  { transform: translate3d(-4px,-6px,0) rotate(-1deg); }
+  100% { transform: translate3d(0,0,0) rotate(0deg); }
 }
 
-/* 7) Page section spacing */
+/* 7) Page headers */
 .page-header {
   padding: var(--space-2xl) 0 var(--space-xl);
   background: var(--section-tint);
@@ -472,13 +447,13 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 .backtotop a { color: var(--ink-500); }
 .backtotop a:hover { color: var(--ink-700); }
 
-/* --- Bio Block Layout (About & CoCo pages) --- */
+/* Bio blocks */
 .bio-block {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   align-items: flex-start;
-  justify-content: center; /* mobile & small screens */
+  justify-content: center;
   margin: var(--space-2xl) auto;
 }
 
@@ -486,41 +461,26 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
 .bio-text {
   display: flex;
   flex-direction: column;
-  align-items: center;      /* mobile: center content */
+  align-items: center;
   text-align: center;
 }
 
-/* Headshot / main photo styling */
 .profile-photo img {
   max-width: 220px;
-  border-radius: 999px; /* soft portrait shape */
+  border-radius: 999px;
   box-shadow: var(--shadow-soft);
   border: 1px solid var(--silver);
 }
 
-/* Bio text column */
-.bio-text {
-  max-width: 38rem;
-}
+.bio-text { max-width: 38rem; }
 
-/* Desktop adjustments */
 @media (min-width: 820px) {
-  .bio-block {
-    justify-content: flex-start;
-  }
-
-  .profile-photo {
-    flex: 0 0 auto;
-    align-items: flex-start;
-  }
-
-  .bio-text {
-    align-items: flex-start;
-    text-align: left;
-  }
+  .bio-block { justify-content: flex-start; }
+  .profile-photo { flex: 0 0 auto; align-items: flex-start; }
+  .bio-text { align-items: flex-start; text-align: left; }
 }
 
-/* --- CoCo Photo Grid --- */
+/* CoCo grid */
 .photo-grid {
   list-style: none;
   margin: var(--space-xl) 0 0;
@@ -529,11 +489,8 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   gap: var(--space-lg);
   grid-template-columns: 1fr;
 }
-
 @media (min-width: 720px) {
-  .photo-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
+  .photo-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
 }
 
 .photo-card {
@@ -543,14 +500,11 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   padding: var(--space-sm);
   box-shadow: var(--shadow-soft);
 }
-
 .photo-card img {
   border-radius: var(--radius-md);
   width: 100%;
-  height: auto;
   display: block;
 }
-
 .photo-caption {
   font-size: var(--step--1);
   color: var(--ink-600);
@@ -558,30 +512,7 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   text-align: center;
 }
 
-/* --- Figure captions (About & CoCo) --- */
-.profile-photo figcaption,
-.bio-text figure figcaption {
-  margin-top: 0.4rem;
-  font-size: var(--step--1);
-  color: var(--ink-600);
-  text-align: center;
-}
-
-/* Secondary images inside bio-text (CoCo) */
-.bio-text figure {
-  margin: var(--space-md) 0 var(--space-lg);
-  text-align: center;
-}
-
-.bio-text figure img {
-  max-width: 260px;
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-soft);
-  border: 1px solid var(--silver);
-  margin-inline: auto;
-}
-
-/* --- Footer Headshot Styling (final) --- */
+/* Footer headshot */
 .signature-slot img {
   max-width: 80px;
   height: auto;
@@ -590,28 +521,23 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   margin-top: 0.5rem;
 }
 
-/* --- Blog Teaser Card Styling --- */
+/* Blog teaser card */
 #blog-teaser-card .teaser-title {
   font-size: 1.05rem;
   margin-bottom: 0.25rem;
 }
-
 #blog-teaser-card .teaser-meta {
   font-size: 0.85rem;
   opacity: 0.7;
   margin-bottom: 0.5rem;
 }
-
 #blog-teaser-card .teaser-tags .tag {
   margin-left: 0.4rem;
   font-size: 0.8rem;
 }
+#blog-teaser-card .teaser-summary { margin-bottom: 0.6rem; }
 
-#blog-teaser-card .teaser-summary {
-  margin-bottom: 0.6rem;
-}
-
-/* --- Blog listing & post layout --- */
+/* Blog listing */
 .blog-list {
   list-style: none;
   margin: 0;
@@ -640,9 +566,7 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   color: inherit;
   display: block;
 }
-.blog-card-link h2 {
-  margin-bottom: var(--space-xs);
-}
+.blog-card-link h2 { margin-bottom: var(--space-xs); }
 .blog-card-excerpt {
   margin-bottom: var(--space-sm);
   color: var(--ink-700);
@@ -668,15 +592,13 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   color: var(--ink-600);
 }
 
-/* Blog post page body */
+/* Blog post body */
 .blog-post-body {
   max-width: 70ch;
   margin-inline: auto;
   font-size: var(--step-0);
 }
-.blog-post-body p + p {
-  margin-top: var(--space-md);
-}
+.blog-post-body p + p { margin-top: var(--space-md); }
 .blog-post-body h2 {
   margin-top: var(--space-xl);
   margin-bottom: var(--space-sm);
@@ -691,34 +613,27 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   color: var(--ink-500);
   margin-bottom: var(--space-md);
 }
-
-/* Small mobile tweaks */
 @media (max-width: 768px) {
-  .blog-card {
-    padding: var(--space-md);
-  }
-  .page-header {
-    padding: var(--space-xl) 0 var(--space-lg);
-  }
+  .blog-card { padding: var(--space-md); }
+  .page-header { padding: var(--space-xl) 0 var(--space-lg); }
 }
 
-.footer-social {
-  display: flex;
-  gap: 1.2rem;
-  margin: 0.5rem 0 0.75rem;
+/* Base publication item container */
+.pub-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  transition:
+    transform 180ms ease-out,
+    box-shadow 180ms ease-out,
+    background-color 180ms ease-out;
 }
 
-.footer-social a {
-  color: var(--ink-600);
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.18s ease;
-}
-
-.footer-social a:hover {
-  color: var(--lavender-ink);
-  text-decoration: underline;
-  text-underline-offset: 3px;
+/* Hover / focus lift */
+.pub-item:hover,
+.pub-item:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+  background-color: color-mix(in oklab, var(--pearl) 80%, white);
 }
 
 .pub-item.book {
@@ -728,24 +643,22 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   align-items: flex-start;
 }
 
-/* Brand-aligned border for book covers */
+/* Book cover border — using variables */
 .pub-item .book-cover {
   width: 240px;
   height: auto;
   border-radius: 10px;
 
-  /* L8 brand border: subtle pearl → lavender */
   border: 3px solid;
   border-image: linear-gradient(
       135deg,
-      #f7f3f7 0%,      /* pearl */
-      #f4d7e8 25%,     /* blush */
-      #d7c5f7 60%,     /* orchid lavender */
-      #c9c9d5 100%     /* soft metallic silver */
+      var(--pearl) 0%,
+      var(--blush) 25%,
+      var(--orchid) 60%,
+      var(--silver) 100%
   ) 1;
 
-  /* Existing shadow for lateral depth */
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 
 .pub-item .pub-content p {
@@ -762,5 +675,162 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   .pub-item .book-cover {
     width: 70%;
     max-width: 320px;
+    border-width: 2px;
   }
 }
+
+/* Publication card */
+.pub-item.card {
+  padding: 1.5rem 1.75rem;
+  border-radius: 12px;
+  border: 1px solid var(--silver);
+  background-color: #ffffff;
+}
+
+/* Accent strip */
+.pub-item.card::before {
+  content: "";
+  position: absolute;
+  inset-block: 0.9rem;
+  inset-inline-start: 0.9rem;
+  width: 3px;
+  border-radius: 999px;
+  background: linear-gradient(
+    180deg,
+    var(--blush) 0%,
+    var(--orchid) 60%,
+    var(--silver) 100%
+  );
+}
+
+.pub-item.card .pub-content {
+  margin-left: 0.9rem;
+}
+.pub-item.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+}
+.pub-item.card .pub-meta {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.72;
+  margin-bottom: 0.75rem;
+}
+.pub-item.card p { margin-bottom: 0.65rem; }
+.pub-item.card a {
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+.pub-item.card a:hover { color: var(--lavender-ink); }
+
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Mini cards */
+.pub-item.card-mini {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--silver);
+  border-radius: 10px;
+  background: #ffffff;
+  gap: 1rem;
+  position: relative;
+  transition: transform 160ms ease-out, box-shadow 160ms ease-out;
+}
+
+/* Mini card accent strip */
+.pub-item.card-mini::before {
+  content: "";
+  position: absolute;
+  inset-block: 0.75rem;
+  inset-inline-start: 0.75rem;
+  width: 3px;
+  border-radius: 999px;
+  background: linear-gradient(
+    180deg,
+    var(--blush) 0%,
+    var(--orchid) 60%,
+    var(--silver) 100%
+  );
+}
+
+.pub-item.card-mini .mini-content { margin-left: 0.75rem; }
+.pub-item.card-mini h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.05rem;
+}
+.pub-item.card-mini p {
+  margin: 0.1rem 0 0;
+  font-size: 0.9rem;
+}
+
+/* Thumbnail card */
+.thumb-card {
+  display: grid;
+  grid-template-columns: 120px auto;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 14px;
+  border: 1px solid var(--silver);
+  background: #ffffff;
+  position: relative;
+  transition: transform 180ms ease-out, box-shadow 180ms ease-out;
+}
+
+/* Accent strip for thumbnails */
+.thumb-card::before {
+  content: "";
+  position: absolute;
+  inset-block: 1rem;
+  inset-inline-start: 1rem;
+  width: 3px;
+  border-radius: 999px;
+  background: linear-gradient(
+    180deg,
+    var(--blush) 0%,
+    var(--orchid) 60%,
+    var(--silver) 100%
+  );
+}
+
+.thumb-card img.thumb {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Thumbnail text */
+.thumb-card .thumb-content { margin-left: 0.75rem; }
+.thumb-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+  font-size: 1.15rem;
+}
+.thumb-card .meta {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-bottom: 0.4rem;
+}
+.thumb-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 650px) {
+  .thumb-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .thumb-card img.thumb { margin-inline: auto; }
+  .thumb-card .thumb-content { margin-left: 0; }
+}
+
