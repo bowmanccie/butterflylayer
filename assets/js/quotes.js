@@ -1,7 +1,10 @@
 // /site/assets/js/quotes.js
-// Curated, short, uplifting lines for your floating bubble.
-// Keep them light and elegant—an encouraging whisper, not a shout.
+// Expanded, elegant, intentional L8 quote collection.
+// Light, motivational, and written in the L8 voice.
+// Each line should feel like a soft nudge toward clarity and grace.
+
 window.L8_QUOTES = [
+  // Core L8 voice
   { text: "Small, graceful moves change everything.", author: "L8" },
   { text: "Clarity first, elegance follows.", author: "L8" },
   { text: "Build lightly. Aim precisely.", author: "L8" },
@@ -11,6 +14,96 @@ window.L8_QUOTES = [
   { text: "Refine until it feels inevitable.", author: "L8" },
   { text: "Grace wins the long game.", author: "L8" },
   { text: "Architecture is empathy made structural.", author: "L8" },
+  { text: "Elegance is disciplined kindness.", author: "L8" },
   { text: "Just when the caterpillar thought she would die, she began to fly.", author: "L8" },
-  { text: "Elegance is disciplined kindness.", author: "L8" }
+  { text: "Leave room for light—systems breathe better that way.", author: "L8" },
+  { text: "The clearest path often feels the lightest.", author: "L8" },
+  { text: "Simplicity is the ultimate sophistication.", author: "L8" },
+  { text: "Design with care; the system will follow your lead.", author: "L8" },
+  { text: "True elegance is felt, not forced.", author: "L8" },
+  { text: "When in doubt, choose the option that invites more kindness.", author: "L8" },
+  { text: "The most powerful architecture is the one that serves people first.", author: "L8" },
+  { text: "Clarity is the foundation of all great design.", author: "L8" },
+  { text: "A well-placed pause can redirect the entire flow.", author: "L8" },
+  { text: "Every detail matters when building for humans.", author: "L8" },
+  { text: "The best solutions often emerge from quiet reflection.", author: "L8" },
+  { text: "True strength lies in flexibility and grace.", author: "L8" },
+  { text: "The most elegant systems are those that adapt with ease.", author: "L8" },
+  { text: "Kindness is the most scalable architecture of all.", author: "L8" },
+  { text: "Precision in design leads to freedom in use.", author: "L8" },
+  { text: "A clear vision paves the way for elegant execution.", author: "L8" },
+  { text: "The most enduring designs are those that prioritize human experience.", author: "L8" },
+
+  // Leadership & architecture
+  { text: "Quiet confidence moves more than loud certainty.", author: "L8" },
+  { text: "Precision is a form of love for the future.", author: "L8" },
+  { text: "Start with clarity. Commit with kindness.", author: "L8" },
+  { text: "A single aligned decision can lift the entire architecture.", author: "L8" },
+  { text: "Move the human layers first—the rest will follow.", author: "L8" },
+  { text: "Strong foundations are built from patient decisions.", author: "L8" },
+  { text: "Sometimes the most powerful design is the one that calms the room.", author: "L8" },
+  { text: "Shape the path with clarity, and complexity learns where to go.", author: "L8" },
+  { text: "Your clarity will teach the system how to behave.", author: "L8" },
+  { text: "Harmony isn’t accidental. It’s designed.", author: "L8" },
+  { text: "When the intent is pure, the architecture sings.", author: "L8" },
+  { text: "Lead like an architect: see the whole, soften the edges.", author: "L8" },
+  { text: "Influence is architecture at the human layer.", author: "L8" },
+  { text: "Set the constraints with care, then let people surprise you.", author: "L8" },
+  { text: "The best leaders design for the people, not the process.", author: "L8" },
+  { text: "A well-designed system reflects the values of its architect.", author: "L8" },
+  { text: "Leadership is the art of creating space for others to thrive.", author: "L8" },
+  { text: "The most effective architecture is invisible to those it serves.", author: "L8" },
+  { text: "Design with empathy, lead with intention.", author: "L8" },
+  { text: "Great leaders build systems that elevate everyone involved.", author: "L8" },
+
+  // Women in engineering / visibility
+  { text: "You belong in every room your ideas can improve.", author: "L8" },
+  { text: "Your voice is not a guest here—it’s part of the architecture.", author: "L8" },
+  { text: "You are not an exception. You are the evidence.", author: "L8" },
+  { text: "Take up the space your work has already earned.", author: "L8" },
+  { text: "Your perspective is not a side note; it’s a missing layer.", author: "L8" },
+  { text: "You are allowed to be brilliant, kind, and unapologetically visible.", author: "L8" },
+  { text: "The system changes every time you refuse to shrink.", author: "L8" },
+  { text: "You are not too much for the room. The room is still resizing.", author: "L8" },
+  { text: "You do not have to sound like them to be heard.", author: "L8" },
+  { text: "Your story is also part of the reference architecture.", author: "L8" },
+  { text: "You are not alone on the edge—you are expanding the boundary.", author: "L8" },
+  { text: "Your presence is a protocol upgrade for the whole system.", author: "L8" },
+  { text: "You are proof that the architecture can evolve.", author: "L8" },
+  { text: "You are not a disruption; you are a necessary iteration.", author: "L8" },
+  { text: "Your success is a blueprint for those who follow.", author: "L8" },
+  { text: "You are allowed to lead without fitting the old mold.", author: "L8" },
+  { text: "You are not asking for too much—you are setting a new standard.", author: "L8" },
+  { text: "Your ideas are not just valid; they are vital.", author: "L8" },
+  { text: "You are expanding the architecture simply by being yourself.", author: "L8" },
+  { text: "Your brilliance is a necessary upgrade to the system.", author: "L8" },
+
+  // Resilience & recovery
+  { text: "Even graceful systems wobble. Stability is a practice.", author: "L8" },
+  { text: "Rest is not a regression. It’s a rebalance.", author: "L8" },
+  { text: "You can rewrite the pattern without erasing yourself.", author: "L8" },
+  { text: "Recovery is also progress; it just walks more slowly.", author: "L8" },
+  { text: "You are allowed to be a work in elegant progress.", author: "L8" },
+  { text: "Failure is often just an overly honest signal.", author: "L8" },
+  { text: "Grace means you get to start again without the self-scolding.", author: "L8" },
+  { text: "You can learn the lesson without keeping the shame.", author: "L8" },
+  { text: "Each small repair makes the system more humane.", author: "L8" },
+  { text: "You don’t have to be unbreakable to be invaluable.", author: "L8" },
+  { text: "Some days, resilience is simply not quitting on yourself.", author: "L8" },
+  { text: "It’s okay to reroute. Beautiful paths are rarely straight.", author: "L8" },
+
+  // Micro-affirmations
+  { text: "You are allowed to take up bandwidth.", author: "L8" },
+  { text: "You are not behind. You are on your path.", author: "L8" },
+  { text: "You are learning faster than you feel.", author: "L8" },
+  { text: "You don’t have to push. You can guide.", author: "L8" },
+  { text: "You are allowed to be both soft and highly scalable.", author: "L8" },
+  { text: "You are more prepared than your doubt believes.", author: "L8" },
+  { text: "You don’t need permission to be precise.", author: "L8" },
+  { text: "You are allowed to say no without an essay.", author: "L8" },
+  { text: "You are allowed to change your mind with new data.", author: "L8" },
+  { text: "Your pace is not a problem to solve.", author: "L8" },
+  { text: "You’re doing more than enough for one human layer.", author: "L8" },
+  { text: "You are worthy of the elegance you build for others.", author: "L8" },
+  { text: "You’re allowed to be proud of how far you’ve flown.", author: "L8" }
 ];
