@@ -1,34 +1,56 @@
-<!-- /site/pages/podcast/index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Podcast — L8 The Butterfly Layer</title>
+  <head>
+    <meta charset="utf-8" />
+    <title>L8 Podcast — The Butterfly Layer</title>
+    <meta
+      name="description"
+      content="The L8 Podcast: conversations at Layer 8 where architecture, AI, and intent take flight."
+    />
+    <link rel="stylesheet" href="/assets/css/variables.css?v=20251122005529" />
+    <link rel="stylesheet" href="/assets/css/main.css?v=20251122005529" />
+    <link rel="stylesheet" href="/assets/css/podcast.css?v=20251122005529" />
+  </head>
 
-  <link rel="stylesheet" href="/assets/css/variables.css?v=20251121225148" />
-  <link rel="stylesheet" href="/assets/css/main.css?v=20251121225148" />
-  <link rel="stylesheet" href="/assets/css/podcast.css?v=20251121225148" />
-</head>
-<body id="top">
-  <div id="header"></div>
+  <body id="top">
+    <!-- Header injected by loader.js -->
+    <div id="header"></div>
 
-  <main id="main" role="main">
-    <header class="page-header container">
-      <h1>Podcast</h1>
-      <p class="page-intro">Conversations on building with intention.</p>
-    </header>
+    <main id="main" role="main">
+      <!-- Page header -->
+      <header class="page-header">
+        <div class="container flow">
+          <p class="kicker">Podcast</p>
+          <h1>L8 Podcast</h1>
+          <p class="page-intro">
+            Conversations at Layer&nbsp;8 — where architecture, AI, and intent meet
+            with a bit of butterfly grace.
+          </p>
+        </div>
+      </header>
 
-    <section class="container flow" id="episodes" aria-live="polite">
-      <!-- Podcast episodes will be rendered here (via /assets/js/podcast.js) -->
-      <noscript>Please enable JavaScript to view episodes.</noscript>
-    </section>
-  </main>
+      <section class="page-section">
+        <div class="container">
 
-  <div id="footer"></div>
+          
+          
+          
+          <article class="card" id="featured-episode">
+            <header class="flow">
+              <h2>Coming Soon!</h2>
+              
+            </header>
+          </article>
+          
+        </div>
+      </section>
+    </main>
 
-  <script src="/assets/js/quotes.js?v=20251121225148" defer></script>
-  <script src="/assets/js/loader.js?v=20251121225148" defer></script>
-  <script src="/assets/js/podcast.js?v=20251121225148" defer></script>
-</body>
+    <!-- Footer injected by loader.js -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="/assets/js/quotes.js?v=20251122005529" defer></script>
+    <script src="/assets/js/loader.js?v=20251122005529" defer></script>
+  </body>
 </html>
