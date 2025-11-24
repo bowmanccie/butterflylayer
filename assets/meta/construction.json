@@ -2,7 +2,7 @@
   "pages": [
     {
       "path": "/",
-      "level": "partial",
+      "level": "in progress",
       "message": "We are still developing some sections of the site. Thanks for your patience!"
     },
     {
@@ -22,7 +22,8 @@
     },
     {
       "path": "/coco/",
-      "level": "partial"
+      "level": "in progress",
+      "message": "The CoCo project is underway. More updates and features are coming soon."
     }
   ]
 }
