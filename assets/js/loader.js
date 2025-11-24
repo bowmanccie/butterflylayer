@@ -2,7 +2,98 @@
 /**
  * Loads HTML partials, wires the header/nav, fixes footer year,
  * and (optionally) shows a motivational quote bubble.
+ * Also, supports construction mode via construction.json.
  */
+
+const CONSTRUCTION_CONFIG_URL = '/assets/meta/construction.json?v=20251124005149';
+
+function normalizePath(path) {
+  if (!path) return '/';
+  path = path.replace(/index\.html$/i, '');
+  if (path !== '/' && !path.endsWith('/')) {
+    path += '/';
+  }
+
+  // *** NEW: normalize /pages/... to root-level paths
+  path = path.replace(/^\/pages\//, "/");
+  
+  return path;
+}
+
+function createConstructionBanner(cfg) {
+  const div = document.createElement('div');
+  div.className = 'l8-construction-banner';
+
+  const label = (cfg.level || 'in progress').toUpperCase();
+  const message =
+    cfg.message ||
+    'This page is part of an active build. Some sections may be incomplete or evolving.';
+
+  div.innerHTML = `
+    <div class="l8-construction-inner">
+      <span class="l8-construction-pill">${label}</span>
+      <span class="l8-construction-text">${message}</span>
+    </div>
+  `;
+
+  return div;
+}
+
+function insertConstructionBanner(banner) {
+  const slot = document.getElementById('construction-banner-slot');
+  if (slot) {
+    slot.appendChild(banner);
+  } else {
+    document.body.prepend(banner);
+  }
+}
+
+function offsetFloatingButterfly(banner) {
+  const fb = document.querySelector('.floating-butterfly');
+  if (!fb) return;
+
+  const h = banner.offsetHeight;
+
+  // Apply dynamic CSS variable (the best, smoothest method)
+  document.documentElement.style.setProperty('--banner-offset', h + 'px');
+}
+
+function applyConstructionBanner() {
+  const current = normalizePath(window.location.pathname);
+
+  fetch(CONSTRUCTION_CONFIG_URL)
+    .then(function (res) {
+      if (!res.ok) throw new Error('Failed to load construction.json');
+      return res.json();
+    })
+    .then(function (data) {
+      if (!data || !Array.isArray(data.pages)) return;
+
+      const match = data.pages.find(function (p) {
+        const cfg = normalizePath(p.path);
+
+        // 1. root must match ONLY root
+        if (cfg === "/") {
+          return current === "/";
+        }
+
+        // 2. for all other paths, allow exact match or prefix match
+        return current === cfg || current.startsWith(cfg);
+      });
+
+      if (!match) return;
+
+      const banner = createConstructionBanner(match);
+      insertConstructionBanner(banner);
+      offsetFloatingButterfly(banner);
+    })
+    .catch(function (err) {
+      if (window.console && console.debug) {
+        console.debug('[L8 construction] skipped:', err.message || err);
+      }
+    });
+}
+
 
 async function loadPartial(targetSelector, url) {
   const target = document.querySelector(targetSelector);
@@ -80,11 +171,22 @@ function showQuoteBubble(quote) {
 
 /* ---------- Boot ---------- */
 document.addEventListener("DOMContentLoaded", async () => {
-  const v = "20251123233107"; // will be replaced at publish time
+  const v = "20251124005149"; // will be replaced at publish time
     await Promise.all([
       loadPartial("#header", `/partials/header.html?v=${v}`),
       loadPartial("#footer", `/partials/footer.html?v=${v}`),
-    ]);
+    ])    
+    .then(function () {
+      // Other post-load work you already do...
+
+      // Now apply the construction banner
+      applyConstructionBanner();
+    })
+    .catch(function (err) {
+      console.error('Error loading layout:', err);
+      // Even if header/footer fail, you *could* still call applyConstructionBanner()
+      // but it's fine to skip in that case.
+    });
 
   // Light, pretty motivation: random quote (sourced from quotes.js if present)
   if (window.L8_QUOTES && Array.isArray(window.L8_QUOTES) && window.L8_QUOTES.length) {

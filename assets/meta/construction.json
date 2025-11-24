@@ -1,0 +1,28 @@
+{
+  "pages": [
+    {
+      "path": "/",
+      "level": "partial",
+      "message": "We are still developing some sections of the site. Thanks for your patience!"
+    },
+    {
+      "path": "/blog/",
+      "level": "partial",
+      "message": "This section is still unfolding — some posts and links may be in progress."
+    },
+    {
+      "path": "/podcast/",
+      "level": "skeleton",
+      "message": "We’re wiring up the audio players and episode index. Check back soon."
+    },
+    {
+      "path": "/toolkit/",
+      "level": "partial",
+      "message": "We are developing the guides and resources in this section. Stay tuned!"
+    },
+    {
+      "path": "/coco/",
+      "level": "partial"
+    }
+  ]
+}
