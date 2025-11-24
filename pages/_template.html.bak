@@ -1,0 +1,34 @@
+<!-- /site/pages/_template.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Reusable Page Template — duplicate this file for new pages -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title><!-- Replace with Page Title --></title>
+
+  <link rel="stylesheet" href="/assets/css/variables.css?v=@@VER@@" />
+  <link rel="stylesheet" href="/assets/css/main.css?v=@@VER@@" />
+  <!-- Add page-specific CSS only when needed (e.g., podcast.css) -->
+</head>
+<body id="top">
+  <div id="header"></div>
+
+  <main id="main" role="main">
+    <header class="page-header container">
+      <h1><!-- Page Heading --></h1>
+      <p class="page-intro"><!-- Optional intro --></p>
+    </header>
+
+    <section class="container flow">
+      <!-- Page content -->
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="/assets/js/quotes.js?v=@@VER@@" defer></script>
+  <script src="/assets/js/loader.js?v=@@VER@@" defer></script>
+  <!-- Page-specific JS below if needed -->
+</body>
+</html>

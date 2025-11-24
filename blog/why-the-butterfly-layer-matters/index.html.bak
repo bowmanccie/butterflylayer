@@ -8,20 +8,6 @@
         content="How the human layer – the Butterfly Layer – shapes architectures more than any protocol ever will.">
   <link rel="stylesheet" href="/assets/css/variables.css">
   <link rel="stylesheet" href="/assets/css/main.css">
-  <!-- Favicon + Icons -->
-  <link rel="icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
-
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/favicon-192.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/favicon-180.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/favicon-512.png">
-
-  <!-- Social / OpenGraph defaults -->
-  <meta property="og:title" content="The Butterfly Layer — L8">
-  <meta property="og:description" content="Where intent, architecture, and elegance shape networks of the future.">
-  <meta property="og:image" content="/assets/img/social/default-share.png">
-  <meta name="twitter:image" content="/assets/img/social/default-share.png">
 </head>
 <body class="page page-blog-post">
   <!-- Header partial container -->

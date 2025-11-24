@@ -6,22 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CoCo — Chief Wellness Officer</title>
   <meta name="description" content="Meet CoCo, the chocolate lab who brightens calls and keeps L8 moving.">
-  <link rel="stylesheet" href="/assets/css/variables.css?v=20251123233107" />
-  <link rel="stylesheet" href="/assets/css/main.css?v=20251123233107" />
-  <!-- Favicon + Icons -->
-  <link rel="icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
-
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/favicon-192.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/favicon-180.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/favicon-512.png">
-
-  <!-- Social / OpenGraph defaults -->
-  <meta property="og:title" content="The Butterfly Layer — L8">
-  <meta property="og:description" content="Where intent, architecture, and elegance shape networks of the future.">
-  <meta property="og:image" content="/assets/img/social/default-share.png">
-  <meta name="twitter:image" content="/assets/img/social/default-share.png">
+  <link rel="stylesheet" href="/assets/css/variables.css?v=@@VER@@" />
+  <link rel="stylesheet" href="/assets/css/main.css?v=@@VER@@" />
 </head>
 <body id="top">
   <div id="header"></div>
@@ -43,7 +29,7 @@
       <div class="container bio-block">
         <figure class="profile-photo">
           <img
-            src="/assets/img/coco/coco-1.jpg?v=20251123233107"
+            src="/assets/img/coco/coco-1.jpg?v=@@VER@@"
             alt="CoCo the chocolate lab sitting attentively during a video call."
           />
           <figcaption>On duty during client sessions.</figcaption>
@@ -58,7 +44,7 @@
 
           <figure>
             <img
-              src="/assets/img/coco/coco-2.jpg?v=20251123233107"
+              src="/assets/img/coco/coco-2.jpg?v=@@VER@@"
               alt="CoCo relaxing between meetings."
             />
             <figcaption>Recovery between sprints.</figcaption>
@@ -90,7 +76,7 @@
 
   <div id="footer"></div>
 
-  <script src="/assets/js/loader.js?v=20251123233107" defer></script>
-  <script src="/assets/js/quotes.js?v=20251123233107" defer></script>
+  <script src="/assets/js/loader.js?v=@@VER@@" defer></script>
+  <script src="/assets/js/quotes.js?v=@@VER@@" defer></script>
 </body>
 </html>

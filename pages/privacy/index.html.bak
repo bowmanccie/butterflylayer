@@ -1,0 +1,44 @@
+<!-- /site/pages/privacy/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — L8 The Butterfly Layer</title>
+
+  <link rel="stylesheet" href="/assets/css/variables.css?v=@@VER@@" />
+  <link rel="stylesheet" href="/assets/css/main.css?v=@@VER@@" />
+</head>
+<body id="top">
+  <div id="header"></div>
+
+  <main id="main" role="main">
+    <header class="page-header container">
+      <h1>Privacy Policy</h1>
+      <p class="page-intro">How we handle data with clarity and care.</p>
+    </header>
+
+    <section class="container flow">
+      <h2>Overview</h2>
+      <p>This site collects minimal data necessary to provide content and improve the experience.</p>
+
+      <h2>What We Collect</h2>
+      <ul>
+        <li>Standard analytics (aggregate traffic insights)</li>
+        <li>Voluntary contact information (if you email us)</li>
+      </ul>
+
+      <h2>Use of Information</h2>
+      <p>We use information solely to respond to inquiries and improve the website.</p>
+
+      <h2>Your Choices</h2>
+      <p>Contact us anytime at <a href="mailto:hello@butterflylayer.com">hello@butterflylayer.com</a> to request updates or removal.</p>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="/assets/js/quotes.js?v=@@VER@@" defer></script>
+  <script src="/assets/js/loader.js?v=@@VER@@" defer></script>
+</body>
+</html>
