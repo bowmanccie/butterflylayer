@@ -4,6 +4,29 @@
    Editorial Elegance — Airier Theme  
    =========== */
 
+/* Hide any element with the .hidden class */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hide on mobile */
+.mobile-hide {
+  display: none !important;
+}
+@media (min-width: 768px) {
+  .mobile-hide {
+    display: block !important;
+  }
+}
+
+
 /* 1) Reset + Base */
 *,
 *::before,
