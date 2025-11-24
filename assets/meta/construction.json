@@ -13,7 +13,12 @@
     {
       "path": "/podcast/",
       "level": "skeleton",
-      "message": "We’re wiring up the audio players and episode index. Check back soon."
+      "message": "We are wiring up the audio players and episode index. Check back soon."
+    },
+    {
+      "path": "/resources/",
+      "level": "skeleton",
+      "message": "We are developing the lists and links in this section. Please check back later."
     },
     {
       "path": "/toolkit/",
