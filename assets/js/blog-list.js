@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // posts.json generated at build time
   // (lives at /blog/posts.json in your tree)
-  fetch("/blog/posts.json?v=20251124005950")
+  fetch("/blog/posts.json?v=20251124152230")
     .then((res) => {
       if (!res.ok) throw new Error("Unable to load posts.json");
       return res.json();
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Optional thumbnail from posts.json; otherwise use a known-good image
         const thumbSrc =
           post.thumbnail ||
-          "/assets/img/ui/hero-butterfly-wow.svg?v=20251124005950";
+          "/assets/img/ui/hero-butterfly-wow.svg?v=20251124152230";
 
         const card = document.createElement("article");
         // pub-item gives hover lift; thumb-card gives layout + accent

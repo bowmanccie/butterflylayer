@@ -8,26 +8,31 @@
     {
       "path": "/blog/",
       "level": "partial",
+      "cascade": true,
       "message": "This section is still unfolding — some posts and links may be in progress."
     },
     {
       "path": "/podcast/",
       "level": "skeleton",
+      "cascade": true,
       "message": "We are wiring up the audio players and episode index. Check back soon."
     },
     {
       "path": "/resources/",
       "level": "skeleton",
+      "cascade": true,
       "message": "We are developing the lists and links in this section. Please check back later."
     },
     {
       "path": "/toolkit/",
       "level": "partial",
+      "cascade": false,
       "message": "We are developing the guides and resources in this section. Stay tuned!"
     },
     {
       "path": "/coco/",
       "level": "in progress",
+      "cascade": true,
       "message": "The CoCo project is underway. More updates and features are coming soon."
     }
   ]

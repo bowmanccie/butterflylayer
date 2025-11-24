@@ -5,7 +5,7 @@
  * Also, supports construction mode via construction.json.
  */
 
-const CONSTRUCTION_CONFIG_URL = '/assets/meta/construction.json?v=20251124005950';
+const CONSTRUCTION_CONFIG_URL = '/assets/meta/construction.json?v=20251124152230';
 
 function normalizePath(path) {
   if (!path) return '/';
@@ -58,6 +58,24 @@ function offsetFloatingButterfly(banner) {
   document.documentElement.style.setProperty('--banner-offset', h + 'px');
 }
 
+function findConstructionConfig(data, current) {
+  // exact match first
+  let exact = data.pages.find(p => normalizePath(p.path) === current);
+  if (exact) {
+    // You can optionally treat level === "none" as an explicit "no banner"
+    if (exact.level === "none") return null;
+    return exact;
+  }
+
+  // no exact match -> section-level cascade
+  return data.pages.find(p => {
+    const cfg = normalizePath(p.path);
+    if (cfg === "/") return current === "/";       // root only matches root
+    if (!p.cascade) return false;                  // only cascade if explicitly allowed
+    return current.startsWith(cfg);
+  }) || null;
+}
+
 function applyConstructionBanner() {
   const current = normalizePath(window.location.pathname);
 
@@ -69,18 +87,8 @@ function applyConstructionBanner() {
     .then(function (data) {
       if (!data || !Array.isArray(data.pages)) return;
 
-      const match = data.pages.find(function (p) {
-        const cfg = normalizePath(p.path);
-
-        // 1. root must match ONLY root
-        if (cfg === "/") {
-          return current === "/";
-        }
-
-        // 2. for all other paths, allow exact match or prefix match
-        return current === cfg || current.startsWith(cfg);
-      });
-
+      const current = normalizePath(window.location.pathname);
+      const match = findConstructionConfig(data, current);
       if (!match) return;
 
       const banner = createConstructionBanner(match);
@@ -171,7 +179,7 @@ function showQuoteBubble(quote) {
 
 /* ---------- Boot ---------- */
 document.addEventListener("DOMContentLoaded", async () => {
-  const v = "20251124005950"; // will be replaced at publish time
+  const v = "20251124152230"; // will be replaced at publish time
     await Promise.all([
       loadPartial("#header", `/partials/header.html?v=${v}`),
       loadPartial("#footer", `/partials/footer.html?v=${v}`),
