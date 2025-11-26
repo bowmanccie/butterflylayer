@@ -3,9 +3,46 @@ document.addEventListener("DOMContentLoaded", () => {
   const listEl = document.getElementById("blog-list");
   if (!listEl) return;
 
-  // posts.json generated at build time
-  // (lives at /blog/posts.json in your tree)
-  fetch("/blog/posts.json?v=20251125232252")
+  const PAGE_SIZE = 6;
+
+  function getCurrentPage() {
+    const params = new URLSearchParams(window.location.search);
+    const raw = params.get("page");
+    const n = raw ? parseInt(raw, 10) : 1;
+    return Number.isNaN(n) || n < 1 ? 1 : n;
+  }
+
+  function renderPagination(totalPosts) {
+    const totalPages = Math.max(1, Math.ceil(totalPosts / PAGE_SIZE));
+    const current = getCurrentPage();
+    if (totalPages <= 1) return;
+
+    const nav = document.createElement("nav");
+    nav.className = "blog-pagination";
+
+    const prevPage = current > 1 ? current - 1 : null;
+    const nextPage = current < totalPages ? current + 1 : null;
+
+    if (prevPage) {
+      const a = document.createElement("a");
+      a.href = prevPage === 1 ? "?page=1" : `?page=${prevPage}`;
+      a.className = "blog-pagination-link";
+      a.textContent = "← Newer posts";
+      nav.appendChild(a);
+    }
+
+    if (nextPage) {
+      const a = document.createElement("a");
+      a.href = `?page=${nextPage}`;
+      a.className = "blog-pagination-link";
+      a.textContent = "Older posts →";
+      nav.appendChild(a);
+    }
+
+    listEl.parentElement.appendChild(nav);
+  }
+
+  fetch("/blog/posts.json?v=20251126130340")
     .then((res) => {
       if (!res.ok) throw new Error("Unable to load posts.json");
       return res.json();
@@ -16,31 +53,38 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
+      // Sort newest → oldest by date (ISO strings)
+      const sorted = posts.slice().sort((a, b) => {
+        const ad = a.date || "";
+        const bd = b.date || "";
+        return bd.localeCompare(ad);
+      });
+
+      const page = getCurrentPage();
+      const start = (page - 1) * PAGE_SIZE;
+      const current = sorted.slice(start, start + PAGE_SIZE);
+
       const frag = document.createDocumentFragment();
 
-      posts.forEach((post) => {
+      current.forEach((post) => {
         const slug = post.slug;
         if (!slug) return;
 
-        // In your repo, posts are at /blog/<slug>/index.html
         const url = `/blog/${slug}/`;
-
         const title = post.title || slug;
         const date = post.date || "";
         const tags = Array.isArray(post.tags)
           ? post.tags.join(", ")
-          : (post.tags || "");
+          : post.tags || "";
         const summary =
           post.summary ||
           "An essay from the Butterfly Layer — architecture, AI, and the human layer of networks.";
 
-        // Optional thumbnail from posts.json; otherwise use a known-good image
         const thumbSrc =
           post.thumbnail ||
-          "/assets/img/ui/hero-butterfly-wow.svg?v=20251125232252";
+          "/assets/img/ui/hero-butterfly-wow.svg?v=20251126130340";
 
         const card = document.createElement("article");
-        // pub-item gives hover lift; thumb-card gives layout + accent
         card.className = "pub-item thumb-card";
 
         card.innerHTML = `
@@ -63,6 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       listEl.innerHTML = "";
       listEl.appendChild(frag);
+      renderPagination(sorted.length);
     })
     .catch((err) => {
       console.error(err);

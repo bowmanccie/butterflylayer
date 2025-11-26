@@ -24,17 +24,17 @@
 <meta name="twitter:image" content="/assets/img/social/og-default.png">
 
 <!-- Primary styles -->
-<link rel="stylesheet" href="/assets/css/variables.css?v=20251125232252">
-<link rel="stylesheet" href="/assets/css/main.css?v=20251125232252">
-<link rel="stylesheet" href="/assets/css/podcast.css?v=20251125232252">
+<link rel="stylesheet" href="/assets/css/variables.css?v=20251126130340">
+<link rel="stylesheet" href="/assets/css/main.css?v=20251126130340">
+<link rel="stylesheet" href="/assets/css/podcast.css?v=20251126130340">
 
 <!-- Page-specific scripts (optional) -->
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 
 <!-- Shared scripts -->
-<script src="/assets/js/quotes.js?v=20251125232252" defer></script>
-<script src="/assets/js/loader.js?v=20251125232252" defer></script>
+<script src="/assets/js/quotes.js?v=20251126130340" defer></script>
+<script src="/assets/js/loader.js?v=20251126130340" defer></script>
 
 <!-- END: content/partials/head.html -->
 
@@ -62,7 +62,17 @@
     <article id="post-body" class="blog-post-body flow"></article>
   </div>
 </section>
+
+<!-- Previous / Next navigation -->
+<section class="page-section">
+  <div class="container two-column blog-nav">
+    <div id="previous"></div>
+    <div id="next"></div>
+  </div>
+</section>
+
 <script>
+  // Values injected from devserver via "why-the-butterfly-layer-matters" / "Why the Butterfly Layer Matters"
   const slug = "why-the-butterfly-layer-matters";
   const pageTitle = "Why the Butterfly Layer Matters";
   const bodyEl = document.getElementById("post-body");
@@ -100,7 +110,62 @@
     }
   }
 
-  document.addEventListener("DOMContentLoaded", loadMarkdown);
+  // --- Previous / Next navigation ---
+
+  function renderNeighborCard(targetId, post, label) {
+    const slot = document.getElementById(targetId);
+    if (!slot || !post) return;
+
+    const parts = [];
+    if (post.date) parts.push(post.date);
+    if (Array.isArray(post.tags) && post.tags.length) {
+      parts.push(post.tags.join(", "));
+    }
+    const meta = parts.join(" • ");
+    const summary = post.summary || "";
+
+    slot.innerHTML = `
+      <article class="card blog-nav-card flow">
+        <p class="kicker">${label}</p>
+        <h3><a href="/blog/${post.slug}/">${post.title}</a></h3>
+        ${meta ? `<p class="blog-card-meta">${meta}</p>` : ""}
+        ${summary ? `<p class="blog-card-excerpt">${summary}</p>` : ""}
+      </article>
+    `;
+  }
+
+  async function loadNeighbors() {
+    try {
+      const res = await fetch("/blog/posts.json");
+      if (!res.ok) return;
+
+      const posts = await res.json();
+      if (!Array.isArray(posts)) return;
+
+      // Sort by date ascending so "previous" = older, "next" = newer
+      const sorted = posts.slice().sort((a, b) => {
+        const ad = a.date || "";
+        const bd = b.date || "";
+        return ad.localeCompare(bd);
+      });
+
+      const idx = sorted.findIndex(p => p.slug === slug);
+      if (idx === -1) return;
+
+      const prev = idx > 0 ? sorted[idx - 1] : null;
+      const next = idx < sorted.length - 1 ? sorted[idx + 1] : null;
+
+      if (prev) renderNeighborCard("previous", prev, "Previous Post");
+      if (next) renderNeighborCard("next", next, "Next Post");
+    } catch (err) {
+      console.error("Error loading neighbor posts:", err);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    loadMarkdown();
+    loadNeighbors();
+  });
 </script>
 <!-- END: /content/partials/blog_post_content.html -->
 

@@ -932,3 +932,21 @@ ul, ol { margin: 0 0 var(--space-md) 1.2rem; padding: 0 0 0 1rem; }
   font-size: 0.9rem;
   letter-spacing: 0.01em;
 }
+
+/* Previous / Next nav on blog post pages */
+.blog-nav {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-lg);
+}
+
+/* Ensure the inner wrappers (previous/next divs) can stretch */
+.blog-nav > div {
+  display: flex;
+}
+
+/* Make the card fill its grid cell so both sides look balanced */
+.blog-nav-card {
+  width: 100%;
+  height: 100%;
+}
