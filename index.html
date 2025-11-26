@@ -1,51 +1,51 @@
-<!-- /site/pages/index.html -->
-<!DOCTYPE html>
+<!-- BEGIN: content/partials/layout.html -->
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <!-- BEGIN: content/partials/head.html -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>The Butterfly Layer — L8</title>
-  <meta name="description" content="L8 — The Butterfly Layer. The human layer above the stack: where intent, architecture, and elegance shape networks of the future.">
+<title>L8: The Butterfly Layer</title>
+<meta name="description" content="Architecture, AI, and the human intent layer — created by Jennifer Bowman.">
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="/assets/css/variables.css?v=20251124162559" />
-  <link rel="stylesheet" href="/assets/css/main.css?v=20251124162559" />
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="L8: The Butterfly Layer">
+<meta property="og:description" content="Exploring architecture, AI, and the human intent layer.">
+<meta property="og:image" content="/assets/img/social/og-default.png">
+<meta property="og:url" content="https://butterflylayer.com/">
+<meta property="og:site_name" content="L8: The Butterfly Layer">
 
-  <!-- Favicon + Icons -->
-  <link rel="icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="L8: The Butterfly Layer">
+<meta name="twitter:description" content="Exploring architecture, AI, and the human intent layer.">
+<meta name="twitter:image" content="/assets/img/social/og-default.png">
 
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/favicon-192.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/favicon-180.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/favicon-512.png">
+<!-- Primary styles -->
+<link rel="stylesheet" href="/assets/css/variables.css?v=20251125232252">
+<link rel="stylesheet" href="/assets/css/main.css?v=20251125232252">
+<link rel="stylesheet" href="/assets/css/podcast.css?v=20251125232252">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="L8: The Butterfly Layer">
-  <meta property="og:description" content="Architecture, AI, and the Human Intent Layer — created by Jennifer Bowman.">
-  <meta property="og:image" content="/assets/img/social/og-default.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:url" content="https://butterflylayer.com/">
-  <meta property="og:site_name" content="L8: The Butterfly Layer">
+<!-- Page-specific scripts (optional) -->
+<script src="/assets/js/blog-teaser.js?v=20251125232252" defer></script>
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="L8: The Butterfly Layer">
-  <meta name="twitter:description" content="Architecture, AI, and the Human Intent Layer.">
-  <meta name="twitter:image" content="/assets/img/social/og-default.png">
 
-  <!-- Primary Meta -->
-  <meta name="title" content="L8: The Butterfly Layer">
-  <meta name="description" content="Exploring architecture, AI, and the human intent layer — by Jennifer Bowman.">
-</head>
-<body id="top">
-  <div id="construction-banner-slot"></div>
-  <div id="header"></div>
+<!-- Shared scripts -->
+<script src="/assets/js/quotes.js?v=20251125232252" defer></script>
+<script src="/assets/js/loader.js?v=20251125232252" defer></script>
 
-  <main id="main-content">
+<!-- END: content/partials/head.html -->
+
+  </head>
+  <body id="top">
+    <div id="construction-banner-slot"></div>
+    <div id="header"></div>
+
+    <main id="main-content">
+      
+      <!-- BEGIN: /content/pages/home.html -->
     <!-- Hero -->
     <section class="hero">
       <div class="container hero-inner">
@@ -63,7 +63,7 @@
 
 <!--        <div class="hero-visual" aria-hidden="true">
           <img
-            src="/assets/img/ui/hero-butterfly-wow.svg?v=20251124162559"
+            src="/assets/img/ui/hero-butterfly-wow.svg?v=20251125232252"
             alt=""
             class="hero-butterfly"
           />
@@ -177,18 +177,18 @@
       </div>
     </section>
 
+<!-- END: /content/pages/home.html -->
+ 
+    </main>
+
     <!-- Back to top / subtle footer helper -->
     <section class="page-section backtotop">
       <div class="container">
-        <a href="#main-content">Back to Top</a>
+        <a href="#construction-banner-slot">Back to Top</a>
       </div>
     </section>
-  </main>
 
-  <div id="footer"></div>
-
-  <script src="/assets/js/loader.js?v=20251124162559" defer></script>
-  <script src="/assets/js/quotes.js?v=20251124162559" defer></script>
-  <script src="/assets/js/blog-teaser.js?v=20251124162559" defer></script>
-</body>
+    <div id="footer"></div>
+  </body>
 </html>
+<!-- END: content/partials/layout.html -->

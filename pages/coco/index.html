@@ -1,55 +1,70 @@
-<!-- /site/pages/coco/index.html -->
-<!DOCTYPE html>
+<!-- BEGIN: content/partials/layout.html -->
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CoCo — Chief Wellness Officer</title>
-  <meta name="description" content="Meet CoCo, the chocolate lab who brightens calls and keeps L8 moving.">
-  <link rel="stylesheet" href="/assets/css/variables.css?v=20251124162559" />
-  <link rel="stylesheet" href="/assets/css/main.css?v=20251124162559" />
-  <!-- Favicon + Icons -->
-  <link rel="icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+  <head>
+    <!-- BEGIN: content/partials/head.html -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/favicon-192.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/favicon-180.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/favicon-512.png">
+<title>CoCo — L8’s Chief Morale Officer</title>
+<meta name="description" content="Meet CoCo, Jennifer’s loyal chocolate lab and constant companion. A joyful presence woven into life, work, and the L8 creative process.">
 
-  <!-- Social / OpenGraph defaults -->
-  <meta property="og:title" content="The Butterfly Layer — L8">
-  <meta property="og:description" content="Where intent, architecture, and elegance shape networks of the future.">
-  <meta property="og:image" content="/assets/img/social/default-share.png">
-  <meta name="twitter:image" content="/assets/img/social/default-share.png">
-</head>
-<body id="top">
-  <div id="header"></div>
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="CoCo — The Heart of L8">
+<meta property="og:description" content="Jennifer’s joyful chocolate lab, always by her side through work, design, and life.">
+<meta property="og:image" content="/assets/img/social/og-default.png">
+<meta property="og:url" content="https://butterflylayer.com/coco/">
+<meta property="og:site_name" content="L8: The Butterfly Layer">
 
-  <main id="main" role="main">
-    <!-- Page header -->
-    <section class="page-header">
-      <div class="container flow">
-        <p class="kicker">Team</p>
-        <h1>CoCo — Chief Wellness Officer</h1>
-        <p class="page-intro">
-          Chocolate lab, teammate, and on-camera regular.
-        </p>
-      </div>
-    </section>
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CoCo — The Heart of L8">
+<meta name="twitter:description" content="Jennifer’s joyful chocolate lab, always by her side through work, design, and life.">
+<meta name="twitter:image" content="/assets/img/social/og-default.png">
 
+<!-- Primary styles -->
+<link rel="stylesheet" href="/assets/css/variables.css?v=20251125232252">
+<link rel="stylesheet" href="/assets/css/main.css?v=20251125232252">
+<link rel="stylesheet" href="/assets/css/podcast.css?v=20251125232252">
+
+<!-- Page-specific scripts (optional) -->
+
+
+<!-- Shared scripts -->
+<script src="/assets/js/quotes.js?v=20251125232252" defer></script>
+<script src="/assets/js/loader.js?v=20251125232252" defer></script>
+
+<!-- END: content/partials/head.html -->
+
+  </head>
+  <body id="top">
+    <div id="construction-banner-slot"></div>
+    <div id="header"></div>
+
+    <main id="main-content">
+      <!-- BEGIN: content/partials/page_header.html -->
+<header class="page-header">
+  <div class="container flow">
+    <h1>CoCo</h1>
+    <p class="page-intro">The sweetest member of L8 — part office companion, part emotional support, and full-time heart-stealer.</p>
+  </div>
+</header>
+<!-- END: content/partials/page_header.html -->
+ 
+      <!-- BEGIN: /content/pages/coco.html -->
     <!-- Primary bio block (image + text) -->
     <section class="page-section">
       <div class="container bio-block">
         <figure class="profile-photo">
           <img
-            src="/assets/img/coco/coco-1.jpg?v=20251124162559"
+            src="/assets/img/coco/coco-1.jpg?v=20251125232252"
             alt="CoCo the chocolate lab sitting attentively during a video call."
           />
           <figcaption>On duty during client sessions.</figcaption>
         </figure>
 
-        <div class="bio-text">
+        <div class="bio-text flow">
           <p>
             CoCo regularly appears on video, providing calm energy and levity during
             high-stakes discussions. She is known to improve meeting outcomes, morale,
@@ -58,7 +73,7 @@
 
           <figure>
             <img
-              src="/assets/img/coco/coco-2.jpg?v=20251124162559"
+              src="/assets/img/coco/coco-2.jpg?v=20251125232252"
               alt="CoCo relaxing between meetings."
             />
             <figcaption>Recovery between sprints.</figcaption>
@@ -86,11 +101,18 @@
         </aside>
       </div>
     </section>
-  </main>
+<!-- END: /content/pages/coco.html -->
 
-  <div id="footer"></div>
+    </main>
 
-  <script src="/assets/js/loader.js?v=20251124162559" defer></script>
-  <script src="/assets/js/quotes.js?v=20251124162559" defer></script>
-</body>
+    <!-- Back to top / subtle footer helper -->
+    <section class="page-section backtotop">
+      <div class="container">
+        <a href="#construction-banner-slot">Back to Top</a>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+  </body>
 </html>
+<!-- END: content/partials/layout.html -->

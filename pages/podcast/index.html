@@ -1,49 +1,60 @@
-<!DOCTYPE html>
+<!-- BEGIN: content/partials/layout.html -->
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>L8 Podcast — The Butterfly Layer</title>
-    <meta
-      name="description"
-      content="The L8 Podcast: conversations at Layer 8 where architecture, AI, and intent take flight."
-    />
-    <link rel="stylesheet" href="/assets/css/variables.css?v=20251124162559" />
-    <link rel="stylesheet" href="/assets/css/main.css?v=20251124162559" />
-  <!-- Favicon + Icons -->
-  <link rel="icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+    <!-- BEGIN: content/partials/head.html -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/favicon-192.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/favicon-180.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/favicon-512.png">
+<title>Podcast — L8: The Butterfly Layer</title>
+<meta name="description" content="Episodes blending architecture, AI, elegance, and human intent — the official podcast of L8 with Jennifer Bowman.">
 
-  <!-- Social / OpenGraph defaults -->
-  <meta property="og:title" content="The Butterfly Layer — L8">
-  <meta property="og:description" content="Where intent, architecture, and elegance shape networks of the future.">
-  <meta property="og:image" content="/assets/img/social/default-share.png">
-  <meta name="twitter:image" content="/assets/img/social/default-share.png">
-    <link rel="stylesheet" href="/assets/css/podcast.css?v=20251124162559" />
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="L8 Podcast — Architecture, AI, and Intent">
+<meta property="og:description" content="Stories and insights at the human layer above the stack.">
+<meta property="og:image" content="/assets/img/social/og-default.png">
+<meta property="og:url" content="https://butterflylayer.com/podcast/">
+<meta property="og:site_name" content="L8: The Butterfly Layer">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="L8 Podcast — Architecture, AI, and Intent">
+<meta name="twitter:description" content="Stories and insights at the human layer above the stack.">
+<meta name="twitter:image" content="/assets/img/social/og-default.png">
+
+<!-- Primary styles -->
+<link rel="stylesheet" href="/assets/css/variables.css?v=20251125232252">
+<link rel="stylesheet" href="/assets/css/main.css?v=20251125232252">
+<link rel="stylesheet" href="/assets/css/podcast.css?v=20251125232252">
+
+<!-- Page-specific scripts (optional) -->
+<script src="/assets/js/podcast.js?v=20251125232252" defer></script>
+
+
+<!-- Shared scripts -->
+<script src="/assets/js/quotes.js?v=20251125232252" defer></script>
+<script src="/assets/js/loader.js?v=20251125232252" defer></script>
+
+<!-- END: content/partials/head.html -->
+
   </head>
-
   <body id="top">
-    <!-- Header injected by loader.js -->
+    <div id="construction-banner-slot"></div>
     <div id="header"></div>
 
-    <main id="main" role="main">
-      <!-- Page header -->
-      <header class="page-header">
-        <div class="container flow">
-          <p class="kicker">Podcast</p>
-          <h1>L8 Podcast</h1>
-          <p class="page-intro">
-            Conversations at Layer&nbsp;8 — where architecture, AI, and intent meet
-            with a bit of butterfly grace.
-          </p>
-        </div>
-      </header>
-
-      <section class="page-section">
+    <main id="main-content">
+      <!-- BEGIN: content/partials/page_header.html -->
+<header class="page-header">
+  <div class="container flow">
+    <h1>Podcast</h1>
+    <p class="page-intro">Conversations and stories where architecture, AI, and the human layer meet — told through the voice of L8.</p>
+  </div>
+</header>
+<!-- END: content/partials/page_header.html -->
+ 
+      <!-- BEGIN: /content/pages/podcast-index.html -->
+       <section class="page-section">
         <div class="container">
           <article class="card" id="featured-episode">
             <header class="flow">
@@ -52,13 +63,17 @@
           </article>
         </div>
       </section>
+<!-- END: /content/pages/podcast-index.html -->
     </main>
 
-    <!-- Footer injected by loader.js -->
-    <div id="footer"></div>
+    <!-- Back to top / subtle footer helper -->
+    <section class="page-section backtotop">
+      <div class="container">
+        <a href="#construction-banner-slot">Back to Top</a>
+      </div>
+    </section>
 
-    <!-- Scripts -->
-    <script src="/assets/js/quotes.js?v=20251124162559" defer></script>
-    <script src="/assets/js/loader.js?v=20251124162559" defer></script>
+    <div id="footer"></div>
   </body>
 </html>
+<!-- END: content/partials/layout.html -->

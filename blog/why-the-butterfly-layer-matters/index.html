@@ -1,105 +1,119 @@
+<!-- BEGIN: content/partials/layout.html -->
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Why the Butterfly Layer Matters – L8: The Butterfly Layer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-        content="How the human layer – the Butterfly Layer – shapes architectures more than any protocol ever will.">
-  <link rel="stylesheet" href="/assets/css/variables.css">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <!-- Favicon + Icons -->
-  <link rel="icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+  <head>
+    <!-- BEGIN: content/partials/head.html -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/favicon-192.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/favicon-180.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/favicon-512.png">
+<title>Why the Butterfly Layer Matters — L8 Blog</title>
+<meta name="description" content="How the human layer – the Butterfly Layer – shapes architectures more than any protocol ever will.">
 
-  <!-- Social / OpenGraph defaults -->
-  <meta property="og:title" content="The Butterfly Layer — L8">
-  <meta property="og:description" content="Where intent, architecture, and elegance shape networks of the future.">
-  <meta property="og:image" content="/assets/img/social/default-share.png">
-  <meta name="twitter:image" content="/assets/img/social/default-share.png">
-</head>
-<body class="page page-blog-post">
-  <!-- Header partial container -->
-  <div id="header"></div>
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Why the Butterfly Layer Matters — L8 Blog">
+<meta property="og:description" content="How the human layer – the Butterfly Layer – shapes architectures more than any protocol ever will.">
+<meta property="og:image" content="/assets/img/social/og-default.png">
+<meta property="og:url" content="https://butterflylayer.com/blog/why-the-butterfly-layer-matters">
+<meta property="og:site_name" content="L8: The Butterfly Layer">
 
-  <main id="main" class="page-content">
-    <article class="blog-post container">
-      <header class="page-header">
-        <p class="page-eyebrow">
-          <a href="/pages/blog/">&larr; Back to blog</a>
-        </p>
-        <h1 id="post-title">Why the Butterfly Layer Matters</h1>
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why the Butterfly Layer Matters — L8 Blog">
+<meta name="twitter:description" content="How the human layer – the Butterfly Layer – shapes architectures more than any protocol ever will.">
+<meta name="twitter:image" content="/assets/img/social/og-default.png">
 
-        <p class="page-subtitle" id="post-meta">2025-11-16 • layer8, architecture, mindset
-        </p>
-      </header>
+<!-- Primary styles -->
+<link rel="stylesheet" href="/assets/css/variables.css?v=20251125232252">
+<link rel="stylesheet" href="/assets/css/main.css?v=20251125232252">
+<link rel="stylesheet" href="/assets/css/podcast.css?v=20251125232252">
 
-      <section id="post-body" class="blog-post-body"></section>
-    </article>
-  </main>
+<!-- Page-specific scripts (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-  <!-- Footer partial container -->
-  <div id="footer"></div>
 
-  <!-- Scripts: loader for header/footer, motivational card, markdown renderer, then page logic -->
-  <script src="/assets/js/loader.js" defer></script>
-  <script src="/assets/js/quotes.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<!-- Shared scripts -->
+<script src="/assets/js/quotes.js?v=20251125232252" defer></script>
+<script src="/assets/js/loader.js?v=20251125232252" defer></script>
 
-  <script>
-    // slug + title baked in at build time
-    const slug = "why-the-butterfly-layer-matters";
-    const pageTitle = "Why the Butterfly Layer Matters";
-    const bodyEl = document.getElementById("post-body");
+<!-- END: content/partials/head.html -->
 
-    function stripLeadingTitle(md, title) {
-      const lines = md.split("\n");
+  </head>
+  <body id="top">
+    <div id="construction-banner-slot"></div>
+    <div id="header"></div>
 
-      // Skip leading blank lines
-      let i = 0;
-      while (i < lines.length && lines[i].trim() === "") {
-        i++;
-      }
+    <main id="main-content">
+      <!-- BEGIN: content/partials/blog_post_header.html -->
+<header class="page-header">
+  <div class="container flow">
+    <p class="page-eyebrow">
+      <a href="/pages/blog/">&larr; Back to Blog</a>
+    </p>
+    <h1 id="post-title">Why the Butterfly Layer Matters</h1>
+    <p class="page-subtitle" id="post-meta">2025-11-16 • layer8, architecture, mindset</p>
+  </div>
+</header>
+<!-- END: content/partials/blog_post_header.html -->
 
-      if (i < lines.length) {
-        const line = lines[i].trim();
+      <!-- BEGIN: /content/partials/blog_post_content.html -->
+<section class="page-section">
+  <div class="container">
+    <article id="post-body" class="blog-post-body flow"></article>
+  </div>
+</section>
+<script>
+  const slug = "why-the-butterfly-layer-matters";
+  const pageTitle = "Why the Butterfly Layer Matters";
+  const bodyEl = document.getElementById("post-body");
 
-        // Match "# Title" at the top
-        if (line.startsWith("# ")) {
-          const headingText = line.replace(/^#\s+/, "").trim();
-          if (!title || headingText === title.trim()) {
-            // Remove that line
-            lines.splice(i, 1);
-            return lines.join("\n");
-          }
+  function stripLeadingTitle(md, title) {
+    const lines = md.split("\n");
+    let i = 0;
+    while (i < lines.length && lines[i].trim() === "") {
+      i++;
+    }
+    if (i < lines.length) {
+      const line = lines[i].trim();
+      if (line.startsWith("# ")) {
+        const headingText = line.replace(/^#\s+/, "").trim();
+        if (!title || headingText === title.trim()) {
+          lines.splice(i, 1);
+          return lines.join("\n");
         }
       }
-      return md;
     }
+    return md;
+  }
 
-    async function loadMarkdown() {
-      try {
-        const res = await fetch("/blog/posts/" + slug + ".md");
-        if (!res.ok) throw new Error("Unable to load markdown");
-        let markdown = await res.text();
-
-        // Remove leading "# Title" if it matches the page title
-        markdown = stripLeadingTitle(markdown, pageTitle);
-
-        const html = window.marked ? window.marked.parse(markdown) : markdown;
-        bodyEl.innerHTML = html;
-      } catch (err) {
-        console.error(err);
-        bodyEl.innerHTML = "<p>Sorry, this post could not be loaded right now.</p>";
-      }
+  async function loadMarkdown() {
+    try {
+      const res = await fetch("/blog/posts/" + slug + ".md");
+      if (!res.ok) throw new Error("Unable to load markdown");
+      let markdown = await res.text();
+      markdown = stripLeadingTitle(markdown, pageTitle);
+      const html = window.marked ? window.marked.parse(markdown) : markdown;
+      bodyEl.innerHTML = html;
+    } catch (err) {
+      console.error(err);
+      bodyEl.innerHTML = "<p>Sorry, this post could not be loaded right now.</p>";
     }
+  }
 
-    document.addEventListener("DOMContentLoaded", loadMarkdown);
-  </script>
-</body>
+  document.addEventListener("DOMContentLoaded", loadMarkdown);
+</script>
+<!-- END: /content/partials/blog_post_content.html -->
+
+    </main>
+
+    <!-- Back to top / subtle footer helper -->
+    <section class="page-section backtotop">
+      <div class="container">
+        <a href="#construction-banner-slot">Back to Top</a>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+  </body>
 </html>
+<!-- END: content/partials/layout.html -->
