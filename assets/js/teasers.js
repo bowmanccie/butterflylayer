@@ -11,14 +11,8 @@
     podcast: "/podcast/episodes.json"
   };
 
-  const PILLAR_ORDER = [
-    "architecture-l8",
-    "women-in-engineering",
-    "mentoring-leadership",
-    "health-resilience",
-    "stories-reflections",
-    "news-updates"
-  ];
+  // Pillar order is now driven by tags.json priority, not hard-coded.
+  let PILLAR_ORDER = [];
 
   const BLOG_ROTATION_MS = 18000;  // 18s
   const POD_ROTATION_MS  = 22000;  // 22s
@@ -46,8 +40,19 @@
     return map;
   }
 
+  function getPillarTags(tagsArray) {
+    return (tagsArray || []).filter(t => t.category === "pillar");
+  }
+
+  function setPillarOrderFromTags(tagsArray) {
+    const pillars = getPillarTags(tagsArray || []);
+    pillars.sort((a, b) => (a.priority || 999) - (b.priority || 999));
+    PILLAR_ORDER = pillars.map(t => t.id);
+  }
+
   function findPrimaryPillar(entryTags) {
     if (!Array.isArray(entryTags)) return null;
+    if (!PILLAR_ORDER.length) return null;
     for (const pillarId of PILLAR_ORDER) {
       if (entryTags.includes(pillarId)) {
         return pillarId;
@@ -57,6 +62,8 @@
   }
 
   function getPreferredPillar() {
+    if (PILLAR_ORDER.length === 0) return null;
+
     if (window.L8_PREFERRED_PILLAR && PILLAR_ORDER.includes(window.L8_PREFERRED_PILLAR)) {
       return window.L8_PREFERRED_PILLAR;
     }
@@ -66,7 +73,7 @@
         return stored;
       }
     } catch (e) {}
-    return "architecture-l8";
+    return PILLAR_ORDER[0] || null;
   }
 
   function latestPerPillar(entries) {
@@ -90,11 +97,18 @@
   }
 
   function buildRotationArray(latestMap) {
-    const availablePillars = PILLAR_ORDER.filter(id => !!latestMap[id]);
+    // If we have an ordered pillar list, use it; otherwise fall back to keys.
+    let availablePillars;
+    if (PILLAR_ORDER.length) {
+      availablePillars = PILLAR_ORDER.filter(id => !!latestMap[id]);
+    } else {
+      availablePillars = Object.keys(latestMap);
+    }
+
     if (!availablePillars.length) return [];
 
     const preferred = getPreferredPillar();
-    let startIndex = availablePillars.indexOf(preferred);
+    let startIndex = preferred ? availablePillars.indexOf(preferred) : -1;
     if (startIndex === -1) startIndex = 0;
 
     const ordered = [];
@@ -151,7 +165,9 @@
 
     const isBlog = mediumType === "blog";
     const mediumLabel = isBlog ? "Blog" : "Podcast Episode";
-    const mediumIndexHref = isBlog ? "/pages/blog/index.html" : "/pages/podcast/index.html";
+    const mediumIndexHref = isBlog
+      ? "/pages/blog/index.html"
+      : "/pages/podcast/index.html";
     const pillarHref = pillarId
       ? (mediumIndexHref + "?pillar=" + encodeURIComponent(pillarId))
       : mediumIndexHref;
@@ -191,7 +207,7 @@
       container.classList.remove("l8-teaser-card--empty");
       container.classList.remove("l8-teaser-card--transitioning");
       container.classList.add("l8-teaser-card--visible");
-    }, 500); // half of CSS duration for a smooth crossfade
+    }, 500); // should be ~half your CSS transition length
   }
 
   function setupRotation(containerId, rotationArray, tagIndex, mediumType, intervalMs) {
@@ -222,6 +238,9 @@
         blogContainer ? fetchJson(L8_PATHS.blog) : Promise.resolve([]),
         podcastContainer ? fetchJson(L8_PATHS.podcast) : Promise.resolve([])
       ]);
+
+      // Set PILLAR_ORDER dynamically from tags.json priority
+      setPillarOrderFromTags(tagsJson);
 
       const tagIndex = buildTagIndex(tagsJson);
 

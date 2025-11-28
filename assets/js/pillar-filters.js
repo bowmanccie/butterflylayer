@@ -126,10 +126,11 @@
 
     const hasContent = id => pillarIdsWithContent.has(id);
 
-    const orderedPillars = PILLAR_ORDER
-      .map(id => pillarTags.find(t => t.id === id))
-      .filter(Boolean)
-      .filter(t => hasContent(t.id));
+    // Dynamically order pillars by priority from tags.json
+    const orderedPillars = [...pillarTags]
+    .filter(t => hasContent(t.id))
+    .sort((a, b) => (a.priority || 999) - (b.priority || 999));
+
 
     const parts = [];
 
