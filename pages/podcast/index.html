@@ -24,17 +24,17 @@
 <meta name="twitter:image" content="/assets/img/social/og-default.png">
 
 <!-- Primary styles -->
-<link rel="stylesheet" href="/assets/css/variables.css?v=20251126130340">
-<link rel="stylesheet" href="/assets/css/main.css?v=20251126130340">
-<link rel="stylesheet" href="/assets/css/podcast.css?v=20251126130340">
+<link rel="stylesheet" href="/assets/css/variables.css?v=20251127230126">
+<link rel="stylesheet" href="/assets/css/main.css?v=20251127230126">
+<link rel="stylesheet" href="/assets/css/podcast.css?v=20251127230126">
 
 <!-- Page-specific scripts (optional) -->
-<script src="/assets/js/podcast.js?v=20251126130340" defer></script>
+<script src="/assets/js/pillar-filters.js?v=20251127230126" defer></script>
 
 
 <!-- Shared scripts -->
-<script src="/assets/js/quotes.js?v=20251126130340" defer></script>
-<script src="/assets/js/loader.js?v=20251126130340" defer></script>
+<script src="/assets/js/quotes.js?v=20251127230126" defer></script>
+<script src="/assets/js/loader.js?v=20251127230126" defer></script>
 
 <!-- END: content/partials/head.html -->
 
@@ -53,17 +53,18 @@
 </header>
 <!-- END: content/partials/page_header.html -->
  
-      <!-- BEGIN: /content/pages/podcast-index.html -->
-       <section class="page-section">
-        <div class="container">
-          <article class="card" id="featured-episode">
-            <header class="flow">
-              <h2>Coming Soon!</h2>
-            </header>
-          </article>
-        </div>
-      </section>
-<!-- END: /content/pages/podcast-index.html -->
+      <section class="page-section">
+  <div class="container">
+    <div class="l8-filter-shell">
+      <p class="l8-filter-heading">Filter by Layer</p>
+      <div class="l8-filter-underline" aria-hidden="true"></div>
+      <div id="podcast-filter-bar" class="l8-pill-filter"></div>
+    </div>
+
+    <div id="podcast-list" class="card-list l8-card-list"></div>
+  </div>
+</section>
+
     </main>
 
     <!-- Back to top / subtle footer helper -->

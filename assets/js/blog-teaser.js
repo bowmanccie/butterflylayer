@@ -18,9 +18,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     const posts = await res.json();
     if (!Array.isArray(posts) || posts.length === 0) return;
 
-    // Assuming newest post is first in the array
-    const latest = posts[0];
-
+    // Newest post by ISO date (YYYY-MM-DD)
+    const sorted = posts.slice().sort((a, b) => {
+      const ad = a.date || "";
+      const bd = b.date || "";
+      return bd.localeCompare(ad); // descending
+    });
+    const latest = sorted[0];
+    
     const slug    = latest.slug || latest.id || "";
     const title   = latest.title || "Latest Post";
     const summary = latest.summary || latest.excerpt || "";

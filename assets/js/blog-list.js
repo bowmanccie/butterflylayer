@@ -42,7 +42,17 @@ document.addEventListener("DOMContentLoaded", () => {
     listEl.parentElement.appendChild(nav);
   }
 
-  fetch("/blog/posts.json?v=20251126130340")
+  function normalizeTags(raw) {
+    if (Array.isArray(raw)) return raw;
+    if (!raw) return [];
+    // handle "tag1, tag2" string just in case
+    return String(raw)
+      .split(",")
+      .map((t) => t.trim())
+      .filter(Boolean);
+  }
+
+  fetch("/blog/posts.json?v=20251127230126")
     .then((res) => {
       if (!res.ok) throw new Error("Unable to load posts.json");
       return res.json();
@@ -53,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // Sort newest → oldest by date (ISO strings)
+      // Newest → oldest
       const sorted = posts.slice().sort((a, b) => {
         const ad = a.date || "";
         const bd = b.date || "";
@@ -71,21 +81,28 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!slug) return;
 
         const url = `/blog/${slug}/`;
+
         const title = post.title || slug;
         const date = post.date || "";
-        const tags = Array.isArray(post.tags)
-          ? post.tags.join(", ")
-          : post.tags || "";
+        const tags = normalizeTags(post.tags);
         const summary =
           post.summary ||
           "An essay from the Butterfly Layer — architecture, AI, and the human layer of networks.";
 
         const thumbSrc =
           post.thumbnail ||
-          "/assets/img/ui/hero-butterfly-wow.svg?v=20251126130340";
+          "/assets/img/ui/hero-butterfly-wow.svg?v=20251127230126";
 
         const card = document.createElement("article");
         card.className = "pub-item thumb-card";
+
+        const metaText = date ? date : "";
+
+        const tagsHtml = tags.length
+          ? `<p class="blog-card-tags">${tags
+              .map((tag) => `<span class="tag">${tag}</span>`)
+              .join("")}</p>`
+          : "";
 
         card.innerHTML = `
           <a href="${url}" class="thumb-link" aria-label="${title}">
@@ -95,10 +112,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <h3>
               <a href="${url}">${title}</a>
             </h3>
-            <p class="meta">
-              ${[date, tags].filter(Boolean).join(" • ")}
-            </p>
+            ${metaText ? `<p class="meta">${metaText}</p>` : ""}
             <p>${summary}</p>
+            ${tagsHtml}
           </div>
         `;
 

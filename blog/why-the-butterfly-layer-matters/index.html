@@ -24,17 +24,17 @@
 <meta name="twitter:image" content="/assets/img/social/og-default.png">
 
 <!-- Primary styles -->
-<link rel="stylesheet" href="/assets/css/variables.css?v=20251126130340">
-<link rel="stylesheet" href="/assets/css/main.css?v=20251126130340">
-<link rel="stylesheet" href="/assets/css/podcast.css?v=20251126130340">
+<link rel="stylesheet" href="/assets/css/variables.css?v=20251127230126">
+<link rel="stylesheet" href="/assets/css/main.css?v=20251127230126">
+<link rel="stylesheet" href="/assets/css/podcast.css?v=20251127230126">
 
 <!-- Page-specific scripts (optional) -->
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 
 <!-- Shared scripts -->
-<script src="/assets/js/quotes.js?v=20251126130340" defer></script>
-<script src="/assets/js/loader.js?v=20251126130340" defer></script>
+<script src="/assets/js/quotes.js?v=20251127230126" defer></script>
+<script src="/assets/js/loader.js?v=20251127230126" defer></script>
 
 <!-- END: content/partials/head.html -->
 
@@ -116,13 +116,16 @@
     const slot = document.getElementById(targetId);
     if (!slot || !post) return;
 
-    const parts = [];
-    if (post.date) parts.push(post.date);
-    if (Array.isArray(post.tags) && post.tags.length) {
-      parts.push(post.tags.join(", "));
-    }
-    const meta = parts.join(" • ");
+    const date = post.date || "";
+    const tags = normalizeTags(post.tags);
     const summary = post.summary || "";
+    const meta = date;
+
+    const tagsHtml = tags.length
+      ? `<p class="blog-card-tags">${tags
+          .map((tag) => `<span class="tag">${tag}</span>`)
+          .join("")}</p>`
+      : "";
 
     slot.innerHTML = `
       <article class="card blog-nav-card flow">
@@ -130,6 +133,7 @@
         <h3><a href="/blog/${post.slug}/">${post.title}</a></h3>
         ${meta ? `<p class="blog-card-meta">${meta}</p>` : ""}
         ${summary ? `<p class="blog-card-excerpt">${summary}</p>` : ""}
+        ${tagsHtml}
       </article>
     `;
   }

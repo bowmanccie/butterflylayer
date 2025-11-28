@@ -24,17 +24,17 @@
 <meta name="twitter:image" content="/assets/img/social/og-default.png">
 
 <!-- Primary styles -->
-<link rel="stylesheet" href="/assets/css/variables.css?v=20251126130340">
-<link rel="stylesheet" href="/assets/css/main.css?v=20251126130340">
-<link rel="stylesheet" href="/assets/css/podcast.css?v=20251126130340">
+<link rel="stylesheet" href="/assets/css/variables.css?v=20251127230126">
+<link rel="stylesheet" href="/assets/css/main.css?v=20251127230126">
+<link rel="stylesheet" href="/assets/css/podcast.css?v=20251127230126">
 
 <!-- Page-specific scripts (optional) -->
-<script src="/assets/js/blog-teaser.js?v=20251126130340" defer></script>
+<script src="/assets/js/teasers.js?v=20251127230126" defer></script>
 
 
 <!-- Shared scripts -->
-<script src="/assets/js/quotes.js?v=20251126130340" defer></script>
-<script src="/assets/js/loader.js?v=20251126130340" defer></script>
+<script src="/assets/js/quotes.js?v=20251127230126" defer></script>
+<script src="/assets/js/loader.js?v=20251127230126" defer></script>
 
 <!-- END: content/partials/head.html -->
 
@@ -63,7 +63,7 @@
 
 <!--        <div class="hero-visual" aria-hidden="true">
           <img
-            src="/assets/img/ui/hero-butterfly-wow.svg?v=20251126130340"
+            src="/assets/img/ui/hero-butterfly-wow.svg?v=20251127230126"
             alt=""
             class="hero-butterfly"
           />
@@ -119,61 +119,39 @@
       </div>
     </section>
 
-    <!-- Latest blog teaser -->
     <section class="page-section">
       <div class="container">
-        <header class="page-intro flow">
-          <p class="kicker">From the Blog</p>
-          <h2>Recent Writing</h2>
-          <p>
-            Essays and reflections from the Butterfly Layer — architecture stories,
-            lessons from the field, and thoughts on the human side of networking.
-          </p>
-        </header>
 
-        <!-- This card is styled and can be populated by your existing JS -->
-        <article id="blog-teaser-card" class="card">
-          <p class="teaser-meta">Latest Post</p>
-          <h3 class="teaser-title">Loading latest post…</h3>
-          <p class="teaser-summary">
-            Please wait while we fetch the most recent story from the Butterfly Layer.
-          </p>
-          <p class="teaser-tags">
-            <span class="tag">L8</span>
-            <span class="tag">Architecture</span>
-          </p>
-          <a href="/blog/" class="link-arrow">Browse all Posts</a>
-        </article>
-      </div>
-    </section>
+        <section class="l8-latest-layer">
+          <div class="l8-latest-columns">
 
-    <!-- Podcast teaser -->
-    <section class="page-section">
-      <div class="container two-column">
-        <article class="card flow">
-          <p class="kicker">Podcast</p>
-          <h2>L8: The Butterfly Layer — In Conversation</h2>
-          <p>
-            A podcast exploring architecture, intent, and the human stories that sit
-            between the diagrams. Episodes blend technical depth with honest,
-            grounded conversations.
-          </p>
-          <p>
-            Even as episodes evolve, the goal stays the same: help you see the
-            networks you build — and the people who live inside them — with more
-            clarity and care.
-          </p>
-          <a href="/podcast/" class="button">Visit the Podcast</a>
-        </article>
+            <!-- Latest from the Blog -->
+            <article class="l8-latest-column">
+              <h2 class="l8-section-heading">From the Blog</h2>
+              <div id="latest-blog-teaser" class="l8-teaser-card l8-teaser-card--empty">
+                <!-- Filled by teasers.js -->
+              </div>
+            </article>
 
-        <aside class="card flow">
-          <h3>What to Expect</h3>
-          <ul>
-            <li>Deep dives on real-world architectures and tradeoffs.</li>
-            <li>Reflections from global strategy and transformation work.</li>
-            <li>Moments from the greenroom, with CoCo occasionally supervising.</li>
-          </ul>
-        </aside>
+            <!-- Latest from the L8 Podcast -->
+            <article class="l8-latest-column">
+              <h2 class="l8-section-heading">From the L8 Podcast</h2>
+                <div id="latest-podcast-teaser" class="l8-teaser-card l8-teaser-card--empty">
+                  <div class="l8-teaser-card__shell l8-teaser-card__shell--placeholder">
+                    <div class="l8-teaser-card__meta">
+                      <span class="l8-teaser-card__medium-link">L8 Podcast</span>
+                    </div>
+                    <h3 class="l8-teaser-card__title">Episodes are Taking Flight Soon</h3>
+                    <p class="l8-teaser-card__teaser">
+                      The first conversations are in editing. Check back soon for architecture, intent, and the human layer.
+                    </p>
+                  </div>
+                </div>
+            </article>
+
+          </div>
+        </section>
+
       </div>
     </section>
 
