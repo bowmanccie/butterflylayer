@@ -1,84 +1,98 @@
 [
-  { 
-    "id": "architecture-l8",      
-    "label": "Architecture & L8",      
-    "category": "pillar", 
-    "priority": 1 
+  {
+    "id": "architecture-l8",
+    "label": "Architecture & L8",
+    "category": "pillar",
+    "priority": 1
   },
-  { 
-    "id": "women-in-engineering", 
-    "label": "Women in Engineering",   
-    "category": "pillar", 
-    "priority": 2 
+  {
+    "id": "women-in-engineering",
+    "label": "Women in Engineering",
+    "category": "pillar",
+    "priority": 2
   },
-  { 
-    "id": "mentoring-leadership", 
-    "label": "Mentoring & Leadership", 
-    "category": "pillar", 
-    "priority": 3 
+  {
+    "id": "mentoring-leadership",
+    "label": "Mentoring & Leadership",
+    "category": "pillar",
+    "priority": 3
   },
-  { 
-    "id": "health-resilience",    
-    "label": "Health & Resilience",    
-    "category": "pillar", 
-    "priority": 4 
+  {
+    "id": "health-resilience",
+    "label": "Health & Resilience",
+    "category": "pillar",
+    "priority": 4
   },
-  { 
-    "id": "stories-reflections",  
-    "label": "Stories & Reflections",  
-    "category": "pillar", 
-    "priority": 5 
+  {
+    "id": "stories-reflections",
+    "label": "Stories & Reflections",
+    "category": "pillar",
+    "priority": 5
   },
-  { 
-    "id": "news-updates",         
-    "label": "News & Updates",         
-    "category": "pillar", 
-    "priority": 6 
+  {
+    "id": "news-updates",
+    "label": "News & Updates",
+    "category": "pillar",
+    "priority": 6
   },
-
-  { 
-    "id": "networking",        
-    "label": "Networking",        
-    "category": "topic" 
+  {
+    "id": "networking",
+    "label": "Networking",
+    "category": "topic",
+    "priority": null
   },
-  { 
-    "id": "design-principles", 
-    "label": "Design Principles", 
-    "category": "topic" 
+  {
+    "id": "design-principles",
+    "label": "Design Principles",
+    "category": "topic",
+    "priority": null
   },
-  { 
-    "id": "ai",                
-    "label": "AI",                
-    "category": "topic" 
+  {
+    "id": "ai",
+    "label": "AI",
+    "category": "topic",
+    "priority": null
   },
-  { 
-    "id": "toolkit",           
-    "label": "Toolkit",           
-    "category": "topic" 
+  {
+    "id": "toolkit",
+    "label": "Toolkit",
+    "category": "topic",
+    "priority": null
   },
-  { 
-    "id": "recovery",          
-    "label": "Recovery",          
-    "category": "topic" 
+  {
+    "id": "personal-story",
+    "label": "Personal Story",
+    "category": "topic",
+    "priority": null
   },
-  { 
-    "id": "personal-story",    
-    "label": "Personal Story",    
-    "category": "topic" 
+  {
+    "id": "gratitude",
+    "label": "Gratitude",
+    "category": "topic",
+    "priority": null
   },
-  { 
-    "id": "gratitude",         
-    "label": "Gratitude",         
-    "category": "topic" 
+  {
+    "id": "coco",
+    "label": "CoCo",
+    "category": "topic",
+    "priority": null
   },
-  { 
-    "id": "coco",              
-    "label": "CoCo",              
-    "category": "topic" 
+  {
+    "id": "podcast",
+    "label": "Podcast",
+    "category": "topic",
+    "priority": null
   },
-  { 
-    "id": "podcast",           
-    "label": "Podcast",           
-    "category": "topic" 
+  {
+    "id": "architecture",
+    "label": "Architecture",
+    "category": "topic",
+    "priority": null
+  },
+  {
+    "id": "mindset",
+    "label": "Mindset",
+    "category": "topic",
+    "priority": null
   }
 ]
