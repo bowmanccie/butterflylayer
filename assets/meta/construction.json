@@ -18,6 +18,12 @@
       "message": "We are wiring up the audio players and episode index. Check back soon."
     },
     {
+      "path": "/resources/women-in-engineering/",
+      "level": "in progress",
+      "cascade": false,
+      "message": "This is our starting point. Please check back later."
+    },
+    {
       "path": "/resources/",
       "level": "skeleton",
       "cascade": true,

@@ -5,7 +5,7 @@
   <div class="header-inner container">
     <a class="brand" href="/" aria-label="L8 — The Butterfly Layer — Home">
       <img
-        src="/assets/img/ui/logo-header.png?v=20251128194255"
+        src="/assets/img/ui/logo-header.png?v=20251203220942"
         alt="L8 — The Butterfly Layer logo"
         class="brand-logo"
       />
@@ -29,7 +29,19 @@
         <li><a href="/" data-nav="home">Home</a></li>
         <li><a href="/pages/publications/" data-nav="publications" title="Books, video series, and formal articles by Jennifer.">Publications</a></li>
         <li><a href="/pages/toolkit/" data-nav="toolkit" title="Hands-on tools, checklists, and reference docs you can use in your work.">Toolkit</a></li>
-        <li><a href="/pages/resources/" data-nav="resources" title="Support for the humans doing the work: mentoring, women in engineering, and health.">Resources</a></li>
+
+        <!-- Resources with submenu -->
+        <li class="nav-item-has-children">
+          <a href="/pages/resources/" data-nav="resources" title="Support for the humans doing the work: mentoring, women in engineering, and health.">
+            Resources
+          </a>
+          <ul class="nav-submenu">
+              <li><a href="/pages/resources/women-in-engineering/">Women in Engineering</a></li>
+              <li><a href="/pages/resources/mentoring/">Mentoring & Leadership</a></li>
+              <li><a href="/pages/resources/health-resilience/">Health & Resilience</a></li>
+          </ul>
+        </li>
+
         <li><a href="/pages/blog/" data-nav="blog">Blog</a></li>
         <li><a href="/pages/podcast/" data-nav="podcast">Podcast</a></li>
         <li><a href="/pages/coco/" data-nav="coco">CoCo</a></li>

@@ -1,88 +1,168 @@
-/* /site/assets/css/variables.css */
+/* =============================================================================
+   CSS Custom Properties (Variables)
+   L8 The Butterfly Layer Design System
+   ============================================================================= */
+
 :root {
-  /* Brand Palette — L8 The Butterfly Layer (airier) */
+  /* ==========================================================================
+     BRAND PALETTE
+     ========================================================================== */
   --pearl:            #FCFCFD;   /* softer canvas */
   --blush:            #F7EAF2;   /* light warm wash */
   --orchid:           #C98BCB;   /* elegant accent */
   --silver:           #ECEEF3;   /* lighter lines/borders */
   --lavender-ink:     #6A5FB2;   /* accent ink */
 
-  /* Neutrals */
-  --ink-900:          #23232A;
-  --ink-800:          #2C2C34;
-  --ink-700:          #3A3A44;
-  --ink-500:          #5A5A66;
-  --ink-300:          #9AA0AD;
-  --ink-150:          #E6E8EF;
+  /* ==========================================================================
+     NEUTRAL COLORS
+     ========================================================================== */
+  --ink-900:          #23232A;   /* darkest text */
+  --ink-800:          #2C2C34;   /* primary text */
+  --ink-700:          #3A3A44;   /* secondary text */
+  --ink-600:          #484854;   /* tertiary text (added) */
+  --ink-500:          #5A5A66;   /* muted text */
+  --ink-300:          #9AA0AD;   /* subtle text */
+  --ink-150:          #E6E8EF;   /* light borders */
 
-  /* Backgrounds — B2+: medium+ blush, airy but clearly pink */
+  /* ==========================================================================
+     SEMANTIC COLORS
+     ========================================================================== */
+  --white:            #FFFFFF;   /* pure white */
+  --transparent:      transparent;
+
+  /* ==========================================================================
+     BACKGROUND COLORS & GRADIENTS
+     ========================================================================== */
   --bg:               var(--pearl);
-  --surface:          #FFFFFF;
-  --surface-tint:     color-mix(in oklab, var(--blush) 26%, white);
+  --surface:          var(--white);
+  --surface-tint:     color-mix(in oklab, var(--blush) 26%, var(--white));
 
   /* Hero wash — bump blush to ~48% at the top */
   --hero-tint:        linear-gradient(
                         180deg,
-                        color-mix(in oklab, var(--blush) 52%, white) 0%,    
-                        color-mix(in oklab, var(--pearl) 90%, white) 100%
+                        color-mix(in oklab, var(--blush) 52%, var(--white)) 0%,    
+                        color-mix(in oklab, var(--pearl) 90%, var(--white)) 100%
                       );
 
   /* Section wash (page headers / highlights) — stronger but under hero */
   --section-tint:     linear-gradient(
                         180deg,
-                        color-mix(in oklab, var(--blush) 34%, white) 0%,
-                        color-mix(in oklab, var(--pearl) 96%, white) 100%
+                        color-mix(in oklab, var(--blush) 34%, var(--white)) 0%,
+                        color-mix(in oklab, var(--pearl) 96%, var(--white)) 100%
                       );
 
   /* UI tint for subtle fills */
-  --ui-tint:          color-mix(in oklab, var(--blush) 30%, white);
+  --ui-tint:          color-mix(in oklab, var(--blush) 30%, var(--white));
 
-  /* Hero graphic size (ensure presence) */
-  --hero-graphic-size: clamp(560px, 42vw, 880px);
-
-  /* Typography */
+  /* ==========================================================================
+     TYPOGRAPHY
+     ========================================================================== */
+  /* Font families */
   --font-sans:        ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
   --font-serif:       "Cormorant Garamond", "Cormorant", Georgia, "Times New Roman", serif;
   --font-mono:        ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-  /* Type scale & spacing */
-  --step--1: clamp(0.86rem, 0.84rem + 0.2vw, 0.95rem);
-  --step-0:  clamp(1.00rem, 0.98rem + 0.25vw, 1.10rem);
-  --step-1:  clamp(1.20rem, 1.12rem + 0.50vw, 1.35rem);
-  --step-2:  clamp(1.44rem, 1.28rem + 0.80vw, 1.70rem);
-  --step-3:  clamp(1.80rem, 1.50rem + 1.20vw, 2.20rem);
-  --step-4:  clamp(2.20rem, 1.80rem + 1.80vw, 2.80rem);
-  --step-5:  clamp(2.75rem, 2.10rem + 2.40vw, 3.60rem);
+  /* ==========================================================================
+     FLUID TYPE SCALE & SPACING
+     ========================================================================== */
+  /* Type scale using fluid typography */
+  --step--1:          clamp(0.86rem, 0.84rem + 0.2vw, 0.95rem);
+  --step-0:           clamp(1.00rem, 0.98rem + 0.25vw, 1.10rem);
+  --step-1:           clamp(1.20rem, 1.12rem + 0.50vw, 1.35rem);
+  --step-2:           clamp(1.44rem, 1.28rem + 0.80vw, 1.70rem);
+  --step-3:           clamp(1.80rem, 1.50rem + 1.20vw, 2.20rem);
+  --step-4:           clamp(2.20rem, 1.80rem + 1.80vw, 2.80rem);
+  --step-5:           clamp(2.75rem, 2.10rem + 2.40vw, 3.60rem);
 
-  --space-2xs:  0.25rem;
-  --space-xs:   0.5rem;
-  --space-sm:   0.75rem;
-  --space-md:   1rem;
-  --space-lg:   1.5rem;
-  --space-xl:   2rem;
-  --space-2xl:  3rem;
-  --space-3xl:  4.5rem;
+  /* Spacing scale */
+  --space-2xs:        0.25rem;
+  --space-xs:         0.5rem;
+  --space-sm:         0.75rem;
+  --space-md:         1rem;
+  --space-lg:         1.5rem;
+  --space-xl:         2rem;
+  --space-2xl:        3rem;
+  --space-3xl:        4.5rem;
 
-  /* Radius & Shadow */
+  /* ==========================================================================
+     LAYOUT & SIZING
+     ========================================================================== */
+  /* Container & content widths */
+  --max-content-width: 1100px;
+  --hero-graphic-size: clamp(560px, 42vw, 880px);
+
+  /* Common dimensions */
+  --thumbnail-size:   120px;
+  --profile-photo-max: 220px;
+  --brand-logo-height: 40px;
+
+  /* ==========================================================================
+     BORDER RADIUS & SHADOWS
+     ========================================================================== */
+  /* Border radius scale */
+  --radius-xs:        4px;
   --radius-sm:        8px;
   --radius-md:        14px;
   --radius-lg:        22px;
+  --radius-round:     999px;
+
+  /* Shadow system */
   --shadow-soft:      0 6px 20px rgba(35, 35, 42, 0.05);
   --shadow-hover:     0 10px 28px rgba(35, 35, 42, 0.08);
+  --shadow-strong:    0 18px 50px rgba(0, 0, 0, 0.08);
+  --shadow-card:      0 16px 40px rgba(0, 0, 0, 0.06);
 
-  /* Borders & focus ring */
+  /* ==========================================================================
+     BORDERS & FOCUS STATES
+     ========================================================================== */
+  /* Border utilities */
   --border:           1px solid var(--silver);
-  --focus-ring:       0 0 0 3px color-mix(in oklab, var(--orchid) 30%, white);
+  --border-width:     1px;
+  --border-width-thick: 3px;
+  
+  /* Focus ring */
+  --focus-ring:       0 0 0 3px color-mix(in oklab, var(--orchid) 30%, var(--white));
 
-  /* Z-index stacks */
+  /* ==========================================================================
+     Z-INDEX SCALE
+     ========================================================================== */
   --z-header:         1000;
   --z-overlay:        1100;
   --z-tooltip:        1200;
 
-  --banner-offset: 0px;
+  /* ==========================================================================
+     ANIMATION & INTERACTION
+     ========================================================================== */
+  /* Transition durations */
+  --transition-fast:  160ms;
+  --transition-normal: 180ms;
+  --transition-slow:  220ms;
+  --transition-long:  420ms;
+
+  /* Animation easing */
+  --ease-standard:    ease;
+  --ease-in-out:      ease-in-out;
+  --ease-out:         ease-out;
+  --ease-bounce:      cubic-bezier(.2,.7,.2,1);
+
+  /* ==========================================================================
+     COMPONENT-SPECIFIC VARIABLES
+     ========================================================================== */
+  /* Banner offset for floating elements */
+  --banner-offset:    0px;
+
+  /* Color mix percentages for consistent blending */
+  --mix-light:        25%;
+  --mix-medium:       40%;
+  --mix-strong:       60%;
 }
 
-/* Dark mode preserved for future use (not active)
+/* =============================================================================
+   DARK MODE (PRESERVED FOR FUTURE USE)
+   Note: Dark mode is not currently active but preserved for future implementation
+   ============================================================================= */
+
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --bg:           #111214;
