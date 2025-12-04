@@ -550,6 +550,12 @@ ul, ol {
 @media (max-width: 640px) {
   .floating-butterfly { display: none; }
 }
+/* Hide the floating quote bubble on small screens */
+@media (max-width: 640px) {
+  .quote-bubble {
+    display: none !important;
+  }
+}
 @keyframes butterflyDrift {
   0%   { transform: translate3d(0,0,0) rotate(0deg); }
   25%  { transform: translate3d(-6px,-8px,0) rotate(-2deg); }
