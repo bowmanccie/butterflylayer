@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .filter(Boolean);
   }
 
-  fetch("/blog/posts.json?v=20251203222324")
+  fetch("/blog/posts.json?v=20251203223144")
     .then((res) => {
       if (!res.ok) throw new Error("Unable to load posts.json");
       return res.json();
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const thumbSrc =
           post.thumbnail ||
-          "/assets/img/ui/hero-butterfly-wow.svg?v=20251203222324";
+          "/assets/img/ui/hero-butterfly-wow.svg?v=20251203223144";
 
         const card = document.createElement("article");
         card.className = "pub-item thumb-card";
