@@ -5,7 +5,7 @@
  * Also, supports construction mode via construction.json.
  */
 
-const CONSTRUCTION_CONFIG_URL = '/assets/meta/construction.json?v=20251203223144';
+const CONSTRUCTION_CONFIG_URL = '/assets/meta/construction.json?v=20251205150458';
 
 function normalizePath(path) {
   if (!path) return '/';
@@ -179,7 +179,7 @@ function showQuoteBubble(quote) {
 
 /* ---------- Boot ---------- */
 document.addEventListener("DOMContentLoaded", async () => {
-  const v = "20251203223144"; // will be replaced at publish time
+  const v = "20251205150458"; // will be replaced at publish time
     await Promise.all([
       loadPartial("#header", `/partials/header.html?v=${v}`),
       loadPartial("#footer", `/partials/footer.html?v=${v}`),
