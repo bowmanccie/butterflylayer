@@ -94,5 +94,11 @@
     "label": "Mindset",
     "category": "topic",
     "priority": null
+  },
+  {
+    "id": "leadership",
+    "label": "Leadership",
+    "category": "topic",
+    "priority": null
   }
 ]
