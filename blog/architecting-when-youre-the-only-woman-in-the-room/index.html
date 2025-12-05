@@ -24,17 +24,17 @@
 <meta name="twitter:image" content="/assets/img/social/og-blog.png">
 
 <!-- Primary styles -->
-<link rel="stylesheet" href="/assets/css/variables.css?v=20251205155513">
-<link rel="stylesheet" href="/assets/css/main.css?v=20251205155513">
-<link rel="stylesheet" href="/assets/css/podcast.css?v=20251205155513">
+<link rel="stylesheet" href="/assets/css/variables.css?v=20251205164826">
+<link rel="stylesheet" href="/assets/css/main.css?v=20251205164826">
+<link rel="stylesheet" href="/assets/css/podcast.css?v=20251205164826">
 
 <!-- Page-specific scripts (optional) -->
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 
 <!-- Shared scripts -->
-<script src="/assets/js/quotes.js?v=20251205155513" defer></script>
-<script src="/assets/js/loader.js?v=20251205155513" defer></script>
+<script src="/assets/js/quotes.js?v=20251205164826" defer></script>
+<script src="/assets/js/loader.js?v=20251205164826" defer></script>
 
 <!-- END: content/partials/head.html -->
 
@@ -111,29 +111,68 @@
   }
 
   // --- Previous / Next navigation ---
+  function normalizeTags(tags) {
+    if (!Array.isArray(tags)) return [];
+    return tags
+      .filter(t => typeof t === "string")
+      .map(t => t.trim())
+      .filter(Boolean);
+  }
 
-  function renderNeighborCard(targetId, post, label) {
-    const slot = document.getElementById(targetId);
-    if (!slot || !post) return;
+  function parseNeighborDate(value) {
+    if (!value) return new Date(0);
 
-    const date = post.date || "";
-    const tags = normalizeTags(post.tags);
-    const summary = post.summary || "";
-    const meta = date;
+    // Treat plain YYYY-MM-DD as local date (no UTC shift)
+    if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+      const [year, month, day] = value.split("-").map(Number);
+      return new Date(year, month - 1, day);
+    }
 
-    const tagsHtml = tags.length
-      ? `<p class="blog-card-tags">${tags
-          .map((tag) => `<span class="tag">${tag}</span>`)
-          .join("")}</p>`
-      : "";
+    const d = new Date(value);
+    return isNaN(d.getTime()) ? new Date(0) : d;
+  }
 
-    slot.innerHTML = `
-      <article class="card blog-nav-card flow">
-        <p class="kicker">${label}</p>
-        <h3><a href="/blog/${post.slug}/">${post.title}</a></h3>
-        ${meta ? `<p class="blog-card-meta">${meta}</p>` : ""}
-        ${summary ? `<p class="blog-card-excerpt">${summary}</p>` : ""}
-        ${tagsHtml}
+  function formatNeighborDate(value) {
+    const d = parseNeighborDate(value);
+    return d.toLocaleDateString(undefined, {
+      year: "numeric",
+      month: "short",
+      day: "numeric"
+    });
+  }
+
+  function getCurrentSlug() {
+    // e.g. /blog/architecting-when-youre-the-only-woman-in-the-room/
+    const parts = window.location.pathname.split("/").filter(Boolean);
+    if (parts[0] === "blog" && parts.length >= 2) {
+      return parts[1];
+    }
+    return null;
+  }
+
+  function renderNeighborCard(containerId, post, label) {
+    const container = document.getElementById(containerId);
+    if (!container || !post) return;
+
+    const slug = post.slug || "";
+    if (!slug) return;
+
+    const url = "/blog/" + encodeURIComponent(slug) + "/index.html";
+    const dateText = formatNeighborDate(post.date || "");
+    const tags = normalizeTags(post.tags || []);
+
+    const metaParts = [];
+    if (dateText) metaParts.push(dateText);
+    if (tags.length) metaParts.push(tags.join(", "));
+    const metaLine = metaParts.join(" • ");
+
+    container.innerHTML = `
+      <article class="neighbor-card neighbor-card--${containerId}">
+        <a href="${url}" class="neighbor-card__link">
+          <p class="neighbor-card__label">${label}</p>
+          <h3 class="neighbor-card__title">${post.title}</h3>
+          ${metaLine ? `<p class="neighbor-card__meta">${metaLine}</p>` : ""}
+        </a>
       </article>
     `;
   }
@@ -153,7 +192,13 @@
         return ad.localeCompare(bd);
       });
 
-      const idx = sorted.findIndex(p => p.slug === slug);
+      const currentSlug = getCurrentSlug();
+      if (!currentSlug) {
+        console.warn("Could not determine current blog slug from URL.");
+        return;
+      }
+
+      const idx = sorted.findIndex(p => p.slug === currentSlug);
       if (idx === -1) return;
 
       const prev = idx > 0 ? sorted[idx - 1] : null;

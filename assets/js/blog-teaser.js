@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const title   = latest.title || "Latest Post";
     const summary = latest.summary || latest.excerpt || "";
     const date    = latest.date_readable || latest.date || "";
+
     const tags    = latest.tags || [];
 
     if (titleEl) {

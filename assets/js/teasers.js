@@ -28,6 +28,15 @@
   }
 
   function parseDate(value) {
+    if (!value) return new Date(0);
+
+    // If it's a plain YYYY-MM-DD, parse as a local date (no UTC shift)
+    if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+      const [year, month, day] = value.split("-").map(Number);
+      return new Date(year, month - 1, day);
+    }
+
+    // Fallback for full ISO strings, etc.
     const d = new Date(value);
     return isNaN(d.getTime()) ? new Date(0) : d;
   }

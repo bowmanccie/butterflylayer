@@ -5,6 +5,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const PAGE_SIZE = 6;
 
+  function parseDate(value) {
+    if (!value) return new Date(0);
+
+    // If it's a plain YYYY-MM-DD, treat it as a local calendar date
+    if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+      const [year, month, day] = value.split("-").map(Number);
+      return new Date(year, month - 1, day);
+    }
+
+    const d = new Date(value);
+    return isNaN(d.getTime()) ? new Date(0) : d;
+  }
+
+  function formatDateForMeta(value) {
+    const d = parseDate(value);
+    return d.toLocaleDateString(undefined, {
+      year: "numeric",
+      month: "short",
+      day: "numeric"
+    });
+  }
+
   function getCurrentPage() {
     const params = new URLSearchParams(window.location.search);
     const raw = params.get("page");
@@ -52,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .filter(Boolean);
   }
 
-  fetch("/blog/posts.json?v=20251205155513")
+  fetch("/blog/posts.json?v=20251205164826")
     .then((res) => {
       if (!res.ok) throw new Error("Unable to load posts.json");
       return res.json();
@@ -91,12 +113,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const thumbSrc =
           post.thumbnail ||
-          "/assets/img/ui/hero-butterfly-wow.svg?v=20251205155513";
+          "/assets/img/ui/hero-butterfly-wow.svg?v=20251205164826";
 
         const card = document.createElement("article");
         card.className = "pub-item thumb-card";
 
-        const metaText = date ? date : "";
+        const metaText = date ? formatDateForMeta(date) : "";
 
         const tagsHtml = tags.length
           ? `<p class="blog-card-tags">${tags

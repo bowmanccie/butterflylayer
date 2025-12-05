@@ -54,8 +54,26 @@
   }
 
   function parseDate(value) {
+    if (!value) return new Date(0);
+
+    // If it's a plain YYYY-MM-DD, treat as local date (no UTC shift)
+    if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+      const [year, month, day] = value.split("-").map(Number);
+      return new Date(year, month - 1, day);
+    }
+
+    // Fallback for full ISO strings
     const d = new Date(value);
     return isNaN(d.getTime()) ? new Date(0) : d;
+  }
+
+  function formatDate(value) {
+    const d = parseDate(value);
+    return d.toLocaleDateString(undefined, {
+      year: "numeric",
+      month: "short",
+      day: "numeric"
+    });
   }
 
   async function fetchJson(path) {
@@ -200,11 +218,7 @@
     const cards = filtered.map(item => {
         const url = getEntryUrl(medium, item);
         const teaser = getItemTeaser(item);
-        const dateText = parseDate(item.date).toLocaleDateString(undefined, {
-        year: "numeric",
-        month: "short",
-        day: "numeric"
-        });
+        const dateText = formatDate(item.date);
 
         const primaryPillarId = findPrimaryPillar(item, pillarIds);
         const primaryPillarTag = primaryPillarId
