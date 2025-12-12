@@ -34,7 +34,11 @@ jobs:
 
       - name: Commit & push if changed
         run: |
-          if git diff --quiet -- assets/meta/quiet_daily.json; then
+          # Show status for debugging (optional)
+          git status --short assets/meta/quiet_daily.json || true
+
+          # If there are no changes (including untracked), exit
+          if ! git status --short assets/meta/quiet_daily.json | grep .; then
             echo "No changes to commit."
             exit 0
           fi
