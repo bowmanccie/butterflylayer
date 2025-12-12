@@ -34,18 +34,16 @@ jobs:
 
       - name: Commit & push if changed
         run: |
-          # Show status for debugging (optional)
-          git status --short assets/meta/quiet_daily.json || true
-
-          # If there are no changes (including untracked), exit
-          if ! git status --short assets/meta/quiet_daily.json | grep .; then
+          if git diff --quiet -- assets/meta/quiet_daily.json; then
             echo "No changes to commit."
             exit 0
           fi
-
+      
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
+      
+          TODAY=$(date -u +"%Y-%m-%d")
+      
           git add assets/meta/quiet_daily.json
-          git commit -m "Update Quiet Layer daily info"
+          git commit -m "Update Quiet Layer -> Daily Info for (${TODAY})"
           git push
