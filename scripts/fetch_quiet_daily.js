@@ -1,7 +1,7 @@
 // scripts/fetch_quiet_daily.js
 // Fetch USCCB Daily Readings page for today's date (Eastern time),
 // extract feast name, lectionary, reading citations, and rosary mysteries,
-// then write site/assets/meta/quiet_daily.json
+// then write assets/meta/quiet_daily.json
 
 const fs = require('fs');
 const path = require('path');
@@ -144,7 +144,6 @@ function weekdayToRosaryMysteries(weekday) {
     const targetPath = path.join(
       __dirname,
       '..',
-      'site',
       'assets',
       'meta',
       'quiet_daily.json'
