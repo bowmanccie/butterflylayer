@@ -1,0 +1,47 @@
+name: Update Quiet Layer Daily JSON
+
+on:
+  # Run every day around 5:10 UTC.
+  # This is 12:10am Eastern in winter, 1:10am in summer.
+  schedule:
+    - cron: '10 5 * * *'
+  # Manual trigger if you want to test it
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-and-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install HTML parser dependency
+        run: |
+          npm install jsdom
+
+      - name: Generate quiet_daily.json
+        run: |
+          node scripts/fetch_quiet_daily.js
+
+      - name: Commit & push if changed
+        run: |
+          if git diff --quiet -- assets/meta/quiet_daily.json; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add assets/meta/quiet_daily.json
+          git commit -m "Update Quiet Layer daily info"
+          git push
