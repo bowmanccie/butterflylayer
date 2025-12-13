@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2025-12-12T05:34:58.000Z",
-  "date": "2025-12-12",
-  "weekday": "Friday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/121225.cfm",
-  "feast": "Feast of Our Lady of Guadalupe",
-  "lectionary": "690A",
+  "generated_at": "2025-12-13T05:43:05.538Z",
+  "date": "2025-12-13",
+  "weekday": "Saturday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/121325.cfm",
+  "feast": "Memorial of Saint Lucy, Virgin and Martyr",
+  "lectionary": "186",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Zechariah 2:14-17"
+      "citation": "Sirach 48:1-4, 9-11"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Judith 13:18bcde, 19"
+      "citation": "Psalm 80:2ac and 3b, 15-16, 18-19"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": null
+      "citation": "Luke 3:4, 6"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 1:26-38"
+      "citation": "Matthew 17:9a, 10-13"
     }
   ]
 }
