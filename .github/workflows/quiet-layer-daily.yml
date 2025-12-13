@@ -45,5 +45,6 @@ jobs:
           TODAY=$(date -u +"%Y-%m-%d")
 
           git add assets/meta/quiet_daily.json
-          git commit -m "Update Quiet Layer -> Daily Info for (${TODAY})"
+          EVENT="${{ github.event_name }}"
+          git commit -m "Update Quiet Layer -> Daily Info for (${TODAY}) [${EVENT}]"
           git push
