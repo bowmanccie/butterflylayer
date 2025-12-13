@@ -5,7 +5,12 @@
  * Also, supports construction mode via construction.json.
  */
 
-const CONSTRUCTION_CONFIG_URL = '/assets/meta/construction.json?v=20251210041107';
+const CONSTRUCTION_CONFIG_URL = '/assets/meta/construction.json?v=20251213052012';
+
+// Quotes: preference + throttling (bubble only)
+const L8_QUOTE_PREF_KEY = "l8.quoteCategory";
+const L8_QUOTE_LAST_SHOWN_KEY = "l8.quoteLastShownAt";
+const L8_QUOTE_COOLDOWN_HOURS_DEFAULT = 24;
 
 function normalizePath(path) {
   if (!path) return '/';
@@ -177,9 +182,134 @@ function showQuoteBubble(quote) {
   });
 }
 
+function safeGetLocalStorage(key) {
+  try { return window.localStorage.getItem(key); } catch { return null; }
+}
+
+function safeSetLocalStorage(key, value) {
+  try { window.localStorage.setItem(key, value); } catch { /* ignore */ }
+}
+
+function getPageQuoteConfig() {
+  // We’re using 1A: data attributes (template-driven)
+  const el = document.body;
+
+  const policy = (el.getAttribute("data-quote-policy") || "normal").trim(); // normal | quiet-only | off
+  let mode = (el.getAttribute("data-quote-mode") || "bubble").trim();       // bubble | inline
+
+  // Quiet pages are inline by design (enforce)
+  if (policy === "quiet-only") mode = "inline";
+
+  // Optional: inline target slot (we standardize on [data-quote-slot])
+  const slot = document.querySelector("[data-quote-slot]");
+
+  return { policy, mode, slot };
+}
+
+function getUserQuoteCategory() {
+  const raw = (safeGetLocalStorage(L8_QUOTE_PREF_KEY) || "all").trim();
+  return raw || "all";
+}
+
+function normalizeQuote(q) {
+  return {
+    text: q?.text || "",
+    author: q?.author || "",
+    category: (q?.category || "all").trim() || "all",
+    weight: Number.isFinite(q?.weight) ? q.weight : 1
+  };
+}
+
+function filterQuotesByCategory(quotes, category) {
+  const cat = (category || "all").trim() || "all";
+  return quotes.filter(q => (q.category || "all") === cat);
+}
+
+function weightedPick(quotes) {
+  // All weights are 1 today, but logic supports future weighting.
+  let total = 0;
+  for (const q of quotes) {
+    const w = Math.max(0, Number(q.weight) || 0);
+    total += w;
+  }
+  if (total <= 0) return null;
+
+  let r = Math.random() * total;
+  for (const q of quotes) {
+    const w = Math.max(0, Number(q.weight) || 0);
+    r -= w;
+    if (r <= 0) return q;
+  }
+  return quotes[quotes.length - 1] || null;
+}
+
+function shouldShowBubbleNow(cooldownHours) {
+  const hours = Number.isFinite(cooldownHours) ? cooldownHours : L8_QUOTE_COOLDOWN_HOURS_DEFAULT;
+  const cooldownMs = Math.max(1, hours) * 60 * 60 * 1000;
+
+  const last = Number(safeGetLocalStorage(L8_QUOTE_LAST_SHOWN_KEY) || 0);
+  const now = Date.now();
+
+  if (!last) return true;
+  return (now - last) >= cooldownMs;
+}
+
+function markBubbleShown() {
+  safeSetLocalStorage(L8_QUOTE_LAST_SHOWN_KEY, String(Date.now()));
+}
+
+function renderInlineQuote(slot, quote) {
+  if (!slot || !quote?.text) return;
+
+  // “Not so bold”: render a simple blockquote only.
+  slot.innerHTML = `
+    <blockquote>
+      <p>${quote.text}</p>
+    </blockquote>
+  `;
+}
+
+function initQuotes() {
+  if (!window.L8_QUOTES || !Array.isArray(window.L8_QUOTES) || !window.L8_QUOTES.length) return;
+
+  const { policy, mode, slot } = getPageQuoteConfig();
+  if (policy === "off") return;
+
+  const all = window.L8_QUOTES.map(normalizeQuote).filter(q => q.text);
+
+  // Effective category selection
+  let effectiveCategory = "all";
+  if (policy === "quiet-only") {
+    effectiveCategory = "quiet";
+  } else {
+    effectiveCategory = getUserQuoteCategory();
+  }
+
+  // Category filter + fallback
+  let pool = filterQuotesByCategory(all, effectiveCategory);
+  if (!pool.length && effectiveCategory !== "all") {
+    pool = filterQuotesByCategory(all, "all");
+  }
+  if (!pool.length) return;
+
+  const pick = weightedPick(pool);
+  if (!pick) return;
+
+  if (mode === "inline") {
+    renderInlineQuote(slot, pick);
+    return;
+  }
+
+  // Bubble mode (throttled)
+  if (!shouldShowBubbleNow(L8_QUOTE_COOLDOWN_HOURS_DEFAULT)) return;
+  showQuoteBubble(pick);
+  markBubbleShown();
+}
+
+
 /* ---------- Boot ---------- */
 document.addEventListener("DOMContentLoaded", async () => {
-  const v = "20251210041107"; // will be replaced at publish time
+  const v = "20251213052012"; // will be replaced at publish time
     await Promise.all([
       loadPartial("#header", `/partials/header.html?v=${v}`),
       loadPartial("#footer", `/partials/footer.html?v=${v}`),
@@ -196,9 +326,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       // but it's fine to skip in that case.
     });
 
-  // Light, pretty motivation: random quote (sourced from quotes.js if present)
-  if (window.L8_QUOTES && Array.isArray(window.L8_QUOTES) && window.L8_QUOTES.length) {
-    const pick = window.L8_QUOTES[Math.floor(Math.random() * window.L8_QUOTES.length)];
-    showQuoteBubble(pick);
-  }
+  // Quotes (policy + mode + category + throttling)
+  initQuotes();
 });

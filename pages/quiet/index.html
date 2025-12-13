@@ -6,28 +6,28 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Blog — L8: Architecture, AI, and Human Intent</title>
-<meta name="description" content="Stories and insights at the intersection of architecture, AI, and human intent — thoughtful writing from Jennifer Bowman.">
+<title>Quiet Layer — L8: The Butterfly Layer</title>
+<meta name="description" content="A daily quiet reference: feast and readings.">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="L8 Blog — Architecture, AI, and Intent">
-<meta property="og:description" content="Thoughtful writing from Jennifer Bowman, exploring the human layer above the stack.">
-<meta property="og:image" content="/assets/img/social/og-blog.png">
-<meta property="og:url" content="https://butterflylayer.com/blog/">
+<meta property="og:title" content="Quiet Layer">
+<meta property="og:description" content="Daily quiet reference: feast and readings.">
+<meta property="og:image" content="/assets/img/social/og-default.png">
+<meta property="og:url" content="https://butterflylayer.com/pages/quiet/">
 <meta property="og:site_name" content="L8: The Butterfly Layer">
 
 <!-- Canonical -->
-<link rel="canonical" href="https://butterflylayer.com/blog/">
+<link rel="canonical" href="https://butterflylayer.com/pages/quiet/">
 
 <!-- Extra per-page meta (e.g., article:published_time for blog posts) -->
 
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="L8 Blog — Architecture, AI, and Intent">
-<meta name="twitter:description" content="Thoughtful writing from Jennifer Bowman, exploring the human layer above the stack.">
-<meta name="twitter:image" content="/assets/img/social/og-blog.png">
+<meta name="twitter:title" content="Quiet Layer">
+<meta name="twitter:description" content="Daily quiet reference: feast and readings.">
+<meta name="twitter:image" content="/assets/img/social/og-default.png">
 
 <!-- Primary styles -->
 <link rel="stylesheet" href="/assets/css/variables.css?v=20251213052012">
@@ -35,7 +35,7 @@
 <link rel="stylesheet" href="/assets/css/podcast.css?v=20251213052012">
 
 <!-- Page-specific scripts (optional) -->
-<script src="/assets/js/pillar-filters.js?v=20251213052012" defer></script>
+<script src="/assets/js/quiet-layer.js?v=20251213052012" defer></script>
 
 
 <!-- Shared scripts -->
@@ -45,7 +45,7 @@
 <!-- END: content/partials/head.html -->
 
   </head>
-  <body id="top" >
+  <body id="top" data-quote-policy="quiet-only" data-quote-mode="inline">
     <div id="construction-banner-slot"></div>
     <div id="header"></div>
 
@@ -53,25 +53,23 @@
       <!-- BEGIN: content/partials/page_header.html -->
 <header class="page-header">
   <div class="container flow">
-    <h1>Blog</h1>
-    <p class="page-intro">Ongoing reflections on architecture, clarity, AI, elegance, and the human intent layer.</p>
+    <h1>Quiet Layer</h1>
+    <p class="page-intro">A small daily anchor — feast, readings, and a moment of stillness.</p>
   </div>
 </header>
 <!-- END: content/partials/page_header.html -->
  
-      <!-- BEGIN: /content/pages/blog-index.html-->
+      <!-- BEGIN: /content/pages/quiet.html -->
 <section class="page-section">
-  <div class="container">
-    <div class="l8-filter-shell">
-      <p class="l8-filter-heading">Filter by Layer</p>
-      <div class="l8-filter-underline" aria-hidden="true"></div>
-      <div id="blog-filter-bar" class="l8-pill-filter"></div>
+  <div class="container flow">
+    <div id="quiet-layer" data-quiet-root>
+      <p>Loading today’s Quiet Layer…</p>
     </div>
-
-    <div id="blog-list" class="card-list l8-card-list"></div>
   </div>
+  <hr class="l8-divider-soft" aria-hidden="true" />
+  <aside class="container l8-quote-inline" data-quote-slot aria-label="Quiet Layer reflection"></aside>
 </section>
-<!-- END: /content/pages/blog-index.html-->
+<!-- END: /content/pages/quiet.html -->
 
     </main>
 

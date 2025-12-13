@@ -224,6 +224,81 @@ ul, ol {
 }
 .link-arrow:hover::after { transform: translateX(3px); }
 
+/* =============================================================================
+   L8 PILL SYSTEM (STANDARD)
+   Preferred usage: <span class="l8-pill">Label</span>
+   Deprecation plan: legacy pill-like classes are aliased here to the same base rule.
+   ============================================================================= */
+
+/* Base pill + legacy aliases (single source of truth) */
+:is(
+  .l8-pill,
+  .tag,                         /* deprecated */
+  .l8-teaser-card__pill,         /* deprecated */
+  .nav-badge,                    /* deprecated */
+  .l8-section-pill-nav .l8-pill-filter__pill /* deprecated */
+) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+
+  padding: var(--l8-pill-pad-y) var(--l8-pill-pad-x);
+  border-radius: var(--l8-pill-radius);
+
+  border: var(--l8-pill-border);
+  background: var(--l8-pill-bg);
+  color: var(--l8-pill-color);
+
+  font-size: var(--l8-pill-font-size);
+  font-weight: var(--l8-pill-font-weight);
+  letter-spacing: var(--l8-pill-letterspace);
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+
+  box-shadow: var(--l8-pill-shadow);
+}
+
+/* Hover / focus (anchors + buttons) */
+:is(
+  .l8-pill,
+  .tag,
+  .l8-teaser-card__pill,
+  .nav-badge,
+  .l8-section-pill-nav .l8-pill-filter__pill
+):hover,
+:is(
+  .l8-pill,
+  .tag,
+  .l8-teaser-card__pill,
+  .nav-badge,
+  .l8-section-pill-nav .l8-pill-filter__pill
+):focus-visible {
+  background: var(--l8-pill-bg-hover);
+  box-shadow: var(--l8-pill-ring);
+  text-decoration: none;
+}
+
+/* Variant: solid (used for construction pill) */
+.l8-pill.is-solid,
+.l8-construction-pill {
+  background: var(--orchid);
+  border: 1px solid color-mix(in oklab, var(--orchid) 65%, var(--white));
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Variant: beta badge (nav) — keep your existing visual intent but expressed cleanly */
+.nav-badge-beta {
+  background: color-mix(in oklab, var(--blush) 65%, var(--white));
+  border: 1px solid color-mix(in oklab, var(--orchid) 55%, var(--white));
+  color: color-mix(in oklab, var(--lavender-ink) 70%, var(--ink-900));
+}
+
 /* 3) Header & Navigation */
 .site-header {
   position: sticky;
@@ -705,18 +780,6 @@ ul, ol {
   color: var(--ink-500);
 }
 
-/* Tag pill */
-.tag {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.05rem 0.5rem;
-  border-radius: 999px;
-  border: 1px solid rgba(163, 139, 198, 0.3);
-  background: color-mix(in oklab, var(--ui-tint) var(--mix-light), var(--white));
-  font-size: var(--step--1);
-  color: var(--ink-600);
-}
-
 /* Blog post body */
 .blog-post-body {
   max-width: 70ch;
@@ -990,16 +1053,6 @@ ul, ol {
   padding: 0 1rem;
 }
 
-.l8-construction-pill {
-  background: var(--orchid);
-  padding: 0.25rem 0.7rem;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--white);
-  text-transform: uppercase;
-}
-
 .l8-construction-text {
   color: var(--pearl);
   font-size: 0.9rem;
@@ -1094,19 +1147,6 @@ ul, ol {
   font-weight: 600;
 }
 
-/* Pill for pillar/tag */
-.l8-teaser-card__pill {
-  display: inline-flex;
-  align-items: center;
-  border-radius: 999px;
-  padding: 0.15rem 0.7rem;
-  font-size: 0.75rem;
-  text-decoration: none;
-  border: 1px solid color-mix(in oklab, var(--orchid) var(--mix-medium), var(--white));
-  background: color-mix(in oklab, var(--blush) var(--mix-medium), var(--white));
-  color: var(--orchid);
-}
-
 /* Title + teaser */
 .l8-teaser-card__title-link {
   text-decoration: none;
@@ -1169,12 +1209,6 @@ ul, ol {
   }
 }
 
-.l8-pill-filter {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
 /* Reuse the teaser pill, but allow active state */
 .l8-pill-filter__pill {
   border: none;
@@ -1227,12 +1261,6 @@ ul, ol {
 .l8-list-card__footer {
   font-size: 0.8rem;
   color: var(--ink-500);
-}
-
-.l8-card-list__empty {
-  font-size: 0.9rem;
-  color: var(--ink-700);
-  font-style: italic;
 }
 
 .l8-list-card__link {
@@ -1448,7 +1476,7 @@ ul, ol {
   }
 
   .primary-nav .nav-submenu a:hover {
-    background: var(--surface-soft);
+    background: var(--surface-tint);
     color: var(--lavender-ink);
     text-decoration: none;
   }
@@ -1470,21 +1498,6 @@ ul, ol {
   gap: 0.65rem 0.9rem;
 }
 
-.l8-section-pill-nav .l8-pill-filter__pill {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.25rem 0.9rem;
-  border-radius: 999px;
-  border: 1px solid color-mix(in oklab, var(--orchid) var(--mix-medium), var(--white));
-  background: color-mix(in oklab, var(--blush) var(--mix-light), var(--white));
-  font-size: var(--step--1);
-  font-weight: 500;
-  color: var(--lavender-ink);
-  text-decoration: none;
-  white-space: nowrap;
-}
-
 .l8-section-pill-nav .l8-pill-filter__pill:hover,
 .l8-section-pill-nav .l8-pill-filter__pill:focus-visible {
   background: color-mix(in oklab, var(--ui-tint) var(--mix-medium), var(--white));
@@ -1492,3 +1505,35 @@ ul, ol {
   text-decoration: none;
 }
 
+.nav-label {
+    display: inline-block;
+    margin-right: 0.3rem;
+}
+
+.nav-badge-beta {
+    background: #f3e5ff;
+    border: 1px solid #c27ad3;
+    color: #673d7b;
+}
+/* =============================================================================
+   L8 DIVIDERS + INLINE QUOTES
+   ============================================================================= */
+
+.l8-divider-soft {
+  border: 0;
+  height: 1px;
+  width: min(22rem, 60%);
+  margin: 1.25rem auto 1.1rem auto;
+  background: color-mix(in oklab, var(--silver) 55%, transparent);
+}
+
+.l8-quote-inline {
+  margin: 0 auto 1.25rem auto;
+  width: min(46rem, 100%);
+  text-align: center;
+  font-style: italic;
+}
+
+.l8-quote-inline p {
+  margin: 0;
+}

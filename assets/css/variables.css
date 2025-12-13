@@ -155,6 +155,50 @@
   --mix-light:        25%;
   --mix-medium:       40%;
   --mix-strong:       60%;
+
+  /* ==========================================================================
+     PILL SYSTEM (STANDARD)
+     Usage: class="l8-pill" (preferred). Legacy aliases remain for now:
+       .tag, .l8-teaser-card__pill, .l8-construction-pill, .nav-badge,
+       .l8-section-pill-nav .l8-pill-filter__pill
+     ========================================================================== */
+
+  /* Pill geometry + type */
+  --l8-pill-radius:       var(--radius-round);
+  --l8-pill-pad-y:        0.18rem;
+  --l8-pill-pad-x:        0.70rem;
+  --l8-pill-font-size:    var(--step--1);
+  --l8-pill-font-weight:  600;
+  --l8-pill-letterspace:  0.02em;
+
+  /* Pill colors (DEFAULT = Option A: blush wash + orchid border, lavender ink text) */
+  --l8-pill-bg:           color-mix(in oklab, var(--blush) var(--mix-light), var(--white));
+  --l8-pill-border:       1px solid color-mix(in oklab, var(--orchid) var(--mix-medium), var(--white));
+  --l8-pill-color:        var(--lavender-ink);
+  --l8-pill-shadow:       none;
+
+  /* Hover/focus */
+  --l8-pill-bg-hover:     color-mix(in oklab, var(--ui-tint) var(--mix-medium), var(--white));
+  --l8-pill-ring:         0 0 0 1px color-mix(in oklab, var(--lavender-ink) 60%, var(--white));
+
+  /*
+    Option B (pearl outline): elegant, quieter
+    --l8-pill-bg:           var(--white);
+    --l8-pill-border:       1px solid var(--silver);
+    --l8-pill-color:        var(--ink-700);
+    --l8-pill-bg-hover:     color-mix(in oklab, var(--surface-tint) 55%, var(--white));
+    --l8-pill-ring:         0 0 0 1px color-mix(in oklab, var(--orchid) 35%, var(--white));
+  */
+
+  /*
+    Option C (orchid solid): stronger, call-to-action feel
+    --l8-pill-bg:           var(--orchid);
+    --l8-pill-border:       1px solid color-mix(in oklab, var(--orchid) 65%, var(--white));
+    --l8-pill-color:        var(--white);
+    --l8-pill-bg-hover:     color-mix(in oklab, var(--orchid) 85%, var(--white));
+    --l8-pill-ring:         0 0 0 2px color-mix(in oklab, var(--orchid) 30%, var(--white));
+  */
+
 }
 
 /* =============================================================================
