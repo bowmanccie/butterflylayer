@@ -5,7 +5,7 @@
  * Also, supports construction mode via construction.json.
  */
 
-const CONSTRUCTION_CONFIG_URL = '/assets/meta/construction.json?v=20251213060745';
+const CONSTRUCTION_CONFIG_URL = '/assets/meta/construction.json?v=20251213062327';
 
 // Quotes: preference + throttling (bubble only)
 const L8_QUOTE_PREF_KEY = "l8.quoteCategory";
@@ -309,7 +309,7 @@ function initQuotes() {
 
 /* ---------- Boot ---------- */
 document.addEventListener("DOMContentLoaded", async () => {
-  const v = "20251213060745"; // will be replaced at publish time
+  const v = "20251213062327"; // will be replaced at publish time
     await Promise.all([
       loadPartial("#header", `/partials/header.html?v=${v}`),
       loadPartial("#footer", `/partials/footer.html?v=${v}`),
