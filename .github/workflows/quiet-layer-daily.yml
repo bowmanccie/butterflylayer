@@ -1,10 +1,10 @@
 name: Update Quiet Layer Daily JSON
 
 on:
-  # Run every day around 5:10 UTC.
-  # This is 12:10am Eastern in winter, 1:10am in summer.
+  # Run every day around 5:05 UTC.
+  # This is 12:05am Eastern in winter, 1:05am in summer.
   schedule:
-    - cron: '10 5 * * *'
+    - cron: '5 5 * * *'
   # Manual trigger if you want to test it
   workflow_dispatch: {}
 
