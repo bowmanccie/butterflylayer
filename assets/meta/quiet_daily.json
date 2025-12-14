@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2025-12-13T05:43:05.538Z",
-  "date": "2025-12-13",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/121325.cfm",
-  "feast": "Memorial of Saint Lucy, Virgin and Martyr",
-  "lectionary": "186",
+  "generated_at": "2025-12-14T05:32:12.871Z",
+  "date": "2025-12-14",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/121425.cfm",
+  "feast": "Third Sunday of Advent",
+  "lectionary": "7",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Sirach 48:1-4, 9-11"
+      "citation": "Isaiah 35:1-6a, 10"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 80:2ac and 3b, 15-16, 18-19"
+      "citation": "Psalm 146:6-7, 8-9, 9-10."
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "James 5:7-10"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Luke 3:4, 6"
+      "citation": "Isaiah 61:1 (cited in Lk 4:18)"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 17:9a, 10-13"
+      "citation": "Matthew 11:2-11"
     }
   ]
 }
