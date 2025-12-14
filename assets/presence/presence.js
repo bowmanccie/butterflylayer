@@ -21,37 +21,29 @@
     document.documentElement.setAttribute("data-theme", theme);
   }
 
-  // Randomize butterfly positions/sizes ONCE (no animation loop = low CPU)
   function seedButterflies() {
     const root = document.getElementById("butterflies");
     if (!root) return;
 
     const els = Array.from(root.querySelectorAll(".butterfly"));
-    if (!els.length) return;
 
-    // Keep them away from extreme edges so they don't clip.
-    const xMin = 6, xMax = 86;  // vw
-    const yMin = 6, yMax = 84;  // vh
+    const xMin = 6, xMax = 86;
+    const yMin = 6, yMax = 84;
 
-    // Scales: a few large, more medium, some small
-    const scaleBands = [0.55, 0.7, 0.85, 1.0, 1.15];
+    for (const el of els) {
+        const layer = parseInt(el.dataset.layer || "4", 10);
 
-    for (let i = 0; i < els.length; i++) {
-      const el = els[i];
+        // subtle variation multiplier (not absolute scale)
+        const s = (0.92 + Math.random() * 0.16).toFixed(2);
+        const r = ((Math.random() * 24) - 12).toFixed(1) + "deg";
 
-      const x = (xMin + Math.random() * (xMax - xMin)).toFixed(2) + "vw";
-      const y = (yMin + Math.random() * (yMax - yMin)).toFixed(2) + "vh";
-      const s = scaleBands[Math.floor(Math.random() * scaleBands.length)];
-      const r = ((Math.random() * 24) - 12).toFixed(1) + "deg"; // gentle tilt
+        el.style.setProperty("--x", (xMin + Math.random() * (xMax - xMin)).toFixed(2) + "vw");
+        el.style.setProperty("--y", (yMin + Math.random() * (yMax - yMin)).toFixed(2) + "vh");
+        el.style.setProperty("--s", s);
+        el.style.setProperty("--r", r);
 
-      el.style.setProperty("--x", x);
-      el.style.setProperty("--y", y);
-      el.style.setProperty("--s", s);
-      el.style.setProperty("--r", r);
-
-      // Stagger animation start so they don't sync up
-      const delay = (-Math.random() * 60).toFixed(2) + "s";
-      el.style.animationDelay = delay;
+        // desync animations
+        el.style.animationDelay = (-Math.random() * 60).toFixed(1) + "s";
     }
   }
 

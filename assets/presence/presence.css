@@ -117,28 +117,32 @@ html[data-theme="night"] {
   position: absolute;
   width: var(--butterfly-size);
   height: var(--butterfly-size);
-  opacity: var(--butterfly-opacity);
+
+  opacity: var(--o-base, var(--butterfly-opacity));
 
   /* GPU-friendly animations only */
+  transform:
+    translate3d(var(--x), var(--y), 0)
+    scale(calc(var(--s-base, 1) * var(--s, 1)))
+    rotate(var(--r));
   will-change: transform, opacity;
-  transform: translate3d(var(--x, 10vw), var(--y, 10vh), 0) scale(var(--s, 1)) rotate(var(--r, 0deg));
 
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 
-  /* Placeholder: swap to your best butterfly SVG(s). */
-  background-image: url("/assets/meta/hero-butterfly.svg");
+  background-image: url("/assets/img/ui/hero-butterfly-wow.svg");
 }
 
 /* Individual motion profiles (slow, elegant, low CPU) */
-.b1 { animation: drift1 76s ease-in-out infinite; }
-.b2 { animation: drift2 92s ease-in-out infinite; }
-.b3 { animation: drift3 84s ease-in-out infinite; }
-.b4 { animation: drift4 110s ease-in-out infinite; }
-.b5 { animation: drift5 88s ease-in-out infinite; }
-.b6 { animation: drift6 104s ease-in-out infinite; }
-.b7 { animation: drift7 96s ease-in-out infinite; }
+/* Motion profiles mapped to OSI semantic layers */
+.layer-1 { animation: drift1 130s ease-in-out infinite; }          /* hero */
+.layer-2 { animation: drift2 95s  ease-in-out infinite; }          /* mid */
+.layer-3 { animation: drift3 95s  ease-in-out infinite; }          /* mid */
+.layer-4 { animation: drift4 95s  ease-in-out infinite; }          /* mid */
+.layer-5 { animation: drift5 115s ease-in-out infinite; }          /* distant */
+.layer-6 { animation: drift6 115s ease-in-out infinite; }          /* distant */
+.layer-7 { animation: drift7 115s ease-in-out infinite; }          /* distant */
 
 /* Subtle breathing */
 @keyframes breathe {
@@ -148,38 +152,128 @@ html[data-theme="night"] {
 
 /* Drift animations: move slightly from the randomized start */
 @keyframes drift1 {
-  0%, 100% { transform: translate3d(var(--x), var(--y), 0) scale(var(--s)) rotate(var(--r)); opacity: var(--butterfly-opacity); }
-  50%      { transform: translate3d(calc(var(--x) + 6vw), calc(var(--y) - 3vh), 0) scale(calc(var(--s) * 1.03)) rotate(calc(var(--r) + 6deg)); opacity: calc(var(--butterfly-opacity) + 0.05); }
+  0%, 100% {
+    transform: translate3d(var(--x), var(--y), 0)
+      scale(calc(var(--s-base, 1) * var(--s, 1)))
+      rotate(var(--r));
+    opacity: var(--o-base, var(--butterfly-opacity));
+  }
+  50% {
+    transform: translate3d(calc(var(--x) + 6vw), calc(var(--y) - 3vh), 0)
+      scale(calc(var(--s-base, 1) * var(--s, 1) * 1.03))
+      rotate(calc(var(--r) + 6deg));
+    opacity: calc(var(--o-base, var(--butterfly-opacity)) + 0.05);
+  }
 }
 
 @keyframes drift2 {
-  0%, 100% { transform: translate3d(var(--x), var(--y), 0) scale(var(--s)) rotate(var(--r)); }
-  50%      { transform: translate3d(calc(var(--x) - 7vw), calc(var(--y) + 4vh), 0) scale(calc(var(--s) * 0.98)) rotate(calc(var(--r) - 7deg)); }
+  0%, 100% {
+    transform: translate3d(var(--x), var(--y), 0)
+      scale(calc(var(--s-base, 1) * var(--s, 1)))
+      rotate(var(--r));
+    opacity: var(--o-base, var(--butterfly-opacity));
+  }
+  50% {
+    transform: translate3d(calc(var(--x) - 7vw), calc(var(--y) + 4vh), 0)
+      scale(calc(var(--s-base, 1) * var(--s, 1) * 0.98))
+      rotate(calc(var(--r) - 7deg));
+  }
 }
 
 @keyframes drift3 {
-  0%, 100% { transform: translate3d(var(--x), var(--y), 0) scale(var(--s)) rotate(var(--r)); }
-  50%      { transform: translate3d(calc(var(--x) + 4vw), calc(var(--y) + 2vh), 0) scale(calc(var(--s) * 1.01)) rotate(calc(var(--r) + 5deg)); }
+  0%, 100% {
+    transform: translate3d(var(--x), var(--y), 0)
+      scale(calc(var(--s-base, 1) * var(--s, 1)))
+      rotate(var(--r));
+    opacity: var(--o-base, var(--butterfly-opacity));
+  }
+  50% {
+    transform: translate3d(calc(var(--x) + 4vw), calc(var(--y) + 2vh), 0)
+      scale(calc(var(--s-base, 1) * var(--s, 1) * 1.01))
+      rotate(calc(var(--r) + 5deg));
+  }
 }
 
 @keyframes drift4 {
-  0%, 100% { transform: translate3d(var(--x), var(--y), 0) scale(var(--s)) rotate(var(--r)); }
-  50%      { transform: translate3d(calc(var(--x) - 5vw), calc(var(--y) - 4vh), 0) scale(calc(var(--s) * 1.02)) rotate(calc(var(--r) + 8deg)); }
+  0%, 100% {
+    transform: translate3d(var(--x), var(--y), 0)
+      scale(calc(var(--s-base, 1) * var(--s, 1)))
+      rotate(var(--r));
+    opacity: var(--o-base, var(--butterfly-opacity));
+  }
+  50% {
+    transform: translate3d(calc(var(--x) - 5vw), calc(var(--y) - 4vh), 0)
+      scale(calc(var(--s-base, 1) * var(--s, 1) * 1.02))
+      rotate(calc(var(--r) + 8deg));
+  }
 }
 
 @keyframes drift5 {
-  0%, 100% { transform: translate3d(var(--x), var(--y), 0) scale(var(--s)) rotate(var(--r)); }
-  50%      { transform: translate3d(calc(var(--x) + 8vw), calc(var(--y) + 1vh), 0) scale(calc(var(--s) * 0.97)) rotate(calc(var(--r) - 6deg)); }
+  0%, 100% {
+    transform: translate3d(var(--x), var(--y), 0)
+      scale(calc(var(--s-base, 1) * var(--s, 1)))
+      rotate(var(--r));
+    opacity: var(--o-base, var(--butterfly-opacity));
+  }
+  50% {
+    transform: translate3d(calc(var(--x) + 8vw), calc(var(--y) + 1vh), 0)
+      scale(calc(var(--s-base, 1) * var(--s, 1) * 0.97))
+      rotate(calc(var(--r) - 6deg));
+  }
 }
 
 @keyframes drift6 {
-  0%, 100% { transform: translate3d(var(--x), var(--y), 0) scale(var(--s)) rotate(var(--r)); opacity: var(--butterfly-opacity); }
-  50%      { transform: translate3d(calc(var(--x) - 3vw), calc(var(--y) + 5vh), 0) scale(calc(var(--s) * 1.04)) rotate(calc(var(--r) + 4deg)); opacity: calc(var(--butterfly-opacity) + 0.04); }
+  0%, 100% {
+    transform: translate3d(var(--x), var(--y), 0)
+      scale(calc(var(--s-base, 1) * var(--s, 1)))
+      rotate(var(--r));
+    opacity: var(--o-base, var(--butterfly-opacity));
+  }
+  50% {
+    transform: translate3d(calc(var(--x) - 3vw), calc(var(--y) + 5vh), 0)
+      scale(calc(var(--s-base, 1) * var(--s, 1) * 1.04))
+      rotate(calc(var(--r) + 4deg));
+    opacity: calc(var(--o-base, var(--butterfly-opacity)) + 0.04);
+  }
 }
 
 @keyframes drift7 {
-  0%, 100% { transform: translate3d(var(--x), var(--y), 0) scale(var(--s)) rotate(var(--r)); }
-  50%      { transform: translate3d(calc(var(--x) + 2vw), calc(var(--y) - 5vh), 0) scale(calc(var(--s) * 1.00)) rotate(calc(var(--r) - 8deg)); }
+  0%, 100% {
+    transform: translate3d(var(--x), var(--y), 0)
+      scale(calc(var(--s-base, 1) * var(--s, 1)))
+      rotate(var(--r));
+    opacity: var(--o-base, var(--butterfly-opacity));
+  }
+  50% {
+    transform: translate3d(calc(var(--x) + 2vw), calc(var(--y) - 5vh), 0)
+      scale(calc(var(--s-base, 1) * var(--s, 1) * 1.00))
+      rotate(calc(var(--r) - 8deg));
+  }
+}
+
+/* Subtle tagline in corner */
+.tagline {
+  position: absolute;
+  left: 3.5vw;
+  bottom: 3.2vh;
+
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: clamp(14px, 1.25vw, 18px);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  opacity: 0.20; /* intentionally subtle */
+  color: rgba(255, 255, 255, 0.78);
+  mix-blend-mode: screen;
+
+  /* tiny glow without blur filters */
+  text-shadow: 0 0 10px rgba(153, 102, 255, 0.22);
+  pointer-events: none;
+}
+html[data-theme="day"] .tagline {
+  color: rgba(25, 10, 40, 0.58);
+  mix-blend-mode: normal;
+  text-shadow: 0 0 10px rgba(179, 139, 255, 0.16);
 }
 
 /* Accessibility & battery friendliness */
@@ -188,4 +282,24 @@ html[data-theme="night"] {
   .butterfly {
     animation: none !important;
   }
+}
+
+/* OSI semantic scale + opacity (pronounced but still elegant) */
+.layer-1 {        /* Hero */
+  --s-base: 1.45;
+  --o-base: 0.30;
+}
+
+.layer-2,
+.layer-3,
+.layer-4 {        /* Mid */
+  --s-base: 0.95;
+  --o-base: 0.22;
+}
+
+.layer-5,
+.layer-6,
+.layer-7 {        /* Distant */
+  --s-base: 0.55;
+  --o-base: 0.16;
 }
