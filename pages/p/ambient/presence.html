@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Keep it “public but obscure” -->
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <meta name="referrer" content="no-referrer" />
+
+  <!-- Optional CSP (safe default for self-hosted assets). 
+       Remove if it ever fights the setup. -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self';" />
+
+  <title>L8 Presence</title>
+
+  <!-- NOTE: no loader.js, no header/footer, no site chrome -->
+  <link rel="stylesheet" href="/assets/presence/presence.css?v=20251214041832" />
+</head>
+
+<body>
+  <main class="presence" aria-hidden="true">
+    <!-- background layers -->
+    <div class="bg bg-base"></div>
+    <div class="bg bg-bloom"></div>
+    <div class="bg bg-stars"></div>
+
+    <!-- logo layer (swap the SVG path to your real L8 mark if desired) -->
+    <div class="logo" role="img" aria-label="L8 butterfly mark"></div>
+
+    <!-- butterflies (small count = low CPU) -->
+    <div class="butterflies" id="butterflies">
+      <span class="butterfly b1" aria-hidden="true"></span>
+      <span class="butterfly b2" aria-hidden="true"></span>
+      <span class="butterfly b3" aria-hidden="true"></span>
+      <span class="butterfly b4" aria-hidden="true"></span>
+      <span class="butterfly b5" aria-hidden="true"></span>
+      <span class="butterfly b6" aria-hidden="true"></span>
+      <span class="butterfly b7" aria-hidden="true"></span>
+    </div>
+
+    <!-- (Optional) ultra-subtle tagline -->
+    <div class="tagline">Where intent takes flight.</div>
+  </main>
+
+  <script src="/assets/presence/presence.js?v=20251214041832"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+/* L8 Presence — ambient, low-motion, low-CPU */
+
+:root {
+  --day-start: 6;   /* 06:00 */
+  --night-start: 19;/* 19:00 */
+
+  /* day palette */
+  --bg1: #fff7fb;   /* pearl blush */
+  --bg2: #f2e9ff;   /* orchid haze */
+  --bg3: #ffe6f3;   /* blush */
+  --glow: rgba(179, 139, 255, 0.22);
+  --spark: rgba(255, 255, 255, 0.55);
+  --logo-opacity: 0.16;
+  --butterfly-opacity: 0.28;
+  --bloom-opacity: 0.14;
+
+  --butterfly-size: 120px; /* base size; each butterfly scales */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: #000; /* never flash white */
+}
+
+body {
+  overflow: hidden;
+}
+
+.presence {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  /* smooth theme transitions */
+  transition: background 900ms ease;
+}
+
+/* Night mode (Option A): deep orchid/indigo w/ subtle glow */
+html[data-theme="night"] {
+  --bg1: #070611;   /* near-black indigo */
+  --bg2: #120a2a;   /* deep orchid */
+  --bg3: #20114a;   /* indigo-violet */
+  --glow: rgba(153, 102, 255, 0.26);
+  --spark: rgba(255, 255, 255, 0.22);
+  --logo-opacity: 0.14;
+  --butterfly-opacity: 0.22;
+  --bloom-opacity: 0.10;
+}
+
+.bg {
+  position: absolute;
+  inset: -2%;
+  pointer-events: none;
+  transform: translateZ(0);
+}
+
+/* Base gradient (cheap to render) */
+.bg-base {
+  background:
+    radial-gradient(1200px 800px at 18% 20%, var(--glow), transparent 55%),
+    radial-gradient(900px 700px at 80% 30%, rgba(255, 174, 227, 0.10), transparent 60%),
+
+    /* Optional refinement: subtle “aurora” points */
+    radial-gradient(700px 520px at 52% 12%, rgba(153, 102, 255, 0.16), transparent 62%),
+    radial-gradient(560px 420px at 88% 62%, rgba(255, 255, 255, 0.07), transparent 68%),
+
+    linear-gradient(135deg, var(--bg1), var(--bg2) 45%, var(--bg3));
+}
+
+/* Soft bloom layer (keep opacity low; avoid blur filters) */
+.bg-bloom {
+  opacity: var(--bloom-opacity);
+  background:
+    radial-gradient(700px 500px at 30% 70%, rgba(255, 255, 255, 0.38), transparent 65%),
+    radial-gradient(800px 600px at 75% 80%, rgba(255, 214, 242, 0.26), transparent 68%);
+  animation: breathe 32s ease-in-out infinite;
+}
+
+/* Tiny “stars” (static dots via gradients — no canvas) */
+.bg-stars {
+  opacity: 0.35;
+  background:
+    radial-gradient(2px 2px at 12% 18%, var(--spark), transparent 55%),
+    radial-gradient(1.5px 1.5px at 22% 78%, var(--spark), transparent 55%),
+    radial-gradient(2px 2px at 41% 35%, var(--spark), transparent 55%),
+    radial-gradient(1.5px 1.5px at 56% 62%, var(--spark), transparent 55%),
+    radial-gradient(2px 2px at 68% 22%, var(--spark), transparent 55%),
+    radial-gradient(1.5px 1.5px at 82% 48%, var(--spark), transparent 55%),
+    radial-gradient(2px 2px at 90% 78%, var(--spark), transparent 55%);
+}
+
+/* Center logo layer */
+.logo {
+  position: absolute;
+  inset: 0;
+  opacity: var(--logo-opacity);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: min(70vmin, 780px);
+  pointer-events: none;
+
+  /* Placeholder: swap this to your real mark. */
+  background-image: url("/assets/meta/l8-butterfly-mark.svg");
+}
+
+/* Butterflies */
+.butterflies {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.butterfly {
+  position: absolute;
+  width: var(--butterfly-size);
+  height: var(--butterfly-size);
+  opacity: var(--butterfly-opacity);
+
+  /* GPU-friendly animations only */
+  will-change: transform, opacity;
+  transform: translate3d(var(--x, 10vw), var(--y, 10vh), 0) scale(var(--s, 1)) rotate(var(--r, 0deg));
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  /* Placeholder: swap to your best butterfly SVG(s). */
+  background-image: url("/assets/meta/hero-butterfly.svg");
+}
+
+/* Individual motion profiles (slow, elegant, low CPU) */
+.b1 { animation: drift1 76s ease-in-out infinite; }
+.b2 { animation: drift2 92s ease-in-out infinite; }
+.b3 { animation: drift3 84s ease-in-out infinite; }
+.b4 { animation: drift4 110s ease-in-out infinite; }
+.b5 { animation: drift5 88s ease-in-out infinite; }
+.b6 { animation: drift6 104s ease-in-out infinite; }
+.b7 { animation: drift7 96s ease-in-out infinite; }
+
+/* Subtle breathing */
+@keyframes breathe {
+  0%, 100% { transform: translateZ(0) scale(1); }
+  50%      { transform: translateZ(0) scale(1.02); }
+}
+
+/* Drift animations: move slightly from the randomized start */
+@keyframes drift1 {
+  0%, 100% { transform: translate3d(var(--x), var(--y), 0) scale(var(--s)) rotate(var(--r)); opacity: var(--butterfly-opacity); }
+  50%      { transform: translate3d(calc(var(--x) + 6vw), calc(var(--y) - 3vh), 0) scale(calc(var(--s) * 1.03)) rotate(calc(var(--r) + 6deg)); opacity: calc(var(--butterfly-opacity) + 0.05); }
+}
+
+@keyframes drift2 {
+  0%, 100% { transform: translate3d(var(--x), var(--y), 0) scale(var(--s)) rotate(var(--r)); }
+  50%      { transform: translate3d(calc(var(--x) - 7vw), calc(var(--y) + 4vh), 0) scale(calc(var(--s) * 0.98)) rotate(calc(var(--r) - 7deg)); }
+}
+
+@keyframes drift3 {
+  0%, 100% { transform: translate3d(var(--x), var(--y), 0) scale(var(--s)) rotate(var(--r)); }
+  50%      { transform: translate3d(calc(var(--x) + 4vw), calc(var(--y) + 2vh), 0) scale(calc(var(--s) * 1.01)) rotate(calc(var(--r) + 5deg)); }
+}
+
+@keyframes drift4 {
+  0%, 100% { transform: translate3d(var(--x), var(--y), 0) scale(var(--s)) rotate(var(--r)); }
+  50%      { transform: translate3d(calc(var(--x) - 5vw), calc(var(--y) - 4vh), 0) scale(calc(var(--s) * 1.02)) rotate(calc(var(--r) + 8deg)); }
+}
+
+@keyframes drift5 {
+  0%, 100% { transform: translate3d(var(--x), var(--y), 0) scale(var(--s)) rotate(var(--r)); }
+  50%      { transform: translate3d(calc(var(--x) + 8vw), calc(var(--y) + 1vh), 0) scale(calc(var(--s) * 0.97)) rotate(calc(var(--r) - 6deg)); }
+}
+
+@keyframes drift6 {
+  0%, 100% { transform: translate3d(var(--x), var(--y), 0) scale(var(--s)) rotate(var(--r)); opacity: var(--butterfly-opacity); }
+  50%      { transform: translate3d(calc(var(--x) - 3vw), calc(var(--y) + 5vh), 0) scale(calc(var(--s) * 1.04)) rotate(calc(var(--r) + 4deg)); opacity: calc(var(--butterfly-opacity) + 0.04); }
+}
+
+@keyframes drift7 {
+  0%, 100% { transform: translate3d(var(--x), var(--y), 0) scale(var(--s)) rotate(var(--r)); }
+  50%      { transform: translate3d(calc(var(--x) + 2vw), calc(var(--y) - 5vh), 0) scale(calc(var(--s) * 1.00)) rotate(calc(var(--r) - 8deg)); }
+}
+
+/* Accessibility & battery friendliness */
+@media (prefers-reduced-motion: reduce) {
+  .bg-bloom,
+  .butterfly {
+    animation: none !important;
+  }
+}

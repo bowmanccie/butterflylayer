@@ -5,7 +5,7 @@
  * Also, supports construction mode via construction.json.
  */
 
-const CONSTRUCTION_CONFIG_URL = '/assets/meta/construction.json?v=20251213062327';
+const CONSTRUCTION_CONFIG_URL = '/assets/meta/construction.json?v=20251214041832';
 
 // Quotes: preference + throttling (bubble only)
 const L8_QUOTE_PREF_KEY = "l8.quoteCategory";
@@ -275,7 +275,13 @@ function initQuotes() {
   const { policy, mode, slot } = getPageQuoteConfig();
   if (policy === "off") return;
 
-  const all = window.L8_QUOTES.map(normalizeQuote).filter(q => q.text);
+  // Make it mutable so we can enforce policy rules
+  let all = window.L8_QUOTES.map(normalizeQuote).filter(q => q.text);
+
+  // ✅ Rule 1: quiet quotes never appear on non-quiet pages
+  if (policy !== "quiet-only") {
+    all = all.filter(q => q.category !== "quiet");
+  }
 
   // Effective category selection
   let effectiveCategory = "all";
@@ -283,15 +289,23 @@ function initQuotes() {
     effectiveCategory = "quiet";
   } else {
     effectiveCategory = getUserQuoteCategory();
+    
+    // ✅ Optional safety: user preference cannot be quiet on normal pages
+    if (effectiveCategory === "quiet") effectiveCategory = "all";
   }
 
   // Category filter + fallback
   let pool = filterQuotesByCategory(all, effectiveCategory);
-  if (!pool.length && effectiveCategory !== "all") {
-    pool = filterQuotesByCategory(all, "all");
+
+  // ✅ Rule 2: quiet-only pages must NEVER fall back to "all"
+  if (!pool.length) {
+    if (policy === "quiet-only") return;
+    if (effectiveCategory !== "all") pool = filterQuotesByCategory(all, "all");
   }
+
   if (!pool.length) return;
 
+  
   const pick = weightedPick(pool);
   if (!pick) return;
 
@@ -309,7 +323,7 @@ function initQuotes() {
 
 /* ---------- Boot ---------- */
 document.addEventListener("DOMContentLoaded", async () => {
-  const v = "20251213062327"; // will be replaced at publish time
+  const v = "20251214041832"; // will be replaced at publish time
     await Promise.all([
       loadPartial("#header", `/partials/header.html?v=${v}`),
       loadPartial("#footer", `/partials/footer.html?v=${v}`),
