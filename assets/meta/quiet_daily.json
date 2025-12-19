@@ -1,23 +1,23 @@
 {
   "source": "usccb",
-  "generated_at": "2025-12-18T05:34:54.975Z",
-  "date": "2025-12-18",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/121825.cfm",
-  "feast": "Thursday of the Third Week of Advent",
-  "lectionary": "194",
+  "generated_at": "2025-12-19T05:33:39.543Z",
+  "date": "2025-12-19",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/121925.cfm",
+  "feast": "Friday of the Third Week of Advent",
+  "lectionary": "195",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Jeremiah 23:5-8"
+      "citation": "Judges 13:2-7, 24-25a"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 72:1-2, 12-13, 18-19"
+      "citation": "Psalm 71:3-4a, 5-6ab, 16-17"
     },
     {
       "label": "Alleluia",
@@ -27,7 +27,7 @@
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 1:18-25"
+      "citation": "Luke 1:5-25"
     }
   ]
 }
