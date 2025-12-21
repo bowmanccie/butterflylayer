@@ -1,13 +1,13 @@
 {
   "source": "usccb",
-  "generated_at": "2025-12-20T05:31:27.892Z",
-  "date": "2025-12-20",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/122025.cfm",
-  "feast": "Saturday of the Third Week of Advent",
-  "lectionary": "196",
+  "generated_at": "2025-12-21T05:32:30.216Z",
+  "date": "2025-12-21",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/122125.cfm",
+  "feast": "Fourth Sunday of Advent",
+  "lectionary": "10",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
@@ -17,17 +17,22 @@
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 24:1-2, 3-4ab, 5-6"
+      "citation": "Psalm 24:1-2, 3-4, 5-6."
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "Romans 1:1-7"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": null
+      "citation": "Matthew 1:23"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 1:26-38"
+      "citation": "Matthew 1:18-24"
     }
   ]
 }
