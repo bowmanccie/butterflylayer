@@ -1,23 +1,23 @@
 {
   "source": "usccb",
-  "generated_at": "2025-12-22T05:35:28.853Z",
-  "date": "2025-12-22",
-  "weekday": "Monday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/122225.cfm",
-  "feast": "Monday of the Fourth Week of Advent",
-  "lectionary": "198",
+  "generated_at": "2025-12-23T05:36:09.681Z",
+  "date": "2025-12-23",
+  "weekday": "Tuesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/122325.cfm",
+  "feast": "Tuesday of the Fourth Week of Advent",
+  "lectionary": "199",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Samuel 1:24-28"
+      "citation": "Malachi 3:1-4, 23-24"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "1 Samuel 2:1, 4-5, 6-7, 8abcd"
+      "citation": "Psalm 25:4-5ab, 8-9, 10 and 14"
     },
     {
       "label": "Alleluia",
@@ -27,7 +27,7 @@
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 1:46-56"
+      "citation": "Luke 1:57-66"
     }
   ]
 }
