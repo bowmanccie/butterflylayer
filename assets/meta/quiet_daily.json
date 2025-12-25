@@ -1,33 +1,12 @@
 {
   "source": "usccb",
-  "generated_at": "2025-12-24T05:36:03.881Z",
-  "date": "2025-12-24",
-  "weekday": "Wednesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/122425.cfm",
-  "feast": "Wednesday of the Fourth Week of Advent\n                                                      \n                    Mass in the Morning",
-  "lectionary": "200",
+  "generated_at": "2025-12-25T05:35:58.986Z",
+  "date": "2025-12-25",
+  "weekday": "Thursday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/122525.cfm",
+  "feast": null,
+  "lectionary": "13, 14, 15, 16",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
-  "readings": [
-    {
-      "label": "Reading 1",
-      "type": "reading",
-      "citation": "2 Samuel 7:1-5, 8b-12, 14a, 16"
-    },
-    {
-      "label": "Responsorial Psalm",
-      "type": "psalm",
-      "citation": "Psalm 89:2-3, 4-5, 27 and 29"
-    },
-    {
-      "label": "Alleluia",
-      "type": "alleluia",
-      "citation": null
-    },
-    {
-      "label": "Gospel",
-      "type": "gospel",
-      "citation": "Luke 1:67-79"
-    }
-  ]
+  "rosary_mysteries": "luminous",
+  "readings": []
 }
