@@ -1,12 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2025-12-25T05:35:58.986Z",
-  "date": "2025-12-25",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/122525.cfm",
-  "feast": null,
-  "lectionary": "13, 14, 15, 16",
+  "generated_at": "2025-12-26T05:34:23.649Z",
+  "date": "2025-12-26",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/122625.cfm",
+  "feast": "Feast of Saint Stephen, First Martyr",
+  "lectionary": "696",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
-  "readings": []
+  "rosary_mysteries": "sorrowful",
+  "readings": [
+    {
+      "label": "Reading 1",
+      "type": "reading",
+      "citation": "Acts 6:8-10; 7:54-59"
+    },
+    {
+      "label": "Responsorial Psalm",
+      "type": "psalm",
+      "citation": "Psalm 31:3cd-4, 6 and 8ab, 16bc and 17"
+    },
+    {
+      "label": "Alleluia",
+      "type": "alleluia",
+      "citation": "Psalm 118:26a, 27a"
+    },
+    {
+      "label": "Gospel",
+      "type": "gospel",
+      "citation": "Matthew 10:17-22"
+    }
+  ]
 }
