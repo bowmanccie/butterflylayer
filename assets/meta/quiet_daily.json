@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2025-12-26T05:34:23.649Z",
-  "date": "2025-12-26",
-  "weekday": "Friday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/122625.cfm",
-  "feast": "Feast of Saint Stephen, First Martyr",
-  "lectionary": "696",
+  "generated_at": "2025-12-27T05:33:13.041Z",
+  "date": "2025-12-27",
+  "weekday": "Saturday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/122725.cfm",
+  "feast": "Feast of Saint John, Apostle and Evangelist",
+  "lectionary": "697",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Acts 6:8-10; 7:54-59"
+      "citation": "1 John 1:1-4"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 31:3cd-4, 6 and 8ab, 16bc and 17"
+      "citation": "Psalm 97:1-2, 5-6, 11-12"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Psalm 118:26a, 27a"
+      "citation": "See Te Deum"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 10:17-22"
+      "citation": "John 20:1a and 2-8"
     }
   ]
 }
