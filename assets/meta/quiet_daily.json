@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2025-12-27T05:33:13.041Z",
-  "date": "2025-12-27",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/122725.cfm",
-  "feast": "Feast of Saint John, Apostle and Evangelist",
-  "lectionary": "697",
+  "generated_at": "2025-12-28T05:35:43.974Z",
+  "date": "2025-12-28",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/122825.cfm",
+  "feast": "Feast of the Holy Family of Jesus, Mary and Joseph",
+  "lectionary": "17",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
-      "label": "Reading 1",
+      "label": "Reading I",
       "type": "reading",
-      "citation": "1 John 1:1-4"
+      "citation": "Sirach 3:2-6, 12-14"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 97:1-2, 5-6, 11-12"
+      "citation": "Psalm 128:1-2, 3, 4-5."
+    },
+    {
+      "label": "Reading II",
+      "type": "reading",
+      "citation": "Colossians 3:12-21 or 3:12-17"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "See Te Deum"
+      "citation": "Colossians 3:15a, 16a"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 20:1a and 2-8"
+      "citation": "Mt 2:13-15, 19-23"
     }
   ]
 }
