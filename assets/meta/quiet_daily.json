@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2025-12-30T05:35:22.215Z",
-  "date": "2025-12-30",
-  "weekday": "Tuesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/123025.cfm",
+  "generated_at": "2025-12-31T05:37:00.395Z",
+  "date": "2025-12-31",
+  "weekday": "Wednesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/123125.cfm",
   "feast": null,
-  "lectionary": "203",
+  "lectionary": "204",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
-      "label": "Reading 1",
+      "label": "Reading I",
       "type": "reading",
-      "citation": "1 John 2:12-17"
+      "citation": "1 John 2:18-21"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 96:7-8a, 8b-9, 10"
+      "citation": "Psalm 96:1-2, 11-12, 13"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": null
+      "citation": "John 1:14a, 12a"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 2:36-40"
+      "citation": "John 1:1-18"
     }
   ]
 }
