@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2025-12-31T05:37:00.395Z",
-  "date": "2025-12-31",
-  "weekday": "Wednesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/123125.cfm",
-  "feast": null,
-  "lectionary": "204",
+  "generated_at": "2026-01-01T05:38:39.041Z",
+  "date": "2026-01-01",
+  "weekday": "Thursday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/010126.cfm",
+  "feast": "Solemnity of Mary, the Holy Mother of God\n                                                      \n                     The Octave Day of the Nativity of the Lord",
+  "lectionary": "18",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "luminous",
   "readings": [
     {
       "label": "Reading I",
       "type": "reading",
-      "citation": "1 John 2:18-21"
+      "citation": "Numbers 6:22-27"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 96:1-2, 11-12, 13"
+      "citation": "Psalm 67:2-3, 5, 6, 8"
+    },
+    {
+      "label": "Reading II",
+      "type": "reading",
+      "citation": "Galatians 4:4-7"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 1:14a, 12a"
+      "citation": "Hebrews 1:1-2"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 1:1-18"
+      "citation": "Luke 2:16-21"
     }
   ]
 }
