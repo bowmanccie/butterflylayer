@@ -1,28 +1,23 @@
 {
   "source": "usccb",
-  "generated_at": "2026-01-01T05:38:39.041Z",
-  "date": "2026-01-01",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/010126.cfm",
-  "feast": "Solemnity of Mary, the Holy Mother of God\n                                                      \n                     The Octave Day of the Nativity of the Lord",
-  "lectionary": "18",
+  "generated_at": "2026-01-02T05:37:26.596Z",
+  "date": "2026-01-02",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/010226.cfm",
+  "feast": "Memorial of Saints Basil the Great and Gregory Nazianzen, Bishops and Doctors of the Church",
+  "lectionary": "205",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
-      "label": "Reading I",
+      "label": "Reading 1",
       "type": "reading",
-      "citation": "Numbers 6:22-27"
+      "citation": "1 John 2:22-28"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 67:2-3, 5, 6, 8"
-    },
-    {
-      "label": "Reading II",
-      "type": "reading",
-      "citation": "Galatians 4:4-7"
+      "citation": "Psalm 98:1, 2-3ab, 3cd-4"
     },
     {
       "label": "Alleluia",
@@ -32,7 +27,7 @@
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 2:16-21"
+      "citation": "John 1:19-28"
     }
   ]
 }
