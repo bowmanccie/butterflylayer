@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-01-02T05:37:26.596Z",
-  "date": "2026-01-02",
-  "weekday": "Friday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/010226.cfm",
-  "feast": "Memorial of Saints Basil the Great and Gregory Nazianzen, Bishops and Doctors of the Church",
-  "lectionary": "205",
+  "generated_at": "2026-01-03T05:33:47.817Z",
+  "date": "2026-01-03",
+  "weekday": "Saturday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/010326.cfm",
+  "feast": null,
+  "lectionary": "206",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 John 2:22-28"
+      "citation": "1 John 2:29–3:6"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 98:1, 2-3ab, 3cd-4"
+      "citation": "Psalm 98:1, 3cd-4, 5-6"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Hebrews 1:1-2"
+      "citation": "John 1:14a, 12a"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 1:19-28"
+      "citation": "John 1:29-34"
     }
   ]
 }
