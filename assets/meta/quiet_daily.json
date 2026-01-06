@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-01-05T05:46:41.694Z",
-  "date": "2026-01-05",
-  "weekday": "Monday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/010526.cfm",
-  "feast": "Memorial of St. John Neumann, Bishop",
-  "lectionary": "212",
+  "generated_at": "2026-01-06T05:37:04.279Z",
+  "date": "2026-01-06",
+  "weekday": "Tuesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/010626.cfm",
+  "feast": null,
+  "lectionary": "213",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 John 3:22–4:6"
+      "citation": "1 John 4:7-10"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 2:7bc-8, 10-12a"
+      "citation": "Psalm 72:1-2, 3-4, 7-8"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "See Matthew 4:23"
+      "citation": "Luke 4:18"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 4:12-17, 23-25"
+      "citation": "Mark 6:34-44"
     }
   ]
 }
