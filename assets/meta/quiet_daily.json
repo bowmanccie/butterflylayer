@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-01-16T05:37:05.585Z",
-  "date": "2026-01-16",
-  "weekday": "Friday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/011626.cfm",
-  "feast": null,
-  "lectionary": "309",
+  "generated_at": "2026-01-17T05:32:27.111Z",
+  "date": "2026-01-17",
+  "weekday": "Saturday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/011726.cfm",
+  "feast": "Memorial of Saint Anthony, Abbot",
+  "lectionary": "310",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading I",
       "type": "reading",
-      "citation": "1 Samuel 8:4-7, 10-22a"
+      "citation": "1 Samuel 9:1-4, 17-19; 10:1"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 89:16-17, 18-19"
+      "citation": "Psalm 21:2-3, 4-5, 6-7"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Luke 7:16"
+      "citation": "Luke 4:18"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Mark 2:1-12"
+      "citation": "Mark 2:13-17"
     }
   ]
 }
