@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-01-18T05:34:28.944Z",
-  "date": "2026-01-18",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/011826.cfm",
-  "feast": "Second Sunday in Ordinary Time",
-  "lectionary": "64",
+  "generated_at": "2026-01-19T05:43:48.413Z",
+  "date": "2026-01-19",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/011926.cfm",
+  "feast": null,
+  "lectionary": "311",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Isaiah 49:3, 5-6"
+      "citation": "1 Samuel 15:16-23"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 40:2, 4, 7-8, 8-9, 10"
-    },
-    {
-      "label": "Reading 2",
-      "type": "reading",
-      "citation": "1 Corinthians 1:1-3"
+      "citation": "Psalm 50:8-9, 16bc-17, 21 and 23"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 1:14a, 12a"
+      "citation": "Hebrews 4:12"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 1:29-34"
+      "citation": "Mark 2:18-22"
     }
   ]
 }
