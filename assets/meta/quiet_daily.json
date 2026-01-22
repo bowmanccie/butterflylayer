@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-01-21T05:40:23.583Z",
-  "date": "2026-01-21",
-  "weekday": "Wednesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/012126.cfm",
-  "feast": "Memorial of Saint Agnes, Virgin and Martyr",
-  "lectionary": "313",
+  "generated_at": "2026-01-22T05:41:13.991Z",
+  "date": "2026-01-22",
+  "weekday": "Thursday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/012226.cfm",
+  "feast": null,
+  "lectionary": "314",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "luminous",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Samuel 17:32-33, 37, 40-51"
+      "citation": "1 Samuel 18:6-9; 19:1-7"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 144:1b, 2, 9-10"
+      "citation": "Psalm 56:2-3, 9-10a, 10b-11, 12-13"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "See Matthew 4:23"
+      "citation": "2 Timothy 1:10"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Mark 3:1-6"
+      "citation": "Mark 3:7-12"
     }
   ]
 }
