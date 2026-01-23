@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-01-22T05:41:13.991Z",
-  "date": "2026-01-22",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/012226.cfm",
+  "generated_at": "2026-01-23T05:39:28.202Z",
+  "date": "2026-01-23",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/012326.cfm",
   "feast": null,
-  "lectionary": "314",
+  "lectionary": "315",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Samuel 18:6-9; 19:1-7"
+      "citation": "1 Samuel 24:3-21"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 56:2-3, 9-10a, 10b-11, 12-13"
+      "citation": "Psalm 57:2, 3-4, 6 and 11"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "2 Timothy 1:10"
+      "citation": "2 Corinthians 5:19"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Mark 3:7-12"
+      "citation": "Mark 3:13-19"
     }
   ]
 }
