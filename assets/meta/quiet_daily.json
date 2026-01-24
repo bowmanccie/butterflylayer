@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-01-23T05:39:28.202Z",
-  "date": "2026-01-23",
-  "weekday": "Friday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/012326.cfm",
-  "feast": null,
-  "lectionary": "315",
+  "generated_at": "2026-01-24T05:33:12.250Z",
+  "date": "2026-01-24",
+  "weekday": "Saturday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/012426.cfm",
+  "feast": "Memorial of Saint Francis de Sales, Bishop and Doctor of the Church",
+  "lectionary": "316",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Samuel 24:3-21"
+      "citation": "2 Samuel 1:1-4, 11-12, 19, 23-27"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 57:2, 3-4, 6 and 11"
+      "citation": "Psalm 80:2-3, 5-7"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "2 Corinthians 5:19"
+      "citation": "See Acts 16:14b"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Mark 3:13-19"
+      "citation": "Mark 3:20-21"
     }
   ]
 }
