@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-01-24T05:33:12.250Z",
-  "date": "2026-01-24",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/012426.cfm",
-  "feast": "Memorial of Saint Francis de Sales, Bishop and Doctor of the Church",
-  "lectionary": "316",
+  "generated_at": "2026-01-25T05:38:27.623Z",
+  "date": "2026-01-25",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/012526.cfm",
+  "feast": "Third Sunday in Ordinary Time",
+  "lectionary": "67",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "2 Samuel 1:1-4, 11-12, 19, 23-27"
+      "citation": "Isaiah 8:23—9:3"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 80:2-3, 5-7"
+      "citation": "Psalm 27:1, 4, 13-14"
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "1 Corinthians 1:10-13, 17"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "See Acts 16:14b"
+      "citation": "Matthew 4:23"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Mark 3:20-21"
+      "citation": "Matthew 4:12-23 or 4:12-17"
     }
   ]
 }
