@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-01-25T05:38:27.623Z",
-  "date": "2026-01-25",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/012526.cfm",
-  "feast": "Third Sunday in Ordinary Time",
-  "lectionary": "67",
+  "generated_at": "2026-01-26T05:43:17.508Z",
+  "date": "2026-01-26",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/012626.cfm",
+  "feast": "Memorial of Saints Timothy and Titus, Bishops",
+  "lectionary": "520/317",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Isaiah 8:23—9:3"
+      "citation": "2 Timothy 1:1-8"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 27:1, 4, 13-14"
-    },
-    {
-      "label": "Reading 2",
-      "type": "reading",
-      "citation": "1 Corinthians 1:10-13, 17"
+      "citation": "Psalm 96:1-2a, 2b-3, 7-8a, 10"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Matthew 4:23"
+      "citation": "See 2 Timothy 1:10"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 4:12-23 or 4:12-17"
+      "citation": "Mark 3:22-30"
     }
   ]
 }
