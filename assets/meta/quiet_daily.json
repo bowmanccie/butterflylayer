@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-01-27T05:38:56.044Z",
-  "date": "2026-01-27",
-  "weekday": "Tuesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/012726.cfm",
-  "feast": null,
-  "lectionary": "318",
+  "generated_at": "2026-01-28T05:39:42.756Z",
+  "date": "2026-01-28",
+  "weekday": "Wednesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/012826.cfm",
+  "feast": "Memorial of Saint Thomas Aquinas, Priest and Doctor of the Church",
+  "lectionary": "319",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "2 Samuel 6:12b-15, 17-19"
+      "citation": "2 Samuel 7:4-17"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 24:7, 8, 9, 10"
+      "citation": "Psalm 89:4-5, 27-28, 29-30"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "See Matthew 11:25"
+      "citation": null
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Mark 3:31-35"
+      "citation": "Mark 4:1-20"
     }
   ]
 }
