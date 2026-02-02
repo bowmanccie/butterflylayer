@@ -1,38 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-02-01T06:05:24.913Z",
-  "date": "2026-02-01",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/020126.cfm",
-  "feast": "Fourth Sunday in Ordinary Time",
-  "lectionary": "70",
+  "generated_at": "2026-02-02T06:10:52.168Z",
+  "date": "2026-02-02",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/020226.cfm",
+  "feast": "Feast of the Presentation of the Lord",
+  "lectionary": "524",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
-      "label": "Reading 1",
+      "label": "Reading I",
       "type": "reading",
-      "citation": "Zephaniah 2:3; 3:12-13"
+      "citation": "Malachi 3:1-4"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 146:6-7, 8-9, 9-10"
+      "citation": "Psalm 24:7, 8, 9, 10"
     },
     {
-      "label": "Reading 2",
+      "label": "Reading II",
       "type": "reading",
-      "citation": "1 Corinthians 1:26-31"
+      "citation": "Hebrews 2:14-18"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Matthew 5:12a"
+      "citation": "Luke 2:32"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 5:1-12a"
+      "citation": "Luke 2:22-40 or 2:22-32"
     }
   ]
 }
