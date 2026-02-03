@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-02-02T06:10:52.168Z",
-  "date": "2026-02-02",
-  "weekday": "Monday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/020226.cfm",
-  "feast": "Feast of the Presentation of the Lord",
-  "lectionary": "524",
+  "generated_at": "2026-02-03T06:01:26.957Z",
+  "date": "2026-02-03",
+  "weekday": "Tuesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/020326.cfm",
+  "feast": null,
+  "lectionary": "324",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
-      "label": "Reading I",
+      "label": "Reading 1",
       "type": "reading",
-      "citation": "Malachi 3:1-4"
+      "citation": "2 Samuel 18:9-10, 14b, 24-25a, 30–19:3"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 24:7, 8, 9, 10"
-    },
-    {
-      "label": "Reading II",
-      "type": "reading",
-      "citation": "Hebrews 2:14-18"
+      "citation": "Psalm 86:1-2, 3-4, 5-6"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Luke 2:32"
+      "citation": "Matthew 8:17"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 2:22-40 or 2:22-32"
+      "citation": "Mark 5:21-43"
     }
   ]
 }
