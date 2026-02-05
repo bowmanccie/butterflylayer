@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-02-04T06:00:28.223Z",
-  "date": "2026-02-04",
-  "weekday": "Wednesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/020426.cfm",
-  "feast": null,
-  "lectionary": "325",
+  "generated_at": "2026-02-05T06:06:26.430Z",
+  "date": "2026-02-05",
+  "weekday": "Thursday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/020526.cfm",
+  "feast": "Memorial of Saint Agatha, Virgin and Martyr",
+  "lectionary": "326",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "luminous",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "2 Samuel 24:2, 9-17"
+      "citation": "1 Kings 2:1-4, 10-12"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 32:1-2, 5, 6, 7"
+      "citation": "1 Chronicles 29:10, 11ab, 11d-12a, 12bcd"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 10:27"
+      "citation": "Mark 1:15"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Mark 6:1-6"
+      "citation": "Mark 6:7-13"
     }
   ]
 }
