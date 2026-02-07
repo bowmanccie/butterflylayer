@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-02-06T06:04:09.800Z",
-  "date": "2026-02-06",
-  "weekday": "Friday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/020626.cfm",
-  "feast": "Memorial of Saint Paul Miki and Companions, Martyrs",
-  "lectionary": "327",
+  "generated_at": "2026-02-07T05:53:24.447Z",
+  "date": "2026-02-07",
+  "weekday": "Saturday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/020726.cfm",
+  "feast": null,
+  "lectionary": "328",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
-      "label": "Reading I",
+      "label": "Reading 1",
       "type": "reading",
-      "citation": "Sirach 47:2-11"
+      "citation": "1 Kings 3:4-13"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 18:31, 47 and 50, 51"
+      "citation": "Psalm 119:9, 10, 11, 12, 13, 14"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "See Luke 8:15"
+      "citation": "John 10:27"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Mark 6:14-29"
+      "citation": "Mark 6:30-34"
     }
   ]
 }
