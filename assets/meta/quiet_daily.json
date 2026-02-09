@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-02-08T06:04:44.592Z",
-  "date": "2026-02-08",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/020826.cfm",
-  "feast": "Fifth Sunday in Ordinary Time",
-  "lectionary": "73",
+  "generated_at": "2026-02-09T06:13:22.943Z",
+  "date": "2026-02-09",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/020926.cfm",
+  "feast": null,
+  "lectionary": "329",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
-      "label": "Reading 1",
+      "label": "Reading I",
       "type": "reading",
-      "citation": "Isaiah 58:7-10"
+      "citation": "1 Kings 8:1-7, 9-13"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 112:4-5, 6-7, 8-9"
-    },
-    {
-      "label": "Reading 2",
-      "type": "reading",
-      "citation": "1 Corinthians 2:1-5"
+      "citation": "Psalm 132:6-7, 8-10"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 8:12"
+      "citation": "See Matthew 4:23"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 5:13-16"
+      "citation": "Mark 6:53-56"
     }
   ]
 }
