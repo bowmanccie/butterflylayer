@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-02-11T06:14:05.602Z",
-  "date": "2026-02-11",
-  "weekday": "Wednesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/021126.cfm",
+  "generated_at": "2026-02-12T06:12:40.031Z",
+  "date": "2026-02-12",
+  "weekday": "Thursday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/021226.cfm",
   "feast": null,
-  "lectionary": "331",
+  "lectionary": "332",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "luminous",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Kings 10:1-10"
+      "citation": "1 Kings 11:4-13"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 37:5-6, 30-31, 39-40"
+      "citation": "Psalm 106:3-4, 35-36, 37 and 40"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "See John 17:17b, 17a"
+      "citation": "James 1:21bc"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Mark 7:14-23"
+      "citation": "Mark 7:24-30"
     }
   ]
 }
