@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-02-13T06:09:32.640Z",
-  "date": "2026-02-13",
-  "weekday": "Friday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/021326.cfm",
-  "feast": null,
-  "lectionary": "333",
+  "generated_at": "2026-02-14T05:56:06.416Z",
+  "date": "2026-02-14",
+  "weekday": "Saturday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/021426.cfm",
+  "feast": "Memorial of Saints Cyril, Monk, and Methodius, Bishop",
+  "lectionary": "334",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Kings 11:29-32; 12:19"
+      "citation": "1 Kings 12:26-32; 13:33-34"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 81:10-11ab, 12-13, 14-15"
+      "citation": "Psalm 106:6-7ab, 19-20, 21-22"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "See Acts 16:14b"
+      "citation": "Matthew 4:4b"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Mark 7:31-37"
+      "citation": "Mark 8:1-10"
     }
   ]
 }
