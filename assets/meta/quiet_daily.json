@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-02-15T06:05:14.279Z",
-  "date": "2026-02-15",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/021526.cfm",
-  "feast": "Sixth Sunday in Ordinary Time",
-  "lectionary": "76",
+  "generated_at": "2026-02-16T06:12:35.122Z",
+  "date": "2026-02-16",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/021626.cfm",
+  "feast": null,
+  "lectionary": "335",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Sirach 15:15-20"
+      "citation": "James 1:1-11"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 119:1-2, 4-5, 17-18, 33-34"
-    },
-    {
-      "label": "Reading 2",
-      "type": "reading",
-      "citation": "1 Corinthians 2:6-10"
+      "citation": "Psalm 119:67, 68, 71, 72, 75, 76"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "cf. Matthew 11:25"
+      "citation": "John 14:6"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 5:17-37"
+      "citation": "Mark 8:11-13"
     }
   ]
 }
