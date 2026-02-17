@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-02-16T06:12:35.122Z",
-  "date": "2026-02-16",
-  "weekday": "Monday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/021626.cfm",
+  "generated_at": "2026-02-17T06:06:03.517Z",
+  "date": "2026-02-17",
+  "weekday": "Tuesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/021726.cfm",
   "feast": null,
-  "lectionary": "335",
+  "lectionary": "336",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "James 1:1-11"
+      "citation": "James 1:12-18"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 119:67, 68, 71, 72, 75, 76"
+      "citation": "Psalm 94:12-13a, 14-15, 18-19"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 14:6"
+      "citation": "John 14:23"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Mark 8:11-13"
+      "citation": "Mark 8:14-21"
     }
   ]
 }
