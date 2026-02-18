@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-02-17T06:06:03.517Z",
-  "date": "2026-02-17",
-  "weekday": "Tuesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/021726.cfm",
+  "generated_at": "2026-02-18T06:11:16.091Z",
+  "date": "2026-02-18",
+  "weekday": "Wednesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/021826.cfm",
   "feast": null,
-  "lectionary": "336",
+  "lectionary": "219",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "James 1:12-18"
+      "citation": "Joel 2:12-18"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 94:12-13a, 14-15, 18-19"
+      "citation": "Psalm 51:3-4, 5-6ab, 12-13, 14 and 17"
     },
     {
-      "label": "Alleluia",
-      "type": "alleluia",
-      "citation": "John 14:23"
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "2 Corinthians 5:20—6:2"
+    },
+    {
+      "label": "Verse Before the Gospel",
+      "type": "gospel",
+      "citation": "Psalm 95:8"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Mark 8:14-21"
+      "citation": "Matthew 6:1-6, 16-18"
     }
   ]
 }
