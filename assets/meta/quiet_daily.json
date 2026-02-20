@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-02-19T06:10:08.717Z",
-  "date": "2026-02-19",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/021926.cfm",
+  "generated_at": "2026-02-20T06:04:40.671Z",
+  "date": "2026-02-20",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/022026.cfm",
   "feast": null,
-  "lectionary": "220",
+  "lectionary": "221",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Deuteronomy 30:15-20"
+      "citation": "Isaiah 58:1-9a"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 1:1-2, 3, 4 and 6"
+      "citation": "Psalm 51:3-4, 5-6ab, 18-19"
     },
     {
       "label": "Verse Before the Gospel",
       "type": "gospel",
-      "citation": "Matthew 4:17"
+      "citation": "See Amos 5:14"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 9:22-25"
+      "citation": "Matthew 9:14-15"
     }
   ]
 }
