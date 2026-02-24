@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-02-23T06:12:38.535Z",
-  "date": "2026-02-23",
-  "weekday": "Monday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/022326.cfm",
-  "feast": "Monday of the First Week of Lent",
-  "lectionary": "224",
+  "generated_at": "2026-02-24T06:09:31.621Z",
+  "date": "2026-02-24",
+  "weekday": "Tuesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/022426.cfm",
+  "feast": "Tuesday of the First Week of Lent",
+  "lectionary": "225",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Leviticus 19:1-2, 11-18"
+      "citation": "Isaiah 55:10-11"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 19:8, 9, 10, 15"
+      "citation": "Psalm 34:4-5, 6-7, 16-17, 18-19"
     },
     {
       "label": "Verse Before the Gospel",
       "type": "gospel",
-      "citation": "2 Corinthians 6:2b"
+      "citation": "Matthew 4:4b"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 25:31-46"
+      "citation": "Matthew 6:7-15"
     }
   ]
 }
