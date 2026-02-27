@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-02-26T06:07:58.989Z",
-  "date": "2026-02-26",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/022626.cfm",
-  "feast": null,
-  "lectionary": "227",
+  "generated_at": "2026-02-27T06:02:02.882Z",
+  "date": "2026-02-27",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/022726.cfm",
+  "feast": "Friday of the First Week of Lent",
+  "lectionary": "228",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
-      "label": "Reading I",
+      "label": "Reading 1",
       "type": "reading",
-      "citation": "Esther C:12, 14-16, 23-25"
+      "citation": "Ezekiel 18:21-28"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 138:1-2ab, 2cde-3, 7c-8"
+      "citation": "Psalm 130:1-2, 3-4, 5-7a, 7bc-8"
     },
     {
       "label": "Verse Before the Gospel",
       "type": "gospel",
-      "citation": "Psalm 51:12a, 14a"
+      "citation": "Ezekiel 18:31"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 7:7-12"
+      "citation": "Matthew 5:20-26"
     }
   ]
 }
