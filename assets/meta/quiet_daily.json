@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-02-28T05:44:40.910Z",
-  "date": "2026-02-28",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/022826.cfm",
-  "feast": "Saturday of the First Week of Lent",
-  "lectionary": "229",
+  "generated_at": "2026-03-01T06:00:22.390Z",
+  "date": "2026-03-01",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/030126.cfm",
+  "feast": "Second Sunday of Lent",
+  "lectionary": "25",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Deuteronomy 26:16-19"
+      "citation": "Genesis 12:1-4a"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 119:1-2, 4-5, 7-8"
+      "citation": "Psalm 33:4-5, 18-19, 20, 22."
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "2 Timothy 1:8b-10"
     },
     {
       "label": "Verse Before the Gospel",
       "type": "gospel",
-      "citation": "2 Corinthians 6:2b"
+      "citation": "Matthew 17:5"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 5:43-48"
+      "citation": "Matthew 17:1-9"
     }
   ]
 }
