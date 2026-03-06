@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-03-05T05:58:34.661Z",
-  "date": "2026-03-05",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/030526.cfm",
-  "feast": "Thursday of the Second Week of Lent",
-  "lectionary": "233",
+  "generated_at": "2026-03-06T05:56:14.019Z",
+  "date": "2026-03-06",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/030626.cfm",
+  "feast": "Friday of the Second Week of Lent",
+  "lectionary": "234",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Jeremiah 17:5-10"
+      "citation": "Genesis 37:3-4, 12-13a, 17b-28a"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 1:1-2, 3, 4 and 6"
+      "citation": "Psalm 105:16-17, 18-19, 20-21"
     },
     {
       "label": "Verse Before the Gospel",
       "type": "gospel",
-      "citation": "See Luke 8:15"
+      "citation": "John 3:16"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 16:19-31"
+      "citation": "Matthew 21:33-43, 45-46"
     }
   ]
 }
