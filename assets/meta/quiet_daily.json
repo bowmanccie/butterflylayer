@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-03-07T05:48:33.828Z",
-  "date": "2026-03-07",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/030726.cfm",
-  "feast": "Saturday of the Second Week of Lent",
-  "lectionary": "235",
+  "generated_at": "2026-03-08T05:54:17.062Z",
+  "date": "2026-03-08",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/030826.cfm",
+  "feast": "Third Sunday of Lent",
+  "lectionary": "28",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
-      "label": "Reading 1",
+      "label": "Reading I",
       "type": "reading",
-      "citation": "Micah 7:14-15, 18-20"
+      "citation": "Exodus 17:3-7"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 103:1-2, 3-4, 9-10, 11-12"
+      "citation": "Psalm 95:1-2, 6-7, 8-9"
+    },
+    {
+      "label": "Reading II",
+      "type": "reading",
+      "citation": "Romans 5:1-2, 5-8"
     },
     {
       "label": "Verse Before the Gospel",
       "type": "gospel",
-      "citation": "Luke 15:18"
+      "citation": "John 4:42, 15"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 15:1-3, 11-32"
+      "citation": "John 4:5-42"
     }
   ]
 }
