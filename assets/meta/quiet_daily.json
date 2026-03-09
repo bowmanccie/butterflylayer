@@ -1,38 +1,28 @@
 {
   "source": "usccb",
-  "generated_at": "2026-03-08T05:54:17.062Z",
-  "date": "2026-03-08",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/030826.cfm",
-  "feast": "Third Sunday of Lent",
-  "lectionary": "28",
+  "generated_at": "2026-03-09T06:08:03.050Z",
+  "date": "2026-03-09",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/030926.cfm",
+  "feast": "Monday of the Third Week of Lent",
+  "lectionary": "237",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
-      "label": "Reading I",
+      "label": "Reading 1",
       "type": "reading",
-      "citation": "Exodus 17:3-7"
+      "citation": "2 Kings 5:1-15ab"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 95:1-2, 6-7, 8-9"
-    },
-    {
-      "label": "Reading II",
-      "type": "reading",
-      "citation": "Romans 5:1-2, 5-8"
-    },
-    {
-      "label": "Verse Before the Gospel",
-      "type": "gospel",
-      "citation": "John 4:42, 15"
+      "citation": "Psalm 42:2, 3; 43:3, 4"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 4:5-42"
+      "citation": "Luke 4:24-30"
     }
   ]
 }
