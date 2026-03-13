@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-03-12T06:01:53.310Z",
-  "date": "2026-03-12",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/031226.cfm",
-  "feast": "Thursday of the Third Week of Lent",
-  "lectionary": "240",
+  "generated_at": "2026-03-13T05:59:51.406Z",
+  "date": "2026-03-13",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/031326.cfm",
+  "feast": "Friday of the Third Week of Lent",
+  "lectionary": "241",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Jeremiah 7:23-28"
+      "citation": "Hosea 14:2-10"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 95:1-2, 6-7, 8-9"
+      "citation": "Psalm 81:6c-8a, 8bc-9, 10-11ab, 14 and 17"
     },
     {
       "label": "Verse Before the Gospel",
       "type": "gospel",
-      "citation": "Joel 2:12-13"
+      "citation": "Matthew 4:17"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 11:14-23"
+      "citation": "Mark 12:28-34"
     }
   ]
 }
