@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-03-14T05:56:33.427Z",
-  "date": "2026-03-14",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/031426.cfm",
-  "feast": "Saturday of the Third Week of Lent",
-  "lectionary": "242",
+  "generated_at": "2026-03-15T06:09:38.537Z",
+  "date": "2026-03-15",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/031526.cfm",
+  "feast": "Fourth Sunday of Lent",
+  "lectionary": "31",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
-      "label": "Reading 1",
+      "label": "Reading I",
       "type": "reading",
-      "citation": "Hosea 6:1-6"
+      "citation": "1 Samuel 16:1b, 6-7, 10-13a"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 51:3-4, 18-19, 20-21ab"
+      "citation": "Psalm 23: 1-3a, 3b-4, 5, 6"
+    },
+    {
+      "label": "Reading II",
+      "type": "reading",
+      "citation": "Ephesians 5:8-14"
     },
     {
       "label": "Verse Before the Gospel",
       "type": "gospel",
-      "citation": "Psalm 95:8"
+      "citation": "John 8:12"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 18:9-14"
+      "citation": "John 9:1-41"
     }
   ]
 }
