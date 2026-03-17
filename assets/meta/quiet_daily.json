@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-03-16T06:23:56.032Z",
-  "date": "2026-03-16",
-  "weekday": "Monday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/031626.cfm",
-  "feast": "Monday of the Fourth Week of Lent",
-  "lectionary": "244",
+  "generated_at": "2026-03-17T06:09:47.238Z",
+  "date": "2026-03-17",
+  "weekday": "Tuesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/031726.cfm",
+  "feast": "Tuesday of the Fourth Week of Lent",
+  "lectionary": "245",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Isaiah 65:17-21"
+      "citation": "Ezekiel 47:1-9, 12"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 30:2 and 4, 5-6, 11-12a and 13b"
+      "citation": "Psalm 46:2-3, 5-6, 8-9"
     },
     {
       "label": "Verse Before the Gospel",
       "type": "gospel",
-      "citation": "Amos 5:14"
+      "citation": "Psalm 51:12a, 14a"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 4:43-54"
+      "citation": "John 5:1-16"
     }
   ]
 }
