@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-03-19T06:07:29.657Z",
-  "date": "2026-03-19",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/031926.cfm",
-  "feast": "Solemnity of Saint Joseph, Spouse of the Blessed Virgin Mary",
-  "lectionary": "543",
+  "generated_at": "2026-03-20T06:02:11.980Z",
+  "date": "2026-03-20",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/032026.cfm",
+  "feast": "Friday of the Fourth Week of Lent",
+  "lectionary": "248",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "2 Samuel 7:4-5a, 12-14a, 16"
+      "citation": "Wisdom 2:1a, 12-22"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 89:2-3, 4-5, 27 and 29"
-    },
-    {
-      "label": "Reading 2",
-      "type": "reading",
-      "citation": "Romans 4:13, 16-18, 22"
+      "citation": "Psalm 34:17-18, 19-20, 21 and 23"
     },
     {
       "label": "Verse Before the Gospel",
       "type": "gospel",
-      "citation": "Psalm 84:5"
+      "citation": "Matthew 4:4b"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 1:16, 18-21, 24a"
+      "citation": "John 7:1-2, 10, 25-30"
     }
   ]
 }
