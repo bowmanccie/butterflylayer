@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-03-21T05:52:07.437Z",
-  "date": "2026-03-21",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/032126.cfm",
-  "feast": "Saturday of the Fourth Week of Lent",
-  "lectionary": "249",
+  "generated_at": "2026-03-22T06:02:14.481Z",
+  "date": "2026-03-22",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/032226.cfm",
+  "feast": "Fifth Sunday of Lent",
+  "lectionary": "34",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
-      "label": "Reading 1",
+      "label": "Reading I",
       "type": "reading",
-      "citation": "Jeremiah 11:18-20"
+      "citation": "Ezekiel 37:12-14"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 7:2-3, 9bc-10, 11-12"
+      "citation": "Psalm 130:1-2, 3-4, 5-6, 7-8"
+    },
+    {
+      "label": "Reading II",
+      "type": "reading",
+      "citation": "Romans 8:8-11"
     },
     {
       "label": "Verse Before the Gospel",
       "type": "gospel",
-      "citation": "See Luke 8:15"
+      "citation": "John 11:25a, 26"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 7:40-53"
+      "citation": "John 11:1-45"
     }
   ]
 }
