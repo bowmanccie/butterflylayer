@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-03-22T06:02:14.481Z",
-  "date": "2026-03-22",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/032226.cfm",
-  "feast": "Fifth Sunday of Lent",
-  "lectionary": "34",
+  "generated_at": "2026-03-23T06:15:19.243Z",
+  "date": "2026-03-23",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/032326.cfm",
+  "feast": "Monday of the Fifth Week of Lent",
+  "lectionary": "251",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading I",
       "type": "reading",
-      "citation": "Ezekiel 37:12-14"
+      "citation": "Daniel 13:1-9, 15-17, 19-30, 33-62 or 13:41c-62"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 130:1-2, 3-4, 5-6, 7-8"
+      "citation": "Psalm 23:1-3a, 3b-4, 5, 6"
     },
     {
-      "label": "Reading II",
-      "type": "reading",
-      "citation": "Romans 8:8-11"
-    },
-    {
-      "label": "Verse Before the Gospel",
+      "label": "Verse before the Gospel",
       "type": "gospel",
-      "citation": "John 11:25a, 26"
+      "citation": "Ezekiel 33:11"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 11:1-45"
+      "citation": "John 8:1-11"
     }
   ]
 }
