@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-03-24T06:09:27.959Z",
-  "date": "2026-03-24",
-  "weekday": "Tuesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/032426.cfm",
-  "feast": "Tuesday of the Fifth Week of Lent",
-  "lectionary": "252",
+  "generated_at": "2026-03-25T06:10:44.480Z",
+  "date": "2026-03-25",
+  "weekday": "Wednesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/032526.cfm",
+  "feast": "Solemnity of the Annunciation of the Lord",
+  "lectionary": "545",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
-      "label": "Reading I",
+      "label": "Reading 1",
       "type": "reading",
-      "citation": "Numbers 21:4-9"
+      "citation": "Isaiah 7:10-14; 8:10"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 102:2-3, 16-18, 19-21"
+      "citation": "Psalm 40:7-8a, 8b-9, 10, 11"
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "Hebrews 10:4-10"
     },
     {
       "label": "Verse Before the Gospel",
       "type": "gospel",
-      "citation": null
+      "citation": "John 1:14ab"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 8:21-30"
+      "citation": "Luke 1:26-38"
     }
   ]
 }
