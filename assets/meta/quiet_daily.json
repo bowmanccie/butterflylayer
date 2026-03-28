@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-03-27T06:17:49.737Z",
-  "date": "2026-03-27",
-  "weekday": "Friday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/032726.cfm",
-  "feast": "Friday of the Fifth Week of Lent",
-  "lectionary": "255",
+  "generated_at": "2026-03-28T06:07:16.501Z",
+  "date": "2026-03-28",
+  "weekday": "Saturday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/032826.cfm",
+  "feast": "Saturday of the Fifth Week of Lent",
+  "lectionary": "256",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Jeremiah 20:10-13"
+      "citation": "Ezekiel 37:21-28"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 18:2-3a, 3bc-4, 5-6, 7"
+      "citation": "Jeremiah 31:10, 11-12abcd, 13"
     },
     {
       "label": "Verse Before the Gospel",
       "type": "gospel",
-      "citation": "John 6:63c, 68c"
+      "citation": "Ezekiel 18:31"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 10:31-42"
+      "citation": "John 11:45-56"
     }
   ]
 }
