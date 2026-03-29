@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-03-28T06:07:16.501Z",
-  "date": "2026-03-28",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/032826.cfm",
-  "feast": "Saturday of the Fifth Week of Lent",
-  "lectionary": "256",
+  "generated_at": "2026-03-29T06:16:29.782Z",
+  "date": "2026-03-29",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/032926.cfm",
+  "feast": "Palm Sunday of the Lord's Passion",
+  "lectionary": "37 and 38",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
-      "label": "Reading 1",
-      "type": "reading",
-      "citation": "Ezekiel 37:21-28"
+      "label": "At the Procession with Palms - Gospel",
+      "type": "gospel",
+      "citation": "Matthew 21:1-11"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Jeremiah 31:10, 11-12abcd, 13"
+      "citation": "Psalm 22:8-9, 17-18, 19-20, 23-24"
     },
     {
-      "label": "Verse Before the Gospel",
+      "label": "Reading II",
+      "type": "reading",
+      "citation": "Philippians 2:6-11"
+    },
+    {
+      "label": "Verse before the Gospel",
       "type": "gospel",
-      "citation": "Ezekiel 18:31"
+      "citation": "Philippians 2:8-9"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 11:45-56"
+      "citation": "Matthew 26:14—27:66"
     }
   ]
 }
