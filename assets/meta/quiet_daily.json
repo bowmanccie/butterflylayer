@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-03-29T06:16:29.782Z",
-  "date": "2026-03-29",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/032926.cfm",
-  "feast": "Palm Sunday of the Lord's Passion",
-  "lectionary": "37 and 38",
+  "generated_at": "2026-03-30T06:57:51.779Z",
+  "date": "2026-03-30",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/033026.cfm",
+  "feast": null,
+  "lectionary": "257",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
-      "label": "At the Procession with Palms - Gospel",
-      "type": "gospel",
-      "citation": "Matthew 21:1-11"
+      "label": "Reading 1",
+      "type": "reading",
+      "citation": "Isaiah 42:1-7"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 22:8-9, 17-18, 19-20, 23-24"
+      "citation": "Psalm 27:1, 2, 3, 13-14"
     },
     {
-      "label": "Reading II",
-      "type": "reading",
-      "citation": "Philippians 2:6-11"
-    },
-    {
-      "label": "Verse before the Gospel",
+      "label": "Verse Before the Gospel",
       "type": "gospel",
-      "citation": "Philippians 2:8-9"
+      "citation": null
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 26:14—27:66"
+      "citation": "John 12:1-11"
     }
   ]
 }
