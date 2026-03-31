@@ -1,23 +1,23 @@
 {
   "source": "usccb",
-  "generated_at": "2026-03-30T06:57:51.779Z",
-  "date": "2026-03-30",
-  "weekday": "Monday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/033026.cfm",
+  "generated_at": "2026-03-31T06:21:07.827Z",
+  "date": "2026-03-31",
+  "weekday": "Tuesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/033126.cfm",
   "feast": null,
-  "lectionary": "257",
+  "lectionary": "258",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Isaiah 42:1-7"
+      "citation": "Isaiah 49:1-6"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 27:1, 2, 3, 13-14"
+      "citation": "Psalm 71:1-2, 3-4a, 5ab-6ab, 15 and 17"
     },
     {
       "label": "Verse Before the Gospel",
@@ -27,7 +27,7 @@
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 12:1-11"
+      "citation": "John 13:21-33, 36-38"
     }
   ]
 }
