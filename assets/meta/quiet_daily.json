@@ -1,33 +1,12 @@
 {
   "source": "usccb",
-  "generated_at": "2026-04-01T06:52:11.418Z",
-  "date": "2026-04-01",
-  "weekday": "Wednesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/040126.cfm",
+  "generated_at": "2026-04-02T06:17:06.509Z",
+  "date": "2026-04-02",
+  "weekday": "Thursday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/040226.cfm",
   "feast": null,
-  "lectionary": "259",
+  "lectionary": "260, 39",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
-  "readings": [
-    {
-      "label": "Reading I",
-      "type": "reading",
-      "citation": "Isaiah 50:4-9a"
-    },
-    {
-      "label": "Responsorial Psalm",
-      "type": "psalm",
-      "citation": "Psalm 69:8-10, 21-22, 31 and 33-34"
-    },
-    {
-      "label": "Verse Before the Gospel",
-      "type": "gospel",
-      "citation": null
-    },
-    {
-      "label": "Gospel",
-      "type": "gospel",
-      "citation": "Matthew 26:14-25"
-    }
-  ]
+  "rosary_mysteries": "luminous",
+  "readings": []
 }
