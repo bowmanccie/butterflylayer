@@ -1,83 +1,18 @@
 {
   "source": "usccb",
-  "generated_at": "2026-04-04T06:08:05.940Z",
-  "date": "2026-04-04",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/040426.cfm",
+  "generated_at": "2026-04-05T06:18:51.058Z",
+  "date": "2026-04-05",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/040526.cfm",
   "feast": null,
-  "lectionary": "41",
+  "lectionary": "42",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
-      "label": "Reading I",
+      "label": "Reading 1",
       "type": "reading",
-      "citation": "Genesis 1:1—2:2"
-    },
-    {
-      "label": "Responsorial Psalm",
-      "type": "psalm",
-      "citation": "Psalm 104:1-2, 5-6, 10, 12, 13-14, 24, 35"
-    },
-    {
-      "label": "Reading II",
-      "type": "reading",
-      "citation": "Genesis 22:1-18"
-    },
-    {
-      "label": "Responsorial Psalm",
-      "type": "psalm",
-      "citation": "Psalm 16:5, 8, 9-10, 11"
-    },
-    {
-      "label": "Reading III",
-      "type": "reading",
-      "citation": "Exodus 14:15—15:1"
-    },
-    {
-      "label": "Responsorial Psalm",
-      "type": "psalm",
-      "citation": "Exodus 15:1-2, 3-4, 5-6, 17-18"
-    },
-    {
-      "label": "Reading IV",
-      "type": "reading",
-      "citation": "Isaiah 54:5-14"
-    },
-    {
-      "label": "Responsorial Psalm",
-      "type": "psalm",
-      "citation": "Psalm 30:2, 4, 5-6, 11-12, 13"
-    },
-    {
-      "label": "Reading V",
-      "type": "reading",
-      "citation": "Isaiah 55:1-11"
-    },
-    {
-      "label": "Responsorial Psalm",
-      "type": "psalm",
-      "citation": "Isaiah 12:2-3, 4, 5-6"
-    },
-    {
-      "label": "Reading VI",
-      "type": "reading",
-      "citation": "Baruch 3:9-15, 32-4:4"
-    },
-    {
-      "label": "Responsorial Psalm",
-      "type": "psalm",
-      "citation": "Psalm 19:8, 9, 10, 11"
-    },
-    {
-      "label": "Reading VII",
-      "type": "reading",
-      "citation": "Ezekiel 36:16-17a, 18-28"
-    },
-    {
-      "label": "Responsorial Psalm",
-      "type": "psalm",
-      "citation": "Psalm 42:3, 5; 43:3, 4"
+      "citation": "Acts 10:34a, 37-43"
     },
     {
       "label": "Responsorial Psalm",
@@ -85,9 +20,19 @@
       "citation": "Psalm 118:1-2, 16-17, 22-23"
     },
     {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "Colossians 3:1-4"
+    },
+    {
+      "label": "Alleluia",
+      "type": "alleluia",
+      "citation": "cf. 1 Corinthians 5:7"
+    },
+    {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 28:1-10"
+      "citation": "John 20:1-9"
     }
   ]
 }
