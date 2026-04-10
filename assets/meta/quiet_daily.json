@@ -1,23 +1,23 @@
 {
   "source": "usccb",
-  "generated_at": "2026-04-09T06:47:10.192Z",
-  "date": "2026-04-09",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/040926.cfm",
+  "generated_at": "2026-04-10T06:58:05.395Z",
+  "date": "2026-04-10",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/041026.cfm",
   "feast": null,
-  "lectionary": "264",
+  "lectionary": "265",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Acts 3:11-26"
+      "citation": "Acts 4:1-12"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 8:2ab and 5, 6-7, 8-9"
+      "citation": "Psalm 118:1-2 and 4, 22-24, 25-27a"
     },
     {
       "label": "Alleluia",
@@ -27,7 +27,7 @@
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 24:35-48"
+      "citation": "John 21:1-14"
     }
   ]
 }
