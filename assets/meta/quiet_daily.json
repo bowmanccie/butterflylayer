@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-04-12T06:45:40.708Z",
-  "date": "2026-04-12",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/041226.cfm",
-  "feast": "Second Sunday of Easter (or Sunday of Divine Mercy)",
-  "lectionary": "43",
+  "generated_at": "2026-04-13T07:20:59.725Z",
+  "date": "2026-04-13",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/041326.cfm",
+  "feast": "Monday of the Second Week of Easter",
+  "lectionary": "267",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Acts 2:42-47"
+      "citation": "Acts 4:23-31"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 118:2-4, 13-15, 22-24"
-    },
-    {
-      "label": "Reading 2",
-      "type": "reading",
-      "citation": "1 Peter 1:3-9"
+      "citation": "Psalm 2:1-3, 4-7a, 7b-9"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 20:29"
+      "citation": "Colossians 3:1"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 20:19-31"
+      "citation": "John 3:1-8"
     }
   ]
 }
