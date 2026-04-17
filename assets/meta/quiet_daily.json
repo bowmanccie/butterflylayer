@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-04-16T07:01:00.256Z",
-  "date": "2026-04-16",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/041626.cfm",
-  "feast": "Thursday of the Second Week of Easter",
-  "lectionary": "270",
+  "generated_at": "2026-04-17T07:01:51.930Z",
+  "date": "2026-04-17",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/041726.cfm",
+  "feast": "Friday of the Second Week of Easter",
+  "lectionary": "271",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Acts 5:27-33"
+      "citation": "Acts 5:34-42"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 34:2 and 9, 17-18, 19-20"
+      "citation": "Psalm 27:1, 4, 13-14"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 20:29"
+      "citation": "Matthew 4:4b"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 3:31-36"
+      "citation": "John 6:1-15"
     }
   ]
 }
