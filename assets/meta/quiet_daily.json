@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-04-19T06:51:16.515Z",
-  "date": "2026-04-19",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/041926.cfm",
-  "feast": "Third Sunday of Easter",
-  "lectionary": "46",
+  "generated_at": "2026-04-20T07:22:31.433Z",
+  "date": "2026-04-20",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/042026.cfm",
+  "feast": "Monday of the Third Week of Easter",
+  "lectionary": "273",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Acts 2:14, 22-33"
+      "citation": "Acts 6:8-15"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 16:1-2, 5, 7-8, 9-10, 11"
-    },
-    {
-      "label": "Reading 2",
-      "type": "reading",
-      "citation": "1 Peter 1:17-21"
+      "citation": "Psalm 119:23-24, 26-27, 29-30"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Cf. Luke 24:32"
+      "citation": "Matthew 4:4b"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 24:13-35"
+      "citation": "John 6:22-29"
     }
   ]
 }
