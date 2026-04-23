@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-04-22T07:02:07.632Z",
-  "date": "2026-04-22",
-  "weekday": "Wednesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/042226.cfm",
-  "feast": "Wednesday of the Third Week of Easter",
-  "lectionary": "275",
+  "generated_at": "2026-04-23T07:06:05.984Z",
+  "date": "2026-04-23",
+  "weekday": "Thursday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/042326.cfm",
+  "feast": "Thursday of the Third Week of Easter",
+  "lectionary": "276",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "luminous",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Acts 8:1b-8"
+      "citation": "Acts 8:26-40"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 66:1-3a, 4-5, 6-7a"
+      "citation": "Psalm 66:8-9, 16-17, 20"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "See John 6:40"
+      "citation": "John 6:51"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 6:35-40"
+      "citation": "John 6:44-51"
     }
   ]
 }
