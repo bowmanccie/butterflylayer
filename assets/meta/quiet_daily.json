@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-04-24T07:08:36.225Z",
-  "date": "2026-04-24",
-  "weekday": "Friday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/042426.cfm",
-  "feast": "Friday of the Third Week of Easter",
-  "lectionary": "277",
+  "generated_at": "2026-04-25T06:24:24.082Z",
+  "date": "2026-04-25",
+  "weekday": "Saturday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/042526.cfm",
+  "feast": "Feast of Saint Mark, evangelist",
+  "lectionary": "555",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Acts 9:1-20"
+      "citation": "1 Peter 5:5b-14"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 117:1bc, 2"
+      "citation": "Psalm 89:2-3, 6-7, 16-17"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 6:56"
+      "citation": "1 Corinthians 1:23a-24b"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 6:52-59"
+      "citation": "Mark 16:15-20"
     }
   ]
 }
