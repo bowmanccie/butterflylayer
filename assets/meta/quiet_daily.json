@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-04-27T07:40:23.385Z",
-  "date": "2026-04-27",
-  "weekday": "Monday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/042726.cfm",
-  "feast": "Monday of the Fourth Week of Easter",
-  "lectionary": "279",
+  "generated_at": "2026-04-28T07:38:15.905Z",
+  "date": "2026-04-28",
+  "weekday": "Tuesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/042826.cfm",
+  "feast": "Tuesday of the Fourth Week of Easter",
+  "lectionary": "280",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Acts 11:1-18"
+      "citation": "Acts 11:19-26"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 42:2-3; 43:3, 4"
+      "citation": "Psalm 87:1b-3, 4-5, 6-7"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 10:14"
+      "citation": "John 10:27"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 10:11-18"
+      "citation": "John 10:22-30"
     }
   ]
 }
