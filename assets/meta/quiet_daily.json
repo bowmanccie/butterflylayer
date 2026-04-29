@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-04-28T07:38:15.905Z",
-  "date": "2026-04-28",
-  "weekday": "Tuesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/042826.cfm",
-  "feast": "Tuesday of the Fourth Week of Easter",
-  "lectionary": "280",
+  "generated_at": "2026-04-29T07:32:03.101Z",
+  "date": "2026-04-29",
+  "weekday": "Wednesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/042926.cfm",
+  "feast": "Memorial of Saint Catherine of Siena, Virgin and Doctor of the Church",
+  "lectionary": "281",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
-      "label": "Reading 1",
+      "label": "Reading I",
       "type": "reading",
-      "citation": "Acts 11:19-26"
+      "citation": "Acts 12:24—13:5a"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 87:1b-3, 4-5, 6-7"
+      "citation": "Psalm 67:2-3, 5, 6 and 8"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 10:27"
+      "citation": "John 8:12"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 10:22-30"
+      "citation": "John 12:44-50"
     }
   ]
 }
