@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-04-30T07:35:55.990Z",
-  "date": "2026-04-30",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/043026.cfm",
-  "feast": "Thursday of the Fourth Week of Easter",
-  "lectionary": "282",
+  "generated_at": "2026-05-01T07:33:24.434Z",
+  "date": "2026-05-01",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/050126.cfm",
+  "feast": "Friday of the Fourth Week of Easter",
+  "lectionary": "283",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading I",
       "type": "reading",
-      "citation": "Acts 13:13-25"
+      "citation": "Acts 13:26-33"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 89:2-3, 21-22, 25 and 27"
+      "citation": "Psalm 2:6-7, 8-9, 10-11ab"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "See Revelation 1:5ab"
+      "citation": "John 14:6"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 13:16-20"
+      "citation": "John 14:1-6"
     }
   ]
 }
