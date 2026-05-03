@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-05-02T07:05:46.654Z",
-  "date": "2026-05-02",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/050226.cfm",
-  "feast": "Memorial of Saint Athanasius, Bishop and Doctor of the Church",
-  "lectionary": "284",
+  "generated_at": "2026-05-03T07:24:23.002Z",
+  "date": "2026-05-03",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/050326.cfm",
+  "feast": "Fifth Sunday of Easter",
+  "lectionary": "52",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Acts 13:44-52"
+      "citation": "Acts 6:1-7"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 98:1, 2-3ab, 3cd-4"
+      "citation": "Psalm 33:1-2, 4-5, 18-19"
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "1 Peter 2:4-9"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 8:31b-32"
+      "citation": "John 14:6"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 14:7-14"
+      "citation": "John 14:1-12"
     }
   ]
 }
