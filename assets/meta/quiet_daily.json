@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-05-05T07:25:20.116Z",
-  "date": "2026-05-05",
-  "weekday": "Tuesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/050526.cfm",
-  "feast": "Tuesday of Fifth Week of Easter",
-  "lectionary": "286",
+  "generated_at": "2026-05-06T07:42:12.522Z",
+  "date": "2026-05-06",
+  "weekday": "Wednesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/050626.cfm",
+  "feast": "Wednesday of the Fifth Week of Easter",
+  "lectionary": "287",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Acts 14:19-28"
+      "citation": "Acts 15:1-6"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 145:10-11, 12-13ab, 21"
+      "citation": "Psalm 122:1-2, 3-4ab, 4cd-5"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "See Luke 24:46, 26"
+      "citation": "John 15:4a, 5b"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 14:27-31a"
+      "citation": "John 15:1-8"
     }
   ]
 }
