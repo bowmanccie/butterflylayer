@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-05-10T07:32:13.534Z",
-  "date": "2026-05-10",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/051026.cfm",
-  "feast": "Sixth Sunday of Easter",
-  "lectionary": "55",
+  "generated_at": "2026-05-11T08:32:18.010Z",
+  "date": "2026-05-11",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/051126.cfm",
+  "feast": "Monday of the Sixth Week of Easter",
+  "lectionary": "291",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Acts 8:5-8, 14-17"
+      "citation": "Acts 16:11-15"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 66:1-3, 4-5, 6-7, 16, 20"
-    },
-    {
-      "label": "Reading 2",
-      "type": "reading",
-      "citation": "1 Peter 3:15-18"
+      "citation": "Psalm 149:1b-2, 3-4, 5-6a and 9b"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 14:23"
+      "citation": "John 15:26b, 27a"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 14:15-21"
+      "citation": "John 15:26—16:4a"
     }
   ]
 }
