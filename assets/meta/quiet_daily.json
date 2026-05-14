@@ -1,33 +1,12 @@
 {
   "source": "usccb",
-  "generated_at": "2026-05-13T08:07:58.855Z",
-  "date": "2026-05-13",
-  "weekday": "Wednesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/051326.cfm",
-  "feast": "Wednesday of the Sixth Week of Easter",
-  "lectionary": "293",
+  "generated_at": "2026-05-14T07:52:15.233Z",
+  "date": "2026-05-14",
+  "weekday": "Thursday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/051426.cfm",
+  "feast": null,
+  "lectionary": "58, 564",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
-  "readings": [
-    {
-      "label": "Reading 1",
-      "type": "reading",
-      "citation": "Acts 17:15, 22—18:1"
-    },
-    {
-      "label": "Responsorial Psalm",
-      "type": "psalm",
-      "citation": "Psalm 148:1-2, 11-12, 13, 14"
-    },
-    {
-      "label": "Alleluia",
-      "type": "alleluia",
-      "citation": "John 14:16"
-    },
-    {
-      "label": "Gospel",
-      "type": "gospel",
-      "citation": "John 16:12-15"
-    }
-  ]
+  "rosary_mysteries": "luminous",
+  "readings": []
 }
