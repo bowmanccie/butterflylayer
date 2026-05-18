@@ -1,12 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-05-17T07:40:47.407Z",
-  "date": "2026-05-17",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/051726.cfm",
-  "feast": "Seventh Sunday of Easter - Ascension",
-  "lectionary": "58/59",
+  "generated_at": "2026-05-18T08:50:27.361Z",
+  "date": "2026-05-18",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/051826.cfm",
+  "feast": "Monday of the Seventh Week of Easter",
+  "lectionary": "297",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
-  "readings": []
+  "rosary_mysteries": "joyful",
+  "readings": [
+    {
+      "label": "Reading 1",
+      "type": "reading",
+      "citation": "Acts 19:1-8"
+    },
+    {
+      "label": "Responsorial Psalm",
+      "type": "psalm",
+      "citation": "Psalm 68:2-3ab, 4-5acd, 6-7ab"
+    },
+    {
+      "label": "Alleluia",
+      "type": "alleluia",
+      "citation": "Colossians 3:1"
+    },
+    {
+      "label": "Gospel",
+      "type": "gospel",
+      "citation": "John 16:29-33"
+    }
+  ]
 }
