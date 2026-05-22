@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-05-21T08:40:38.853Z",
-  "date": "2026-05-21",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/052126.cfm",
-  "feast": "Thursday of the Seventh Week of Easter",
-  "lectionary": "300",
+  "generated_at": "2026-05-22T08:29:49.204Z",
+  "date": "2026-05-22",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/052226.cfm",
+  "feast": "Friday of the Seventh Week of Easter",
+  "lectionary": "301",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Acts 22:30; 23:6-11"
+      "citation": "Acts 25:13b-21"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 16:1-2a and 5, 7-8, 9-10, 11"
+      "citation": "Psalm 103:1-2, 11-12, 19-20ab"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 17:21"
+      "citation": "John 14:26"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 17:20-26"
+      "citation": "John 21:15-19"
     }
   ]
 }
