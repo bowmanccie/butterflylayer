@@ -1,12 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-05-24T07:53:05.608Z",
-  "date": "2026-05-24",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/052426.cfm",
-  "feast": "Pentecost Sunday",
-  "lectionary": "62, 63",
+  "generated_at": "2026-05-26T08:40:24.729Z",
+  "date": "2026-05-26",
+  "weekday": "Tuesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/052626.cfm",
+  "feast": "Memorial of Saint Philip Neri, Priest",
+  "lectionary": "348",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
-  "readings": []
+  "rosary_mysteries": "sorrowful",
+  "readings": [
+    {
+      "label": "Reading 1",
+      "type": "reading",
+      "citation": "1 Peter 1:10-16"
+    },
+    {
+      "label": "Responsorial Psalm",
+      "type": "psalm",
+      "citation": "Psalm 98:1, 2-3ab, 3cd-4"
+    },
+    {
+      "label": "Alleluia",
+      "type": "alleluia",
+      "citation": "See Matthew 11:25"
+    },
+    {
+      "label": "Gospel",
+      "type": "gospel",
+      "citation": "Mark 10:28-31"
+    }
+  ]
 }
