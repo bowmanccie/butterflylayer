@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-05-28T08:50:58.204Z",
-  "date": "2026-05-28",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/052826.cfm",
+  "generated_at": "2026-05-29T08:49:23.414Z",
+  "date": "2026-05-29",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/052926.cfm",
   "feast": null,
-  "lectionary": "350",
+  "lectionary": "351",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Peter 2:2-5, 9-12"
+      "citation": "1 Peter 4:7-13"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 100:2, 3, 4, 5"
+      "citation": "Psalm 96:10, 11-12, 13"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 8:12"
+      "citation": "See John 15:16"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Mark 10:46-52"
+      "citation": "Mark 11:11-26"
     }
   ]
 }
