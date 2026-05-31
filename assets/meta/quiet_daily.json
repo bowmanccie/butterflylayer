@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-05-30T07:48:18.162Z",
-  "date": "2026-05-30",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/053026.cfm",
+  "generated_at": "2026-05-31T08:20:15.531Z",
+  "date": "2026-05-31",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/053126.cfm",
   "feast": null,
-  "lectionary": "352",
+  "lectionary": "164",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Jude 17, 20b-25"
+      "citation": "Exodus 34:4b-6, 8-9"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 63:2, 3-4, 5-6"
+      "citation": "Daniel 3:52, 53, 54, 55, 56"
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "2 Corinthians 13:11-13"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "See Colossians 3:16a, 17c"
+      "citation": "Cf. Revelation 1:8"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Mark 11:27-33"
+      "citation": "John 3:16-18"
     }
   ]
 }
