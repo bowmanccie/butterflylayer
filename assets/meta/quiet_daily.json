@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-05-31T08:20:15.531Z",
-  "date": "2026-05-31",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/053126.cfm",
-  "feast": null,
-  "lectionary": "164",
+  "generated_at": "2026-06-01T10:28:51.953Z",
+  "date": "2026-06-01",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/060126.cfm",
+  "feast": "Memorial of Saint Justin, Martyr",
+  "lectionary": "353",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Exodus 34:4b-6, 8-9"
+      "citation": "2 Peter 1:2-7"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Daniel 3:52, 53, 54, 55, 56"
-    },
-    {
-      "label": "Reading 2",
-      "type": "reading",
-      "citation": "2 Corinthians 13:11-13"
+      "citation": "Psalm 91:1-2, 14-15b, 15c-16"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Cf. Revelation 1:8"
+      "citation": "See Revelation 1:5ab"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 3:16-18"
+      "citation": "Mark 12:1-12"
     }
   ]
 }
