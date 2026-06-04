@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-06-03T10:01:18.365Z",
-  "date": "2026-06-03",
-  "weekday": "Wednesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/060326.cfm",
-  "feast": "Memorial of Saint Charles Lwanga and Companions, Martyrs",
-  "lectionary": "355",
+  "generated_at": "2026-06-04T08:57:34.943Z",
+  "date": "2026-06-04",
+  "weekday": "Thursday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/060426.cfm",
+  "feast": null,
+  "lectionary": "356",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "luminous",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "2 Timothy 1:1-3, 6-12"
+      "citation": "2 Timothy 2:8-15"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 123:1b-2ab, 2cdef"
+      "citation": "Psalm 25:4-5ab, 8-9, 10 and 14"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 11:25a, 26"
+      "citation": "See 2 Timothy 1:10"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Mark 12:18-27"
+      "citation": "Mark 12:28-34"
     }
   ]
 }
