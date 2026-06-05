@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-06-04T08:57:34.943Z",
-  "date": "2026-06-04",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/060426.cfm",
-  "feast": null,
-  "lectionary": "356",
+  "generated_at": "2026-06-05T08:50:39.327Z",
+  "date": "2026-06-05",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/060526.cfm",
+  "feast": "Memorial of Saint Boniface, Bishop and Martyr",
+  "lectionary": "357",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "2 Timothy 2:8-15"
+      "citation": "2 Timothy 3:10-17"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 25:4-5ab, 8-9, 10 and 14"
+      "citation": "Psalm 119:157, 160, 161, 165, 166, 168"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "See 2 Timothy 1:10"
+      "citation": "John 14:23"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Mark 12:28-34"
+      "citation": "Mark 12:35-37"
     }
   ]
 }
