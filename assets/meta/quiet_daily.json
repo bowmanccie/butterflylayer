@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-06-06T07:53:50.827Z",
-  "date": "2026-06-06",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/060626.cfm",
+  "generated_at": "2026-06-07T08:28:08.979Z",
+  "date": "2026-06-07",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/060726.cfm",
   "feast": null,
-  "lectionary": "358",
+  "lectionary": "167",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "2 Timothy 4:1-8"
+      "citation": "Deuteronomy 8:2-3, 14b-16a"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 71:8-9, 14-15AB, 16-17, 22"
+      "citation": "Psalm 147:12-13, 14-15, 19-20"
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "1 Corinthians 10:16-17"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Matthew 5:3"
+      "citation": "John 6:51"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Mark 12:38-44"
+      "citation": "John 6:51-58"
     }
   ]
 }
