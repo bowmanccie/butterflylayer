@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-06-13T08:29:40.710Z",
-  "date": "2026-06-13",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/061326.cfm",
-  "feast": null,
-  "lectionary": "364",
+  "generated_at": "2026-06-14T08:46:15.354Z",
+  "date": "2026-06-14",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/061426.cfm",
+  "feast": "Eleventh Sunday in Ordinary Time",
+  "lectionary": "91",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Kings 19:19-21"
+      "citation": "Exodus 19:2-6a"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 16:1b-2a and 5, 7-8, 9-10"
+      "citation": "Psalm 100:1-2, 3, 5"
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "Romans 5:6-11"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Psalm 119:36a, 29b"
+      "citation": "Mark 1:15"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 5:33-37"
+      "citation": "Matthew 9:36—10:8"
     }
   ]
 }
