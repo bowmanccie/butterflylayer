@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-06-15T11:20:38.403Z",
-  "date": "2026-06-15",
-  "weekday": "Monday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/061526.cfm",
+  "generated_at": "2026-06-16T10:19:03.811Z",
+  "date": "2026-06-16",
+  "weekday": "Tuesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/061626.cfm",
   "feast": null,
-  "lectionary": "365",
+  "lectionary": "366",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Kings 21:1-16"
+      "citation": "1 Kings 21:17-29"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 5:2-3ab, 4b-6a, 6b-7"
+      "citation": "Psalm 51:3-4, 5-6ab, 11 and 16"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Psalm 119:105"
+      "citation": "John 13:34"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 5:38-42"
+      "citation": "Matthew 5:43-48"
     }
   ]
 }
