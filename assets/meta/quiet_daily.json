@@ -1,33 +1,12 @@
 {
   "source": "usccb",
-  "generated_at": "2026-06-23T08:36:04.724Z",
-  "date": "2026-06-23",
-  "weekday": "Tuesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/062326.cfm",
-  "feast": null,
-  "lectionary": "372",
+  "generated_at": "2026-06-24T08:30:50.894Z",
+  "date": "2026-06-24",
+  "weekday": "Wednesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/062426.cfm",
+  "feast": "Solemnity of the Nativity of Saint John the Baptist",
+  "lectionary": "586, 587",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
-  "readings": [
-    {
-      "label": "Reading 1",
-      "type": "reading",
-      "citation": "2 Kings 19:9b-11, 14-21, 31-35a, 36"
-    },
-    {
-      "label": "Responsorial Psalm",
-      "type": "psalm",
-      "citation": "Psalm 48:2-3Ab, 3cd-4, 10-11"
-    },
-    {
-      "label": "Alleluia",
-      "type": "alleluia",
-      "citation": "John 8:12"
-    },
-    {
-      "label": "Gospel",
-      "type": "gospel",
-      "citation": "Matthew 7:6, 12-14"
-    }
-  ]
+  "rosary_mysteries": "glorious",
+  "readings": []
 }
