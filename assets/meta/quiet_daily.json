@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-06-25T08:29:28.486Z",
-  "date": "2026-06-25",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/062526.cfm",
+  "generated_at": "2026-06-26T08:33:40.911Z",
+  "date": "2026-06-26",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/062626.cfm",
   "feast": null,
-  "lectionary": "374",
+  "lectionary": "375",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "2 Kings 24:8-17"
+      "citation": "2 Kings 25:1-12"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 79:1b-2, 3-5, 8, 9"
+      "citation": "Psalm 137:1-2, 3, 4-5, 6"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 14:23"
+      "citation": "Matthew 8:17"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 7:21-29"
+      "citation": "Matthew 8:1-4"
     }
   ]
 }
