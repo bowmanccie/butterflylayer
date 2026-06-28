@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-06-27T08:02:42.967Z",
-  "date": "2026-06-27",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/062726.cfm",
-  "feast": null,
-  "lectionary": "376",
+  "generated_at": "2026-06-28T08:26:40.180Z",
+  "date": "2026-06-28",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/062826.cfm",
+  "feast": "Thirteenth Sunday in Ordinary Time",
+  "lectionary": "97",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Lamentations 2:2, 10-14, 18-19"
+      "citation": "2 Kings 4:8-11, 14-16a"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 74:1b-2, 3-5, 6-7, 20-21"
+      "citation": "Psalm 89:2-3, 16-17, 18-19"
+    },
+    {
+      "label": "Reading II",
+      "type": "reading",
+      "citation": "Romans 6:3-4, 8-11"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Matthew 8:17"
+      "citation": "1 Peter 2:9"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 8:5-17"
+      "citation": "Matthew 10:37-42"
     }
   ]
 }
