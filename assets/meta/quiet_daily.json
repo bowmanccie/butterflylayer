@@ -1,38 +1,12 @@
 {
   "source": "usccb",
-  "generated_at": "2026-06-28T08:26:40.180Z",
-  "date": "2026-06-28",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/062826.cfm",
-  "feast": "Thirteenth Sunday in Ordinary Time",
-  "lectionary": "97",
+  "generated_at": "2026-06-29T09:55:42.682Z",
+  "date": "2026-06-29",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/062926.cfm",
+  "feast": "Solemnity of Saints Peter and Paul, Apostles",
+  "lectionary": "590, 591",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
-  "readings": [
-    {
-      "label": "Reading 1",
-      "type": "reading",
-      "citation": "2 Kings 4:8-11, 14-16a"
-    },
-    {
-      "label": "Responsorial Psalm",
-      "type": "psalm",
-      "citation": "Psalm 89:2-3, 16-17, 18-19"
-    },
-    {
-      "label": "Reading II",
-      "type": "reading",
-      "citation": "Romans 6:3-4, 8-11"
-    },
-    {
-      "label": "Alleluia",
-      "type": "alleluia",
-      "citation": "1 Peter 2:9"
-    },
-    {
-      "label": "Gospel",
-      "type": "gospel",
-      "citation": "Matthew 10:37-42"
-    }
-  ]
+  "rosary_mysteries": "joyful",
+  "readings": []
 }
