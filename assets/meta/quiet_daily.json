@@ -1,12 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-06-29T09:55:42.682Z",
-  "date": "2026-06-29",
-  "weekday": "Monday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/062926.cfm",
-  "feast": "Solemnity of Saints Peter and Paul, Apostles",
-  "lectionary": "590, 591",
+  "generated_at": "2026-07-01T08:53:28.652Z",
+  "date": "2026-07-01",
+  "weekday": "Wednesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/070126.cfm",
+  "feast": null,
+  "lectionary": "379",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
-  "readings": []
+  "rosary_mysteries": "glorious",
+  "readings": [
+    {
+      "label": "Reading 1",
+      "type": "reading",
+      "citation": "Amos 5:14-15, 21-24"
+    },
+    {
+      "label": "Responsorial Psalm",
+      "type": "psalm",
+      "citation": "Psalm 50:7, 8-9, 10-11, 12-13, 16bc-17"
+    },
+    {
+      "label": "Alleluia",
+      "type": "alleluia",
+      "citation": "James 1:18"
+    },
+    {
+      "label": "Gospel",
+      "type": "gospel",
+      "citation": "Matthew 8:28-34"
+    }
+  ]
 }
