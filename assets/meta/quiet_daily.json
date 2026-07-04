@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-07-03T08:21:31.359Z",
-  "date": "2026-07-03",
-  "weekday": "Friday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/070326.cfm",
-  "feast": "Feast of Saint Thomas, Apostle",
-  "lectionary": "593",
+  "generated_at": "2026-07-04T08:01:04.021Z",
+  "date": "2026-07-04",
+  "weekday": "Saturday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/070426.cfm",
+  "feast": null,
+  "lectionary": "382",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Ephesians 2:19-22"
+      "citation": "Amos 9:11-15"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 117:1bc, 2"
+      "citation": "Psalm 85:9 and 10, 11-12, 13-14"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 20:29"
+      "citation": "John 10:27"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 20:24-29"
+      "citation": "Matthew 9:14-17"
     }
   ]
 }
