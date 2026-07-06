@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-07-05T08:10:24.771Z",
-  "date": "2026-07-05",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/070526.cfm",
-  "feast": "Fourteenth Sunday in Ordinary Time",
-  "lectionary": "100",
+  "generated_at": "2026-07-06T09:07:57.735Z",
+  "date": "2026-07-06",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/070626.cfm",
+  "feast": null,
+  "lectionary": "383",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Zechariah 9:9-10"
+      "citation": "Hosea 2:16, 17c-18, 21-22"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 145:1-2, 8-9, 10-11, 13-14"
-    },
-    {
-      "label": "Reading 2",
-      "type": "reading",
-      "citation": "Romans 8:9, 11-13"
+      "citation": "Psalm 145:2-3, 4-5, 6-7, 8-9"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Cf. Matthew 11:25"
+      "citation": "See 2 Timothy 1:10"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 11:25-30"
+      "citation": "Matthew 9:18-26"
     }
   ]
 }
