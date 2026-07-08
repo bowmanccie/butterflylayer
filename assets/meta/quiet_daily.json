@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-07-07T08:34:26.498Z",
-  "date": "2026-07-07",
-  "weekday": "Tuesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/070726.cfm",
+  "generated_at": "2026-07-08T07:38:59.587Z",
+  "date": "2026-07-08",
+  "weekday": "Wednesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/070826.cfm",
   "feast": null,
-  "lectionary": "384",
+  "lectionary": "385",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Hosea 8:4-7, 11-13"
+      "citation": "Hosea 10:1-3, 7-8, 12"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 115:3-4, 5-6, 7ab-8, 9-10"
+      "citation": "Psalm 105:2-3, 4-5, 6-7"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 10:14"
+      "citation": "Mark 1:15"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 9:32-38"
+      "citation": "Matthew 10:1-7"
     }
   ]
 }
