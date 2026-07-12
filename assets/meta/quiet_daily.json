@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-07-11T07:17:45.606Z",
-  "date": "2026-07-11",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/071126.cfm",
-  "feast": "Memorial of Saint Benedict, Abbot",
-  "lectionary": "388",
+  "generated_at": "2026-07-12T07:35:13.434Z",
+  "date": "2026-07-12",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/071226.cfm",
+  "feast": "Fifteenth Sunday in Ordinary Time",
+  "lectionary": "103",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Isaiah 6:1-8"
+      "citation": "Isaiah 55:10-11"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 93:1ab, 1cd-2, 5"
+      "citation": "Psalm 65:10, 11, 12-13, 14"
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "Romans 8:18-23"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "1 Peter 4:14"
+      "citation": null
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 10:24-33"
+      "citation": "Matthew 13:1-23"
     }
   ]
 }
