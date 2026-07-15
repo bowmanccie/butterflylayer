@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-07-14T07:18:15.093Z",
-  "date": "2026-07-14",
-  "weekday": "Tuesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/071426.cfm",
-  "feast": "Memorial of Saint Kateri Tekakwitha, Virgin  [In the Dioceses of the United States]",
-  "lectionary": "390",
+  "generated_at": "2026-07-15T07:21:35.550Z",
+  "date": "2026-07-15",
+  "weekday": "Wednesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/071526.cfm",
+  "feast": "Memorial of Saint Bonaventure, Bishop and Doctor of the Church",
+  "lectionary": "391",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Isaiah 7:1-9"
+      "citation": "Isaiah 10:5-7, 13b-16"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 48:2-3a, 3b-4, 5-6, 7-8"
+      "citation": "Psalm 94:5-6, 7-8, 9-10, 14-15"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Psalm 95:8"
+      "citation": "Matthew 11:25"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 11:20-24"
+      "citation": "Matthew 11:25-27"
     }
   ]
 }
