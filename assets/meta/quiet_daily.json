@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-07-15T07:21:35.550Z",
-  "date": "2026-07-15",
-  "weekday": "Wednesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/071526.cfm",
-  "feast": "Memorial of Saint Bonaventure, Bishop and Doctor of the Church",
-  "lectionary": "391",
+  "generated_at": "2026-07-16T07:29:28.823Z",
+  "date": "2026-07-16",
+  "weekday": "Thursday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/071626.cfm",
+  "feast": null,
+  "lectionary": "392",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "luminous",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Isaiah 10:5-7, 13b-16"
+      "citation": "Isaiah 26:7-9, 12, 16-19"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 94:5-6, 7-8, 9-10, 14-15"
+      "citation": "Psalm 102:13-14ab and 15, 16-18, 19-21"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Matthew 11:25"
+      "citation": "Matthew 11:28"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 11:25-27"
+      "citation": "Matthew 11:28-30"
     }
   ]
 }
