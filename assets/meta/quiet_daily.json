@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-07-19T07:33:32.656Z",
-  "date": "2026-07-19",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/071926.cfm",
-  "feast": "Sixteenth Sunday in Ordinary Time",
-  "lectionary": "106",
+  "generated_at": "2026-07-20T08:15:26.211Z",
+  "date": "2026-07-20",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/072026.cfm",
+  "feast": null,
+  "lectionary": "395",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Wisdom 12:13, 16-19"
+      "citation": "Micah 6:1-4, 6-8"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 86:5-6, 9-10, 15-16"
-    },
-    {
-      "label": "Reading 2",
-      "type": "reading",
-      "citation": "Romans 8:26-27"
+      "citation": "Psalm 50:5-6, 8-9, 16bc-17, 21, 23"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Cf. Matthew 11:25"
+      "citation": "Psalm 95:8"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 13:24-43"
+      "citation": "Matthew 12:38-42"
     }
   ]
 }
