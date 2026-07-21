@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-07-20T08:15:26.211Z",
-  "date": "2026-07-20",
-  "weekday": "Monday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/072026.cfm",
+  "generated_at": "2026-07-21T07:40:18.975Z",
+  "date": "2026-07-21",
+  "weekday": "Tuesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/072126.cfm",
   "feast": null,
-  "lectionary": "395",
+  "lectionary": "396",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Micah 6:1-4, 6-8"
+      "citation": "Micah 7:14-15, 18-20"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 50:5-6, 8-9, 16bc-17, 21, 23"
+      "citation": "Psalm 85:2-4, 5-6, 7-8"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Psalm 95:8"
+      "citation": "John 14:23"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 12:38-42"
+      "citation": "Matthew 12:46-50"
     }
   ]
 }
