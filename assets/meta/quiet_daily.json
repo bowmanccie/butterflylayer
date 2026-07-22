@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-07-21T07:40:18.975Z",
-  "date": "2026-07-21",
-  "weekday": "Tuesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/072126.cfm",
-  "feast": null,
-  "lectionary": "396",
+  "generated_at": "2026-07-22T07:40:38.439Z",
+  "date": "2026-07-22",
+  "weekday": "Wednesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/072226.cfm",
+  "feast": "Feast of Saint Mary Magdalene",
+  "lectionary": "603",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Micah 7:14-15, 18-20"
+      "citation": "Song of Songs 3:1-4b"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 85:2-4, 5-6, 7-8"
+      "citation": "Psalm 63:2, 3-4, 5-6, 8-9"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 14:23"
+      "citation": null
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 12:46-50"
+      "citation": "John 20:1-2, 11-18"
     }
   ]
 }
