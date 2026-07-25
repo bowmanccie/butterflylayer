@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-07-24T07:39:50.554Z",
-  "date": "2026-07-24",
-  "weekday": "Friday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/072426.cfm",
-  "feast": null,
-  "lectionary": "399",
+  "generated_at": "2026-07-25T07:25:46.000Z",
+  "date": "2026-07-25",
+  "weekday": "Saturday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/072526.cfm",
+  "feast": "Feast of Saint James, Apostle",
+  "lectionary": "605",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Jeremiah 3:14-17"
+      "citation": "2 Corinthians 4:7-15"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Jeremiah 31:10, 11-12abcd, 13"
+      "citation": "Psalm 126:1bc-2ab, 2cd-3, 4-5, 6"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Luke 8:15"
+      "citation": "See John 15:16"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 13:18-23"
+      "citation": "Matthew 20:20-28"
     }
   ]
 }
