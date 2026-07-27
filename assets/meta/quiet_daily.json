@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-07-26T07:43:30.074Z",
-  "date": "2026-07-26",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/072626.cfm",
-  "feast": "Seventeenth Sunday in Ordinary Time",
-  "lectionary": "109",
+  "generated_at": "2026-07-27T08:41:57.470Z",
+  "date": "2026-07-27",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/072726.cfm",
+  "feast": null,
+  "lectionary": "401",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Kings 3:5, 7-12"
+      "citation": "Jeremiah 13:1-11"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 119:57, 72, 76-77, 127-128, 129-130"
-    },
-    {
-      "label": "Reading 2",
-      "type": "reading",
-      "citation": "Romans 8:28-30"
+      "citation": "Deuteronomy 32:18-19, 20, 21"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Cf. Matthew 11:25"
+      "citation": "James 1:18"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 13:44-52"
+      "citation": "Matthew 13:31-35"
     }
   ]
 }
