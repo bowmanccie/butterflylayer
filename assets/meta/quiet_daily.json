@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-07-28T07:45:23.946Z",
-  "date": "2026-07-28",
-  "weekday": "Tuesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/072826.cfm",
-  "feast": null,
-  "lectionary": "402",
+  "generated_at": "2026-07-29T07:50:25.574Z",
+  "date": "2026-07-29",
+  "weekday": "Wednesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/072926.cfm",
+  "feast": "Memorial of Saints Martha, Mary, and Lazarus",
+  "lectionary": "403/607",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Jeremiah 14:17-22"
+      "citation": "Jeremiah 15:10, 16-21"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 79:8, 9, 11 and 13"
+      "citation": "Psalm 59:2-3, 4, 10-11, 17, 18"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": null
+      "citation": "John 8:12"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 13:36-43"
+      "citation": "John 11:19-27"
     }
   ]
 }
