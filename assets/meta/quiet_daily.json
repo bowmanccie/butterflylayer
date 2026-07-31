@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-07-30T07:40:08.364Z",
-  "date": "2026-07-30",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/073026.cfm",
-  "feast": null,
-  "lectionary": "404",
+  "generated_at": "2026-07-31T08:07:04.080Z",
+  "date": "2026-07-31",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/073126.cfm",
+  "feast": "Memorial of Saint Ignatius of Loyola, Priest",
+  "lectionary": "405",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Jeremiah 18:1-6"
+      "citation": "Jeremiah 26:1-9"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 146:1B-2, 3-4, 5-6ab"
+      "citation": "Psalm 69:5, 8-10, 14"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Acts 16:14"
+      "citation": "1 Peter 1:25"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 13:47-53"
+      "citation": "Matthew 13:54-58"
     }
   ]
 }
