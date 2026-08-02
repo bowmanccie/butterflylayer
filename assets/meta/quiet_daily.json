@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-07-31T08:07:04.080Z",
-  "date": "2026-07-31",
-  "weekday": "Friday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/073126.cfm",
-  "feast": "Memorial of Saint Ignatius of Loyola, Priest",
-  "lectionary": "405",
+  "generated_at": "2026-08-02T07:38:45.011Z",
+  "date": "2026-08-02",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/080226.cfm",
+  "feast": "Eighteenth Sunday In Ordinary Time",
+  "lectionary": "112",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Jeremiah 26:1-9"
+      "citation": "Isaiah 55:1-3"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 69:5, 8-10, 14"
+      "citation": "Psalm 145:8-9, 15-16, 17-18"
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "Romans 8:35, 37-39"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "1 Peter 1:25"
+      "citation": "Matthew 4:4b"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 13:54-58"
+      "citation": "Matthew 14:13-21"
     }
   ]
 }
