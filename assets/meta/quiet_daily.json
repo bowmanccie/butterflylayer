@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-08-02T07:38:45.011Z",
-  "date": "2026-08-02",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/080226.cfm",
-  "feast": "Eighteenth Sunday In Ordinary Time",
-  "lectionary": "112",
+  "generated_at": "2026-08-03T08:39:09.963Z",
+  "date": "2026-08-03",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/080326.cfm",
+  "feast": null,
+  "lectionary": "407/408",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Isaiah 55:1-3"
+      "citation": "Jeremiah 28:1-17"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 145:8-9, 15-16, 17-18"
-    },
-    {
-      "label": "Reading 2",
-      "type": "reading",
-      "citation": "Romans 8:35, 37-39"
+      "citation": "Psalm 119:29, 43, 79, 80, 95, 102"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Matthew 4:4b"
+      "citation": "John 1:49b"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 14:13-21"
+      "citation": "Matthew 14:22-36"
     }
   ]
 }
