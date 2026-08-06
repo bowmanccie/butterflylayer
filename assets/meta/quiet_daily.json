@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-08-05T07:47:18.996Z",
-  "date": "2026-08-05",
-  "weekday": "Wednesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/080526.cfm",
-  "feast": null,
-  "lectionary": "409",
+  "generated_at": "2026-08-06T07:46:55.514Z",
+  "date": "2026-08-06",
+  "weekday": "Thursday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/080626.cfm",
+  "feast": "Feast of the Transfiguration of the Lord",
+  "lectionary": "614",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "luminous",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Jeremiah 31:1-7"
+      "citation": "Daniel 7:9-10, 13-14"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Jeremiah 31:10, 11-12ab, 13"
+      "citation": "Psalm 97:1-2, 5-6, 9"
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "2 Peter 1:16-19"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Luke 7:16"
+      "citation": "Matthew 17:5"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 15:21-28"
+      "citation": "Matthew 17:1-9"
     }
   ]
 }
