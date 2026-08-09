@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-08-08T05:52:00.783Z",
-  "date": "2026-08-08",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/080826.cfm",
-  "feast": "Memorial of Saint Dominic, Priest",
-  "lectionary": "412",
+  "generated_at": "2026-08-09T05:54:08.886Z",
+  "date": "2026-08-09",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/080926.cfm",
+  "feast": "Nineteenth Sunday in Ordinary Time",
+  "lectionary": "115",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Habakkuk 1:12—2:4"
+      "citation": "1 Kings 19:9a, 11-13a"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 9:8-9, 10-11, 12-13"
+      "citation": "Psalm 85:9, 10, 11-12, 13-14"
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "Romans 9:1-5"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "2 Timothy 1:10"
+      "citation": "Psalm 130:5"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 17:14-20"
+      "citation": "Matthew 14:22-33"
     }
   ]
 }
