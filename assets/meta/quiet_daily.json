@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-08-09T05:54:08.886Z",
-  "date": "2026-08-09",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/080926.cfm",
-  "feast": "Nineteenth Sunday in Ordinary Time",
-  "lectionary": "115",
+  "generated_at": "2026-08-10T06:18:33.667Z",
+  "date": "2026-08-10",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/081026.cfm",
+  "feast": "Feast of Saint Lawrence, Deacon and Martyr",
+  "lectionary": "618",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Kings 19:9a, 11-13a"
+      "citation": "2 Corinthians 9:6-10"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 85:9, 10, 11-12, 13-14"
-    },
-    {
-      "label": "Reading 2",
-      "type": "reading",
-      "citation": "Romans 9:1-5"
+      "citation": "Psalm 112:1-2, 5-6, 7-8, 9"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Psalm 130:5"
+      "citation": "John 8:12"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 14:22-33"
+      "citation": "John 12:24-26"
     }
   ]
 }
