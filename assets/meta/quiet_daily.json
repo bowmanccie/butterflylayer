@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-08-10T06:18:33.667Z",
-  "date": "2026-08-10",
-  "weekday": "Monday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/081026.cfm",
-  "feast": "Feast of Saint Lawrence, Deacon and Martyr",
-  "lectionary": "618",
+  "generated_at": "2026-08-11T05:59:59.614Z",
+  "date": "2026-08-11",
+  "weekday": "Tuesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/081126.cfm",
+  "feast": "Memorial of Saint Clare, Virgin",
+  "lectionary": "414",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "2 Corinthians 9:6-10"
+      "citation": "Ezekiel 2:8-3:4"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 112:1-2, 5-6, 7-8, 9"
+      "citation": "Psalm 119:14, 24, 72, 103, 111, 131"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 8:12"
+      "citation": "Matthew 11:29"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 12:24-26"
+      "citation": "Matthew 18:1-5, 10, 12-14"
     }
   ]
 }
