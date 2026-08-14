@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-08-13T06:39:44.882Z",
-  "date": "2026-08-13",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/081326.cfm",
-  "feast": null,
-  "lectionary": "416",
+  "generated_at": "2026-08-14T06:22:44.081Z",
+  "date": "2026-08-14",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/081426.cfm",
+  "feast": "Memorial of Saint Maximilian Kolbe, Priest and Martyr",
+  "lectionary": "417",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Ezekiel 12:1-12"
+      "citation": "Ezekiel 16:1-15, 60, 63"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 78:56-57, 58-59, 61-62"
+      "citation": "Isaiah 12:2-3, 4bcd, 5-6"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Psalm 119:135"
+      "citation": "See 1 Thessalonians 2:13"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 18:21–19:1"
+      "citation": "Matthew 19:3-12"
     }
   ]
 }
