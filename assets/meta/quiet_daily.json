@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-08-16T05:37:37.047Z",
-  "date": "2026-08-16",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/081626.cfm",
-  "feast": "Twentieth Sunday in Ordinary Time",
-  "lectionary": "118",
+  "generated_at": "2026-08-17T05:44:44.948Z",
+  "date": "2026-08-17",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/081726.cfm",
+  "feast": null,
+  "lectionary": "419",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Isaiah 56:1, 6-7"
+      "citation": "Ezekiel 24:15-23"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 67:2-3, 5, 6, 8"
-    },
-    {
-      "label": "Reading 2",
-      "type": "reading",
-      "citation": "Romans 11:13-15, 29-32"
+      "citation": "Deuteronomy 32:18-19, 20, 21"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Cf. Matthew 4:23"
+      "citation": "Matthew 5:3"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 15:21-28"
+      "citation": "Matthew 19:16-22"
     }
   ]
 }
