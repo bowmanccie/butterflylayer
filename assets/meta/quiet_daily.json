@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-08-18T05:38:52.226Z",
-  "date": "2026-08-18",
-  "weekday": "Tuesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/081826.cfm",
+  "generated_at": "2026-08-19T05:40:13.901Z",
+  "date": "2026-08-19",
+  "weekday": "Wednesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/081926.cfm",
   "feast": null,
-  "lectionary": "420",
+  "lectionary": "421",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Ezekiel 28:1-10"
+      "citation": "Ezekiel 34:1-11"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Deuteronomy 32:26-27ab, 27cd-28, 30, 35cd-36ab"
+      "citation": "Psalm 23:1-3a, 3b-4, 5, 6"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "2 Corinthians 8:9"
+      "citation": "Hebrews 4:12"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 19:23-30"
+      "citation": "Matthew 20:1-16"
     }
   ]
 }
