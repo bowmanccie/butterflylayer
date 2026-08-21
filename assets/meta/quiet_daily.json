@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-08-20T05:40:07.195Z",
-  "date": "2026-08-20",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/082026.cfm",
-  "feast": "Memorial of Saint Bernard, Abbot and Doctor of the Church",
-  "lectionary": "422",
+  "generated_at": "2026-08-21T05:42:38.309Z",
+  "date": "2026-08-21",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/082126.cfm",
+  "feast": "Memorial of Saint Pius X, Pope",
+  "lectionary": "423",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Ezekiel 36:23-28"
+      "citation": "Ezekiel 37:1-14"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 51:12-13, 14-15, 18-19"
+      "citation": "Psalm 107:2-3, 4-5, 6-7, 8-9"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Psalm 95:8"
+      "citation": "Psalm 25:4b, 5a"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 22:1-14"
+      "citation": "Matthew 22:34-40"
     }
   ]
 }
