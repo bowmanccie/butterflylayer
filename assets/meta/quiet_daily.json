@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-08-21T05:42:38.309Z",
-  "date": "2026-08-21",
-  "weekday": "Friday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/082126.cfm",
-  "feast": "Memorial of Saint Pius X, Pope",
-  "lectionary": "423",
+  "generated_at": "2026-08-22T05:37:11.815Z",
+  "date": "2026-08-22",
+  "weekday": "Saturday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/082226.cfm",
+  "feast": "Memorial of the Queenship of the Blessed Virgin Mary",
+  "lectionary": "424",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Ezekiel 37:1-14"
+      "citation": "Ezekiel 43:1-7ab"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 107:2-3, 4-5, 6-7, 8-9"
+      "citation": "Psalm 85:9ab, 10, 11-12, 13-14"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Psalm 25:4b, 5a"
+      "citation": "Matthew 23:9B, 10b"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 22:34-40"
+      "citation": "Matthew 23:1-12"
     }
   ]
 }
