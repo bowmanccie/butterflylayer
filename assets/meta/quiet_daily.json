@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-08-22T05:37:11.815Z",
-  "date": "2026-08-22",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/082226.cfm",
-  "feast": "Memorial of the Queenship of the Blessed Virgin Mary",
-  "lectionary": "424",
+  "generated_at": "2026-08-23T05:38:16.280Z",
+  "date": "2026-08-23",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/082326.cfm",
+  "feast": "Twenty-first Sunday in Ordinary Time",
+  "lectionary": "121",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Ezekiel 43:1-7ab"
+      "citation": "Isaiah 22:19-23"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 85:9ab, 10, 11-12, 13-14"
+      "citation": "Psalm 138:1-2, 2-3, 6, 8"
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "Romans 11:33-36"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Matthew 23:9B, 10b"
+      "citation": "Matthew 16:18"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 23:1-12"
+      "citation": "Matthew 16:13-20"
     }
   ]
 }
