@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-08-25T05:41:14.544Z",
-  "date": "2026-08-25",
-  "weekday": "Tuesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/082526.cfm",
+  "generated_at": "2026-08-26T05:44:47.530Z",
+  "date": "2026-08-26",
+  "weekday": "Wednesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/082626.cfm",
   "feast": null,
-  "lectionary": "426",
+  "lectionary": "427",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "2 Thessalonians 2:1-3a, 14-17"
+      "citation": "2 Thessalonians 3:6-10, 16-18"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 96:10, 11-12, 13"
+      "citation": "Psalm 128:1-2, 4-5"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Hebrews 4:12"
+      "citation": "1 John 2:5"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 23:23-26"
+      "citation": "Matthew 23:27-32"
     }
   ]
 }
