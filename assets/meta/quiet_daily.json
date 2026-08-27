@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-08-26T05:44:47.530Z",
-  "date": "2026-08-26",
-  "weekday": "Wednesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/082626.cfm",
-  "feast": null,
-  "lectionary": "427",
+  "generated_at": "2026-08-27T16:25:02.865Z",
+  "date": "2026-08-27",
+  "weekday": "Thursday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/082726.cfm",
+  "feast": "Memorial of Saint Monica",
+  "lectionary": "428",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "luminous",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "2 Thessalonians 3:6-10, 16-18"
+      "citation": "1 Corinthians 1:1-9"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 128:1-2, 4-5"
+      "citation": "Psalm 145:2-3, 4-5, 6-7"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "1 John 2:5"
+      "citation": "Matthew 24:42a, 44"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 23:27-32"
+      "citation": "Matthew 24:42-51"
     }
   ]
 }
