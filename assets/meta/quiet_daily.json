@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-08-27T16:25:02.865Z",
-  "date": "2026-08-27",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/082726.cfm",
-  "feast": "Memorial of Saint Monica",
-  "lectionary": "428",
+  "generated_at": "2026-08-28T17:22:30.985Z",
+  "date": "2026-08-28",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/082826.cfm",
+  "feast": "Memorial of Saint Augustine, Bishop and Doctor of the Church",
+  "lectionary": "429",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Corinthians 1:1-9"
+      "citation": "1 Corinthians 1:17-25"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 145:2-3, 4-5, 6-7"
+      "citation": "Psalm 33:1-2, 4-5, 10-11"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Matthew 24:42a, 44"
+      "citation": "Luke 21:36"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 24:42-51"
+      "citation": "Matthew 25:1-13"
     }
   ]
 }
