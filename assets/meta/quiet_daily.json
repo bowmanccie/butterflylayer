@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-08-29T11:36:26.018Z",
-  "date": "2026-08-29",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/082926.cfm",
-  "feast": "Memorial of the Passion of Saint John the Baptist",
-  "lectionary": "430/634",
+  "generated_at": "2026-08-30T10:26:34.959Z",
+  "date": "2026-08-30",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/083026.cfm",
+  "feast": "Twenty-second Sunday in Ordinary Time",
+  "lectionary": "124",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Corinthians 1:26-31"
+      "citation": "Jeremiah 20:7-9"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 33:12-13, 18-19, 20-21"
+      "citation": "Psalm 63:2, 3-4, 5-6, 8-9"
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "Romans 12:1-2"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Matthew 5:10"
+      "citation": "cf. Ephesians 1:17-18"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Mark 6:17-29"
+      "citation": "Matthew 16:21-27"
     }
   ]
 }
