@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-09-02T09:30:42.271Z",
-  "date": "2026-09-02",
-  "weekday": "Wednesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/090226.cfm",
-  "feast": null,
-  "lectionary": "433",
+  "generated_at": "2026-09-03T09:39:50.400Z",
+  "date": "2026-09-03",
+  "weekday": "Thursday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/090326.cfm",
+  "feast": "Memorial of Saint Gregory the Great, Pope and Doctor of the Church",
+  "lectionary": "434",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "luminous",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Corinthians 3:1-9"
+      "citation": "1 Corinthians 3:18-23"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 33:12-13, 14-15, 20-21"
+      "citation": "Psalm 24:1bc-2, 3-4ab, 5-6"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Luke 4:18"
+      "citation": "Matthew 4:19"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 4:38-44"
+      "citation": "Luke 5:1-11"
     }
   ]
 }
