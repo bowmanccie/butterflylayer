@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-09-05T09:00:10.620Z",
-  "date": "2026-09-05",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/090526.cfm",
-  "feast": null,
-  "lectionary": "436",
+  "generated_at": "2026-09-06T09:20:26.121Z",
+  "date": "2026-09-06",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/090626.cfm",
+  "feast": "Twenty-third Sunday in Ordinary Time",
+  "lectionary": "127",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Corinthians 4:6b-15"
+      "citation": "Ezekiel 33:7-9"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 145:17-18, 19-20, 21"
+      "citation": "Psalm 95:1-2, 6-7, 8-9"
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "Romans 13:8-10"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 14:6"
+      "citation": "2 Corinthians 5:19"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 6:1-5"
+      "citation": "Matthew 18:15-20"
     }
   ]
 }
