@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-09-07T10:10:21.344Z",
-  "date": "2026-09-07",
-  "weekday": "Monday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/090726.cfm",
-  "feast": null,
-  "lectionary": "437",
+  "generated_at": "2026-09-08T09:34:12.234Z",
+  "date": "2026-09-08",
+  "weekday": "Tuesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/090826.cfm",
+  "feast": "Feast of the Nativity of the Blessed Virgin Mary",
+  "lectionary": "636",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Corinthians 5:1-8"
+      "citation": "Micah 5:1-4a"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 5:5-6, 7, 12"
+      "citation": "Psalm 13:6ab, 6c"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 10:27"
+      "citation": null
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 6:6-11"
+      "citation": "Matthew 1:1-16, 18-23"
     }
   ]
 }
