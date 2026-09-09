@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-09-08T09:34:12.234Z",
-  "date": "2026-09-08",
-  "weekday": "Tuesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/090826.cfm",
-  "feast": "Feast of the Nativity of the Blessed Virgin Mary",
-  "lectionary": "636",
+  "generated_at": "2026-09-09T09:37:22.169Z",
+  "date": "2026-09-09",
+  "weekday": "Wednesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/090926.cfm",
+  "feast": "Memorial of Saint Peter Claver, Priest\n                                                      \n                    [In the Dioceses of the United States]",
+  "lectionary": "439",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Micah 5:1-4a"
+      "citation": "1 Corinthians 7:25-31"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 13:6ab, 6c"
+      "citation": "Psalm 45:11-12, 14-15, 16-17"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": null
+      "citation": "Luke 6:23ab"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 1:1-16, 18-23"
+      "citation": "Luke 6:20-26"
     }
   ]
 }
