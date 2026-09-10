@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-09-09T09:37:22.169Z",
-  "date": "2026-09-09",
-  "weekday": "Wednesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/090926.cfm",
-  "feast": "Memorial of Saint Peter Claver, Priest\n                                                      \n                    [In the Dioceses of the United States]",
-  "lectionary": "439",
+  "generated_at": "2026-09-10T09:36:27.039Z",
+  "date": "2026-09-10",
+  "weekday": "Thursday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/091026.cfm",
+  "feast": null,
+  "lectionary": "440",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "luminous",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Corinthians 7:25-31"
+      "citation": "1 Corinthians 8:1b-7, 11-13"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 45:11-12, 14-15, 16-17"
+      "citation": "Psalm 139:1b-3, 13-14ab, 23-24"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Luke 6:23ab"
+      "citation": "1 John 4:12"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 6:20-26"
+      "citation": "Luke 6:27-38"
     }
   ]
 }
