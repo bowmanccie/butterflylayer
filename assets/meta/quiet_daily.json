@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-09-12T09:13:12.870Z",
-  "date": "2026-09-12",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/091226.cfm",
-  "feast": null,
-  "lectionary": "442",
+  "generated_at": "2026-09-13T10:09:44.176Z",
+  "date": "2026-09-13",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/091326.cfm",
+  "feast": "Twenty-fourth Sunday in Ordinary Time",
+  "lectionary": "130",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Corinthians 10:14-22"
+      "citation": "Sirach 27:30—28:7"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 116:12-13, 17-18"
+      "citation": "Psalm 103:1-2, 3-4, 9-10, 11-12"
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "Romans 14:7-9"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 14:23"
+      "citation": "John 13:34"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 6:43-49"
+      "citation": "Matthew 18:21-35"
     }
   ]
 }
