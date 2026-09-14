@@ -1,38 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-09-13T10:09:44.176Z",
-  "date": "2026-09-13",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/091326.cfm",
-  "feast": "Twenty-fourth Sunday in Ordinary Time",
-  "lectionary": "130",
+  "generated_at": "2026-09-14T10:32:27.284Z",
+  "date": "2026-09-14",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/091426.cfm",
+  "feast": "Feast of the Exaltation of the Holy Cross",
+  "lectionary": "638",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Sirach 27:30—28:7"
+      "citation": "Numbers 21:4b-9"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 103:1-2, 3-4, 9-10, 11-12"
+      "citation": "Psalm 78:1bc-2, 34-35, 36-37, 38"
     },
     {
       "label": "Reading 2",
       "type": "reading",
-      "citation": "Romans 14:7-9"
+      "citation": "Philippians 2:6-11"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 13:34"
+      "citation": null
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 18:21-35"
+      "citation": "John 3:13-17"
     }
   ]
 }
