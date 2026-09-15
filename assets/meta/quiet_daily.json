@@ -1,28 +1,23 @@
 {
   "source": "usccb",
-  "generated_at": "2026-09-14T10:32:27.284Z",
-  "date": "2026-09-14",
-  "weekday": "Monday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/091426.cfm",
-  "feast": "Feast of the Exaltation of the Holy Cross",
-  "lectionary": "638",
+  "generated_at": "2026-09-15T09:59:59.733Z",
+  "date": "2026-09-15",
+  "weekday": "Tuesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/091526.cfm",
+  "feast": "Memorial of Our Lady of Sorrows",
+  "lectionary": "444/639",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Numbers 21:4b-9"
+      "citation": "1 Corinthians 12:12-14, 27-31a"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 78:1bc-2, 34-35, 36-37, 38"
-    },
-    {
-      "label": "Reading 2",
-      "type": "reading",
-      "citation": "Philippians 2:6-11"
+      "citation": "Psalm 100:1b-2, 3, 4, 5"
     },
     {
       "label": "Alleluia",
@@ -32,7 +27,7 @@
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 3:13-17"
+      "citation": "John 19:25-27"
     }
   ]
 }
