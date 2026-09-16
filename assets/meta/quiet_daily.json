@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-09-15T09:59:59.733Z",
-  "date": "2026-09-15",
-  "weekday": "Tuesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/091526.cfm",
-  "feast": "Memorial of Our Lady of Sorrows",
-  "lectionary": "444/639",
+  "generated_at": "2026-09-16T09:51:37.166Z",
+  "date": "2026-09-16",
+  "weekday": "Wednesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/091626.cfm",
+  "feast": "Memorial of Saints Cornelius, Pope, and Cyprian, Bishop, Martyrs",
+  "lectionary": "445",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Corinthians 12:12-14, 27-31a"
+      "citation": "1 Corinthians 12:31-13:13"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 100:1b-2, 3, 4, 5"
+      "citation": "Psalm 33:2-3, 4-5, 12 and 22"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": null
+      "citation": "See John 6:63c, 68c"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 19:25-27"
+      "citation": "Luke 7:31-35"
     }
   ]
 }
