@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-09-16T09:51:37.166Z",
-  "date": "2026-09-16",
-  "weekday": "Wednesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/091626.cfm",
-  "feast": "Memorial of Saints Cornelius, Pope, and Cyprian, Bishop, Martyrs",
-  "lectionary": "445",
+  "generated_at": "2026-09-17T09:56:35.088Z",
+  "date": "2026-09-17",
+  "weekday": "Thursday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/091726.cfm",
+  "feast": null,
+  "lectionary": "446",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "luminous",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Corinthians 12:31-13:13"
+      "citation": "1 Corinthians 15:1-11"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 33:2-3, 4-5, 12 and 22"
+      "citation": "Psalm 118:1b-2, 16ab-17, 28"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "See John 6:63c, 68c"
+      "citation": "Matthew 11:28"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 7:31-35"
+      "citation": "Luke 7:36-50"
     }
   ]
 }
