@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-09-18T09:38:22.768Z",
-  "date": "2026-09-18",
-  "weekday": "Friday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/091826.cfm",
+  "generated_at": "2026-09-19T09:24:57.255Z",
+  "date": "2026-09-19",
+  "weekday": "Saturday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/091926.cfm",
   "feast": null,
-  "lectionary": "447",
+  "lectionary": "448",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Corinthians 15:12-20"
+      "citation": "1 Corinthians 15:35-37, 42-49"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 17:1bcd, 6-7, 8b, 15"
+      "citation": "Psalm 56:10c-12, 13-14"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "See Matthew 11:25"
+      "citation": "Luke 8:15"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 8:1-3"
+      "citation": "Luke 8:4-15"
     }
   ]
 }
