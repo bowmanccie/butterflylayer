@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-09-19T09:24:57.255Z",
-  "date": "2026-09-19",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/091926.cfm",
-  "feast": null,
-  "lectionary": "448",
+  "generated_at": "2026-09-20T09:44:03.295Z",
+  "date": "2026-09-20",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/092026.cfm",
+  "feast": "Twenty-fifth Sunday in Ordinary Time",
+  "lectionary": "133",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "1 Corinthians 15:35-37, 42-49"
+      "citation": "Isaiah 55:6-9"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 56:10c-12, 13-14"
+      "citation": "Psalm 145:2-3, 8-9, 17-18"
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "Philippians 1:20c-24, 27a"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Luke 8:15"
+      "citation": "Cf. Acts 16:14b"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 8:4-15"
+      "citation": "Matthew 20:1-16a"
     }
   ]
 }
