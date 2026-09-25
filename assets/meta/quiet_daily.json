@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-09-24T09:54:56.088Z",
-  "date": "2026-09-24",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/092426.cfm",
+  "generated_at": "2026-09-25T10:08:23.446Z",
+  "date": "2026-09-25",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/092526.cfm",
   "feast": null,
-  "lectionary": "452",
+  "lectionary": "453",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Ecclesiastes 1:2-11"
+      "citation": "Ecclesiastes 3:1-11"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 90:3-4, 5-6, 12-13, 14, 17bc"
+      "citation": "Psalm 144:1b and 2abc, 3-4"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 14:6"
+      "citation": "Mark 10:45"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 9:7-9"
+      "citation": "Luke 9:18-22"
     }
   ]
 }
