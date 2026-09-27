@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-09-26T09:49:03.054Z",
-  "date": "2026-09-26",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/092626.cfm",
-  "feast": null,
-  "lectionary": "454",
+  "generated_at": "2026-09-27T10:30:27.600Z",
+  "date": "2026-09-27",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/092726.cfm",
+  "feast": "Twenty-sixth Sunday in Ordinary Time",
+  "lectionary": "136",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Ecclesiastes 11:9—12:8"
+      "citation": "Ezekiel 18:25-28"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 90:3-4, 5-6, 12-13, 14 and 17"
+      "citation": "Psalm 25:4-5, 6-7, 8-9"
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "Philippians 2:1-11"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "2 Timothy 1:10"
+      "citation": "John 10:27"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 9:43b-45"
+      "citation": "Matthew 21:28-32"
     }
   ]
 }
