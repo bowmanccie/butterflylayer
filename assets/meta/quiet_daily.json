@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-09-28T11:38:19.361Z",
-  "date": "2026-09-28",
-  "weekday": "Monday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/092826.cfm",
-  "feast": null,
-  "lectionary": "455",
+  "generated_at": "2026-09-29T11:18:10.224Z",
+  "date": "2026-09-29",
+  "weekday": "Tuesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/092926.cfm",
+  "feast": "Feast of Saints Michael, Gabriel, and Raphael, Archangels",
+  "lectionary": "647",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Job 1:6-22"
+      "citation": "Daniel 7:9-10, 13-14"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 17:1bcd, 2-3, 6-7"
+      "citation": "Psalm 138:1-2ab, 2cde-3, 4-5"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Mark 10:45"
+      "citation": "Psalm 103:21"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 9:46-50"
+      "citation": "John 1:47-51"
     }
   ]
 }
