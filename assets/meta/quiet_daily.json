@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-09-29T11:18:10.224Z",
-  "date": "2026-09-29",
-  "weekday": "Tuesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/092926.cfm",
-  "feast": "Feast of Saints Michael, Gabriel, and Raphael, Archangels",
-  "lectionary": "647",
+  "generated_at": "2026-09-30T11:06:21.088Z",
+  "date": "2026-09-30",
+  "weekday": "Wednesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/093026.cfm",
+  "feast": "Memorial of Saint Jerome, Priest and Doctor of the Church",
+  "lectionary": "457",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Daniel 7:9-10, 13-14"
+      "citation": "Job 9:1-12, 14-16"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 138:1-2ab, 2cde-3, 4-5"
+      "citation": "Psalm 88:10bc-11, 12-13, 14-15"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Psalm 103:21"
+      "citation": "Philippians 3:8-9"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "John 1:47-51"
+      "citation": "Luke 9:57-62"
     }
   ]
 }
