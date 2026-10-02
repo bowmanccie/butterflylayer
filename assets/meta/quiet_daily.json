@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-10-01T11:32:55.403Z",
-  "date": "2026-10-01",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/100126.cfm",
-  "feast": "Memorial of Saint Thérèse of the Child Jesus, Virgin and Doctor of the Church",
-  "lectionary": "458",
+  "generated_at": "2026-10-02T11:02:17.332Z",
+  "date": "2026-10-02",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/100226.cfm",
+  "feast": "Memorial of the Holy Guardian Angels",
+  "lectionary": "459/650",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Job 19:21-27"
+      "citation": "Job 38:1, 12-21; 40:3-5"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 27:7-8a, 8b-9abc, 13-14"
+      "citation": "Psalm 139:1-3, 7-8, 9-10, 13-14ab"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Mark 1:15"
+      "citation": "Psalm 103:21"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 10:1-12"
+      "citation": "Matthew 18:1-5, 10"
     }
   ]
 }
