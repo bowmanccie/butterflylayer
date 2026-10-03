@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-10-02T11:02:17.332Z",
-  "date": "2026-10-02",
-  "weekday": "Friday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/100226.cfm",
-  "feast": "Memorial of the Holy Guardian Angels",
-  "lectionary": "459/650",
+  "generated_at": "2026-10-03T10:21:06.019Z",
+  "date": "2026-10-03",
+  "weekday": "Saturday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/100326.cfm",
+  "feast": null,
+  "lectionary": "460",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Job 38:1, 12-21; 40:3-5"
+      "citation": "Job 42:1-3, 5-6, 12-17"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 139:1-3, 7-8, 9-10, 13-14ab"
+      "citation": "Psalm 119:66, 71, 75, 91, 125, 130"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Psalm 103:21"
+      "citation": "See Matthew 11:25"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 18:1-5, 10"
+      "citation": "Luke 10:17-24"
     }
   ]
 }
