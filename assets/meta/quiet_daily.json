@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-10-04T11:03:59.562Z",
-  "date": "2026-10-04",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/100426.cfm",
-  "feast": "Twenty-seventh Sunday in Ordinary Time",
-  "lectionary": "139",
+  "generated_at": "2026-10-05T12:12:11.855Z",
+  "date": "2026-10-05",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/100526.cfm",
+  "feast": null,
+  "lectionary": "461",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Isaiah 5:1-7"
+      "citation": "Galatians 1:6-12"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 80:9, 12, 13-14, 15-16, 19-20"
-    },
-    {
-      "label": "Reading 2",
-      "type": "reading",
-      "citation": "Philippians 4:6-9"
+      "citation": "Psalm 111:1b-2, 7-8, 9, 10c"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Cf. John 15:16"
+      "citation": "John 13:34"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 21:33-43"
+      "citation": "Luke 10:25-37"
     }
   ]
 }
