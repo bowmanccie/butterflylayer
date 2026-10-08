@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-10-07T11:42:38.346Z",
-  "date": "2026-10-07",
-  "weekday": "Wednesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/100726.cfm",
-  "feast": "Memorial of Our Lady of the Rosary",
-  "lectionary": "463",
+  "generated_at": "2026-10-08T11:57:36.817Z",
+  "date": "2026-10-08",
+  "weekday": "Thursday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/100826.cfm",
+  "feast": null,
+  "lectionary": "464",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "luminous",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Galatians 2:1-2, 7-14"
+      "citation": "Galatians 3:1-5"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 117:1bc, 2"
+      "citation": "Luke 1:69-70, 71-72, 73-75"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Romans 8:15bc"
+      "citation": "Acts 16:14b"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 11:1-4"
+      "citation": "Luke 11:5-13"
     }
   ]
 }
