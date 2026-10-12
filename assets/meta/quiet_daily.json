@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-10-11T11:21:24.776Z",
-  "date": "2026-10-11",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/101126.cfm",
-  "feast": "Twenty-eighth Sunday in Ordinary Time",
-  "lectionary": "142",
+  "generated_at": "2026-10-12T13:02:52.034Z",
+  "date": "2026-10-12",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/101226.cfm",
+  "feast": null,
+  "lectionary": "467",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Isaiah 25:6-10a"
+      "citation": "Galatians 4:22-24, 26-27, 31–5:1"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 23:1-3a, 3b-4, 5, 6"
-    },
-    {
-      "label": "Reading 2",
-      "type": "reading",
-      "citation": "Philippians 4:12-14, 19-20"
+      "citation": "Psalm 113:1b-2, 3-4, 5a, 6-7"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Cf. Ephesians 1:17-18"
+      "citation": "Psalm 95:8"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 22:1-14"
+      "citation": "Luke 11:29-32"
     }
   ]
 }
