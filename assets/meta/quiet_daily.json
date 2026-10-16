@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-10-15T09:47:53.188Z",
-  "date": "2026-10-15",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/101526.cfm",
-  "feast": "Memorial of Saint Teresa of Jesus, Virgin and Doctor of the Church",
-  "lectionary": "470",
+  "generated_at": "2026-10-16T09:41:09.009Z",
+  "date": "2026-10-16",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/101626.cfm",
+  "feast": null,
+  "lectionary": "471",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Ephesians 1:1-10"
+      "citation": "Ephesians 1:11-14"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 98:1, 2-3ab, 3cd-4, 5-6"
+      "citation": "Psalm 33:1-2, 4-5, 12-13"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 14:6"
+      "citation": "Psalm 33:22"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 11:47-54"
+      "citation": "Luke 12:1-7"
     }
   ]
 }
