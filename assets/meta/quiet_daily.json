@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-10-19T10:40:44.479Z",
-  "date": "2026-10-19",
-  "weekday": "Monday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/101926.cfm",
-  "feast": "Memorial of Saints John de Brébeuf and Isaac Jogues, Priests, and Companions, Martyrs \n                                                      \n                    [In the Dioceses of the United States]",
-  "lectionary": "473",
+  "generated_at": "2026-10-20T09:58:01.342Z",
+  "date": "2026-10-20",
+  "weekday": "Tuesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/102026.cfm",
+  "feast": null,
+  "lectionary": "474",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Ephesians 2:1-10"
+      "citation": "Ephesians 2:12-22"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 100:1b-2, 3, 4ab, 4c-5"
+      "citation": "Psalm 85:9ab-10, 11-12, 13-14"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Matthew 5:3"
+      "citation": "Luke 21:36"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 12:13-21"
+      "citation": "Luke 12:35-38"
     }
   ]
 }
