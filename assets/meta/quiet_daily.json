@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-10-21T10:02:14.485Z",
-  "date": "2026-10-21",
-  "weekday": "Wednesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/102126.cfm",
+  "generated_at": "2026-10-22T10:03:11.890Z",
+  "date": "2026-10-22",
+  "weekday": "Thursday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/102226.cfm",
   "feast": null,
-  "lectionary": "475",
+  "lectionary": "476",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "luminous",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Ephesians 3:2-12"
+      "citation": "Ephesians 3:14-21"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Isaiah 12:2-3, 4bcd, 5-6"
+      "citation": "Psalm 33:1-2, 4-5, 11-12, 18-19"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Matthew 24:42a, 44"
+      "citation": "Phippians 3:8-9"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 12:39-48"
+      "citation": "Luke 12:49-53"
     }
   ]
 }
