@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-10-28T11:15:31.894Z",
-  "date": "2026-10-28",
-  "weekday": "Wednesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/102826.cfm",
-  "feast": "Feast of Saints Simon and Jude, Apostles",
-  "lectionary": "666",
+  "generated_at": "2026-10-29T11:27:38.931Z",
+  "date": "2026-10-29",
+  "weekday": "Thursday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/102926.cfm",
+  "feast": null,
+  "lectionary": "482",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "luminous",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Ephesians 2:19-22"
+      "citation": "Ephesians 6:10-20"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 19:2-3, 4-5"
+      "citation": "Psalm 144:1b, 2, 9-10"
     },
     {
-      "label": "Alleluia See Te Deum",
+      "label": "Alleluia",
       "type": "alleluia",
-      "citation": null
+      "citation": "See Luke 19:38; 2:14"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 6:12-16"
+      "citation": "Luke 13:31-35"
     }
   ]
 }
