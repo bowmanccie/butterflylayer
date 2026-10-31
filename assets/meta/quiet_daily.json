@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-10-30T11:19:21.777Z",
-  "date": "2026-10-30",
-  "weekday": "Friday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/103026.cfm",
+  "generated_at": "2026-10-31T10:52:02.338Z",
+  "date": "2026-10-31",
+  "weekday": "Saturday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/103126.cfm",
   "feast": null,
-  "lectionary": "483",
+  "lectionary": "484",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Philippians 1:1-11"
+      "citation": "Philippians 1:18b-26"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 111:1-2, 3-4, 5-6"
+      "citation": "Psalm 42:2, 3, 5cdef"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 10:27"
+      "citation": "Matthew 11:29ab"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 14:1-6"
+      "citation": "Luke 14:1, 7-11"
     }
   ]
 }
