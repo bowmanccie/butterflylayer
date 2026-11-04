@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-11-03T12:43:35.060Z",
-  "date": "2026-11-03",
-  "weekday": "Tuesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/110326.cfm",
-  "feast": null,
-  "lectionary": "486",
+  "generated_at": "2026-11-04T12:55:18.004Z",
+  "date": "2026-11-04",
+  "weekday": "Wednesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/110426.cfm",
+  "feast": "Memorial of Saint Charles Borromeo, Bishop",
+  "lectionary": "487",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Philippians 2:5-11"
+      "citation": "Philippians 2:12-18"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 22:26b-27, 28-30ab, 30e, 31-32"
+      "citation": "Psalm 27:1, 4, 13-14"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Matthew 11:28"
+      "citation": "1 Peter 4:14"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 14:15-24"
+      "citation": "Luke 14:25-33"
     }
   ]
 }
