@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-11-06T12:52:29.870Z",
-  "date": "2026-11-06",
-  "weekday": "Friday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/110626.cfm",
+  "generated_at": "2026-11-07T11:39:44.933Z",
+  "date": "2026-11-07",
+  "weekday": "Saturday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/110726.cfm",
   "feast": null,
-  "lectionary": "489",
+  "lectionary": "490",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Philippians 3:17—4:1"
+      "citation": "Philippians 4:10-19"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 122:1-2, 3-4ab, 4cd-5"
+      "citation": "Psalm 112:1b-2, 5-6, 8a, 9"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "1 John 2:5"
+      "citation": "2 Corinthians 8:9"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 16:1-8"
+      "citation": "Luke 16:9-15"
     }
   ]
 }
