@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-11-07T11:39:44.933Z",
-  "date": "2026-11-07",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/110726.cfm",
-  "feast": null,
-  "lectionary": "490",
+  "generated_at": "2026-11-08T11:52:25.565Z",
+  "date": "2026-11-08",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/110826.cfm",
+  "feast": "Thirty-second Sunday in Ordinary Time",
+  "lectionary": "154",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Philippians 4:10-19"
+      "citation": "Wisdom 6:12-16"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 112:1b-2, 5-6, 8a, 9"
+      "citation": "Psalm 63:2, 3-4, 5-6, 7-8"
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "1 Thessalonians 4:13-18"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "2 Corinthians 8:9"
+      "citation": "Matthew 24:42a, 44"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 16:9-15"
+      "citation": "Matthew 25:1-13"
     }
   ]
 }
