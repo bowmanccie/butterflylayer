@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-11-11T12:38:13.846Z",
-  "date": "2026-11-11",
-  "weekday": "Wednesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/111126.cfm",
-  "feast": "Memorial of Saint Martin of Tours, Bishop",
-  "lectionary": "493",
+  "generated_at": "2026-11-12T13:41:07.199Z",
+  "date": "2026-11-12",
+  "weekday": "Thursday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/111226.cfm",
+  "feast": "Memorial of Saint Josaphat, Bishop and Martyr",
+  "lectionary": "494",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "luminous",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Titus 3:1-7"
+      "citation": "Philemon 7-20"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 23:1b-3a, 3bc-4, 5, 6"
+      "citation": "Psalm 146:7, 8-9a, 9bc-10"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "1 Thessalonians 5:18"
+      "citation": "John 15:5"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 17:11-19"
+      "citation": "Luke 17:20-25"
     }
   ]
 }
