@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-11-12T13:41:07.199Z",
-  "date": "2026-11-12",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/111226.cfm",
-  "feast": "Memorial of Saint Josaphat, Bishop and Martyr",
-  "lectionary": "494",
+  "generated_at": "2026-11-13T12:59:56.372Z",
+  "date": "2026-11-13",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/111326.cfm",
+  "feast": "Memorial of Saint Frances Xavier Cabrini, Virgin [In the Dioceses of the United States]",
+  "lectionary": "495",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Philemon 7-20"
+      "citation": "2 John 4-9"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 146:7, 8-9a, 9bc-10"
+      "citation": "Psalm 119:1, 2, 10, 11, 17, 18"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 15:5"
+      "citation": "Luke 21:28"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 17:20-25"
+      "citation": "Luke 17:26-37"
     }
   ]
 }
