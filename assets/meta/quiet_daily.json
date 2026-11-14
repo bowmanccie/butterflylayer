@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-11-13T12:59:56.372Z",
-  "date": "2026-11-13",
-  "weekday": "Friday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/111326.cfm",
-  "feast": "Memorial of Saint Frances Xavier Cabrini, Virgin [In the Dioceses of the United States]",
-  "lectionary": "495",
+  "generated_at": "2026-11-14T12:04:24.589Z",
+  "date": "2026-11-14",
+  "weekday": "Saturday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/111426.cfm",
+  "feast": null,
+  "lectionary": "496",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "2 John 4-9"
+      "citation": "3 John 5-8"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 119:1, 2, 10, 11, 17, 18"
+      "citation": "Psalm 112:1-2, 3-4, 5-6"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Luke 21:28"
+      "citation": "See 2 Thessalonians 2:14"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 17:26-37"
+      "citation": "Luke 18:1-8"
     }
   ]
 }
