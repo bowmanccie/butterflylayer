@@ -1,33 +1,38 @@
 {
   "source": "usccb",
-  "generated_at": "2026-11-14T12:04:24.589Z",
-  "date": "2026-11-14",
-  "weekday": "Saturday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/111426.cfm",
-  "feast": null,
-  "lectionary": "496",
+  "generated_at": "2026-11-15T12:39:42.194Z",
+  "date": "2026-11-15",
+  "weekday": "Sunday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/111526.cfm",
+  "feast": "Thirty-third Sunday in Ordinary Time",
+  "lectionary": "157",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "3 John 5-8"
+      "citation": "Proverbs 31:10-13, 19-20, 30-31"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 112:1-2, 3-4, 5-6"
+      "citation": "Psalm 128:1-2, 3, 4-5"
+    },
+    {
+      "label": "Reading 2",
+      "type": "reading",
+      "citation": "1 Thessalonians 5:1-6"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "See 2 Thessalonians 2:14"
+      "citation": "John 15:4a, 5b"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 18:1-8"
+      "citation": "Matthew 25:14-30"
     }
   ]
 }
