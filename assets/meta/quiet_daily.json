@@ -1,33 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-11-16T13:32:21.916Z",
-  "date": "2026-11-16",
-  "weekday": "Monday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/111626.cfm",
-  "feast": null,
-  "lectionary": "497",
+  "generated_at": "2026-11-17T14:16:19.362Z",
+  "date": "2026-11-17",
+  "weekday": "Tuesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/111726.cfm",
+  "feast": "Memorial of Saint Elizabeth of Hungary, Religious",
+  "lectionary": "498",
   "liturgical_color": null,
-  "rosary_mysteries": "joyful",
+  "rosary_mysteries": "sorrowful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Revelation 1:1-4; 2:1-5"
+      "citation": "Revelation 3:1-6, 14-22"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 1:1-2, 3, 4, 6"
+      "citation": "Psalm 15:2-3a, 3bc-4ab, 5"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "John 8:12"
+      "citation": "1 John 4:10b"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 18:35-43"
+      "citation": "Luke 19:1-10"
     }
   ]
 }
