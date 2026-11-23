@@ -1,38 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-11-22T13:15:31.277Z",
-  "date": "2026-11-22",
-  "weekday": "Sunday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/112226.cfm",
+  "generated_at": "2026-11-23T15:52:17.896Z",
+  "date": "2026-11-23",
+  "weekday": "Monday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/112326.cfm",
   "feast": null,
-  "lectionary": "160",
+  "lectionary": "503",
   "liturgical_color": null,
-  "rosary_mysteries": "glorious",
+  "rosary_mysteries": "joyful",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Ezekiel 34:11-12, 15-17"
+      "citation": "Revelation 14:1-3, 4b-5"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 23:1-2, 2-3, 5-6"
-    },
-    {
-      "label": "Reading 2",
-      "type": "reading",
-      "citation": "1 Corinthians 15:20-26, 28"
+      "citation": "Psalm 24:1bc-2, 3-4ab, 5-6"
     },
     {
       "label": "Alleluia",
       "type": "alleluia",
-      "citation": "Mark 11:9, 10"
+      "citation": "Matthew 24:42a, 44"
     },
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Matthew 25:31-46"
+      "citation": "Luke 21:1-4"
     }
   ]
 }
