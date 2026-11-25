@@ -1,23 +1,23 @@
 {
   "source": "usccb",
-  "generated_at": "2026-11-24T15:44:25.107Z",
-  "date": "2026-11-24",
-  "weekday": "Tuesday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/112426.cfm",
-  "feast": "Memorial of Saint Andrew Dung-Lac, Priest, and Companions, Martyrs",
-  "lectionary": "504",
+  "generated_at": "2026-11-25T15:28:50.195Z",
+  "date": "2026-11-25",
+  "weekday": "Wednesday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/112526.cfm",
+  "feast": null,
+  "lectionary": "505",
   "liturgical_color": null,
-  "rosary_mysteries": "sorrowful",
+  "rosary_mysteries": "glorious",
   "readings": [
     {
       "label": "Reading 1",
       "type": "reading",
-      "citation": "Revelation 14:14-19"
+      "citation": "Revelation 15:1-4"
     },
     {
       "label": "Responsorial Psalm",
       "type": "psalm",
-      "citation": "Psalm 96:10, 11-12, 13"
+      "citation": "Psalm 98:1, 2-3ab, 7-8, 9"
     },
     {
       "label": "Alleluia",
@@ -27,7 +27,7 @@
     {
       "label": "Gospel",
       "type": "gospel",
-      "citation": "Luke 21:5-11"
+      "citation": "Luke 21:12-19"
     }
   ]
 }
