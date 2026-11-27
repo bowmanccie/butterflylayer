@@ -1,12 +1,33 @@
 {
   "source": "usccb",
-  "generated_at": "2026-11-26T15:00:46.582Z",
-  "date": "2026-11-26",
-  "weekday": "Thursday",
-  "usccb_url": "https://bible.usccb.org/bible/readings/112626.cfm",
+  "generated_at": "2026-11-27T14:56:04.050Z",
+  "date": "2026-11-27",
+  "weekday": "Friday",
+  "usccb_url": "https://bible.usccb.org/bible/readings/112726.cfm",
   "feast": null,
-  "lectionary": "506, 943-947",
+  "lectionary": "507",
   "liturgical_color": null,
-  "rosary_mysteries": "luminous",
-  "readings": []
+  "rosary_mysteries": "sorrowful",
+  "readings": [
+    {
+      "label": "Reading 1",
+      "type": "reading",
+      "citation": "Revelation 20:1-4, 11—21:2"
+    },
+    {
+      "label": "Responsorial Psalm",
+      "type": "psalm",
+      "citation": "Psalm 84:3, 4, 5-6a, 8a"
+    },
+    {
+      "label": "Alleluia",
+      "type": "alleluia",
+      "citation": "Luke 21:28"
+    },
+    {
+      "label": "Gospel",
+      "type": "gospel",
+      "citation": "Luke 21:29-33"
+    }
+  ]
 }
